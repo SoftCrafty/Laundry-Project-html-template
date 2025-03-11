@@ -11,7 +11,7 @@
         background-color: $--primary;
         .contact_info_area{
             @include flex(row, space-between, center);
-            padding: 0;
+            // padding: 0;
             min-height: 38px;
             flex-wrap: wrap;
             .social_media{
@@ -68,5 +68,151 @@
                 }
             }
         }
+    }
+}
+/* ----hero section start-----*/
+.hero_section_area{
+    position: relative;
+    .hero_overly{
+        background: linear-gradient(90deg, #142137 0%, rgba(20, 33, 55, 0.1) 89.82%);
+        position:absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+    .hero_section{
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 840px;
+        .hero_area_wrapper{
+            .hero_contains{
+                // background-color: darkred;
+                height: 840px;
+                @include flex(column, center, flex-start);
+                gap: 60px;
+                .heading_area{
+                    .heading{
+                        h1{
+                            margin-top: 44px;
+                            margin-bottom: 60px;
+                        }
+                    }
+                }
+                .hero_user_info{
+                    @include flex(row, flex-start, center);
+                    .hero_user_meta{
+                        position: relative;
+                        height: 54px;
+                        width: 200px;
+                        img{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            &:nth-child(1){
+                                left: 18%;
+                                z-index: 2;
+                            }
+                            &:nth-child(2){
+                                left: 36%;
+                                z-index: 2;
+                            }
+                            &:nth-child(3){
+                                left: 54%;
+                                z-index: 2;
+                            }
+                            &:nth-child(4){
+                                left: 72%;
+                                z-index: 2;
+                            }
+
+                        }
+                    }
+                    .review_card_wapper{
+                        @include flex(column, center, flex-start);
+                        margin-left: 14px;
+                        gap: 13px;
+
+                        ul{
+                            @include flex(row, flex-start, flex-start);
+                            gap: 3px;
+                            margin: 0;
+                            padding: 0;
+                            li{
+                                color: $--secondary;
+                            }
+
+                        }
+                        p{
+                            font-family: $--font-family;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 156%;
+                            color: $--white;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}
+/* ----hero section end-----*/
+
+.heading_area{
+    .sub_heading{
+        h4{
+            display: inline-block;
+            backdrop-filter: blur(14px);
+            background: rgba(255, 255, 255, 0.14);
+            margin-left: 20px;
+            font-family: $--font-family;
+            font-weight: 500;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            width: 182px;
+            height: 29px;
+            text-align: center;
+            line-height: 29px;
+            span{
+                margin-right: 8px;
+            }
+        }
+    }
+    .heading{
+        h1{
+        font-family: $--font-family;
+        font-weight: 600;
+        font-size: 100px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        color: $--white;
+        }
+    }
+    .description{
+        p{
+            font-family: $--font-family;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 167%;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}
+.btn_wrapper_area{
+    width: 212px;
+    height: 54px;
+    background-color: $--primary;
+    text-align: center;
+    line-height: 54px;
+    a{
+        font-family: $--font-family;
+        font-weight: 500;
+        font-size: 15px;
+        color: $--white;
     }
 }
