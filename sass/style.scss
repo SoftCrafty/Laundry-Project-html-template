@@ -1,0 +1,42 @@
+@import "mixin";
+@import "variables";
+@import "./partials/animation";
+@import "./pages/home_one.scss";
+@import "./partials/header";
+@import "./partials/menu-sidebar";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    margin-top: 150px;
+}
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+.text-right{
+    text-align: right !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+// p{
+//     font-family: $--second-family;
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 162%;
+//     color: $--eight;
+// }

@@ -1,0 +1,72 @@
+.container_area{
+    max-width: 1600px;
+    margin: auto;
+    width: 100%;
+}
+.header_contact_area{
+    @include sm{
+        display: none;
+    }
+    .header_area_contains{
+        background-color: $--primary;
+        .contact_info_area{
+            @include flex(row, space-between, center);
+            padding: 0;
+            min-height: 38px;
+            flex-wrap: wrap;
+            .social_media{
+                @include flex(row, flex-start, center);
+                height: 100%;
+                gap: 21px;
+                span{
+                    font-family: $--font-family;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $--white;
+                }
+                ul{
+                    @include flex(row, flex-start, center);
+                    gap: 18px;
+                    height: 100%;
+                    margin: 0;
+                    li{
+                        a{
+                            color: $--white;
+                            opacity: 0.3;
+                            &:hover{
+                                opacity: 1;
+                                @include transition(0.4s);
+                            }
+                        }
+                    }
+
+                }
+            }
+            .contact_info{
+                @include flex(row, flex-end, center);
+                gap: 18px;
+                .contact_info_wrapper{
+                    &.style_1{
+                        border-left: 1px solid #ffffff5c;
+                        border-right: 1px solid #ffffff5c;
+                        padding: 0px 18px;
+                        height: 18px;
+                    }
+                    @include flex(row, center, center);
+                    gap: 8px;
+                    
+                    a{
+                        font-family: $--font-family;
+                        font-weight: 500;
+                        font-size: 15px;
+                        color: $--white;
+                        opacity: 0.7;
+                        &:nth-child(1){
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin transition($time) {
+  transition: all $time ease;
+}
+
+@mixin border-style($width, $height, $color) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+}
+@mixin background_img($repeat, $position){
+  background-repeat: $repeat;
+  background-position: $position;
+}
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -moz-border-radius   : $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius    : $radius;
+  -o-border-radius     : $radius;
+}
+@mixin transformY($translate){
+  transform: translateY($translate);
+  -webkit-transform: translateY($translate);
+  -moz-transform: translateY($translate);
+  -ms-transform: translateY($translate);
+  -o-transform: translateY($translate);
+}
+@mixin transformX($translate){
+  transform: translateX($translate);
+  -webkit-transform: translateX($translate);
+  -moz-transform: translateX($translate);
+  -ms-transform: translateX($translate);
+  -o-transform: translateX($translate);
+}
+
+@mixin transform($translateX, $translateY){
+  transform: translate($translateX, $translateY);
+  -webkit-transform: translate($translateX, $translateY);
+  -moz-transform: translate($translateX, $translateY);
+  -ms-transform: translate($translateX, $translateY);
+  -o-transform: translate($translateX, $translateY);
+}
+
+
+// for responsive
+
+// Small devices
+@mixin xs {
+  @media only screen and (min-width: 0px) and (max-width:576px){
+      @content;
+  }
+}
+@mixin sm {
+  @media only screen and (min-width: 0px) and (max-width: 767px){
+      @content;
+  }
+}
+// Medium devices
+@mixin md {
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    @content;
+  }
+}
+
+// Nest Hub Device
+@mixin nesthub() {
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    @content;
+  }
+}
+// Nest Hub Max Device
+@mixin nesthubmax() {
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    @content;
+  }
+}
+
+
+
+
+
+@mixin navmenu {
+  @media only screen and (min-width: 0px) and (max-width: 998px){
+      @content;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
