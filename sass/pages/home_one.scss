@@ -243,10 +243,9 @@
             font-weight: 500;
             font-size: 16px;
             color: rgba(255, 255, 255, 0.7);
-            width: 182px;
-            height: 29px;
+            padding: 5px 10px;
             text-align: center;
-            line-height: 29px;
+            // line-height: 29px;
             margin-bottom: 24px;
             span{
                 margin-right: 8px;
@@ -270,8 +269,16 @@
             letter-spacing: -0.02em;
             color: $--text_clr;
         }
+        
     }
     .description{
+        &.style_2{
+            p{
+                font-weight: 400;
+            font-size: 16px;
+            line-height: 162%;
+            }
+        }
         &.style_1{
                 p{
                     color: $--text2;
@@ -285,6 +292,7 @@
             
             color: rgba(20, 33, 55, 0.7);
             margin-top: 24px;
+            
             
         }
     }
@@ -435,3 +443,591 @@
     
 }
 /*-------experts section end------*/
+
+/*-------our services section start------*/
+.our_service_area{
+    background: #ecf2fe;
+    padding: 100px 0px;
+    @include flex(column, center, center);
+    flex-wrap: wrap;
+    .our_service_container{
+        padding: 0px 30px;
+        @include sm{
+            padding: 0px 10px;
+        }
+        padding-top: 80px;
+        width: 100%;
+        max-width: 1920px;
+        @include flex(row, center, center);
+        flex-wrap: wrap;
+        margin: auto;
+        .heading{
+            margin-top: 50px;
+            margin-bottom: 16px;
+            a{
+            font-family: $--font-family;
+            font-weight: 600;
+            font-size: 30px;
+            letter-spacing: -0.02em;
+            color: $--text_clr;
+            &:hover{
+                color: $--primary;
+            }
+        }
+        }
+        .our_service_contains{
+            height: 505px;
+            &:hover{
+                .service_img_wrapper{
+                .service_images{
+                    visibility: visible;
+                    opacity: 1;
+                    @include transition(0.5s);
+                }
+                a{
+                    display: none;
+                }
+            }
+             .heading{
+            
+            a{
+                color: $--primary;
+            
+        }
+        }
+            }
+            .service_contains_wrapper{
+                padding:0px 60px 40px 60px;
+                @include sm{
+                    padding: 0px 10px 40px 10px;
+                }
+                border-right: 1px solid rgba(20, 33, 55, 0.14);
+                @include sm{
+                    border: none;
+                }
+                h3{
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                }
+            }
+            .service_img_wrapper{
+                border-right: 1px solid rgba(20, 33, 55, 0.14);
+                @include sm{
+                    border: none;
+                }
+                width: 100%;
+                height: 223px;
+                position: relative;
+                a{
+                    position: absolute;
+                    top: 30px;
+                    left: 60px;
+                    font-family: $--font-family;
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: $--text_clr;
+                    span{
+                        margin-left: 5px;
+}
+                }
+                .service_images{
+                    visibility: hidden;
+                    opacity: 0;
+                    img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    
+                }
+                }
+                
+            }
+        }
+    }
+}
+/*-------our services section end------*/
+/*-------Service setps start------*/
+.laundry_service_steps{
+    margin-top: 100px;
+    .view_our_services{
+        margin-top: 63px;
+        background-color: rebeccapurple;
+        width: 100%;
+        height: fit-content;
+        padding: 0px;
+        position: relative;
+        span{
+            position: absolute;
+            color: red;
+            top: 50%;
+            left: 50%;
+            font-size: 70px;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+}
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .servers_card_wrapper{
+        margin-top: 59px;
+        @include flex(row, space-between, center);
+        @include navmenu{
+            flex-wrap: wrap;
+        }
+        flex-wrap: wrap;
+        .service_card_info{
+            // background-color: red;
+            width: 270px;
+            height: 382px;
+            
+            @include flex(column, space-between, center);
+            gap: 80px;
+            .service_card_img{
+                @include flex(column, flex-start, center);
+                position: relative;
+                &.style_1{
+                    img{
+                        top:200px;
+                    }
+                }
+                .service_icon{
+                    margin-top: 50px;
+                    width: 170px;
+                    height: 170px;
+                    background-color: #ecf2fe;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    text-align: center;
+                    line-height: 170px;
+                    position: relative;
+                    z-index: 50;
+                    img{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        -webkit-transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        -o-transform: translate(-50%, -50%);
+                    }
+                }
+                img{
+                    
+                        position: absolute;
+                       top: 70px;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        -webkit-transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        -o-transform: translate(-50%, -50%);
+                        z-index: 5;
+                        
+                    
+                }
+            }
+            .service_card_meta{
+                text-align: center;
+                p{
+                    font-family: $--font-family;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 162%;
+                    text-align: center;
+                    color: #14213799;
+                }
+            }
+        }
+    }
+}
+/*-------Service setps end------*/
+
+/*-------Cleaning Experts Start------*/
+.cleaning_experts_section{
+    margin-top: 100px;
+    .cleaning_container_area{
+        margin-top: 80px;
+        padding-bottom: 50px;
+        @include flex(row, space-between, center);
+        gap: 30px;
+        flex-wrap: wrap;
+        .cleaning_experts_info{
+        width: calc(25% - 30px);
+            max-width: 378px;
+            height: 470px;
+             @include nesthub{
+            width: calc(33.33% - 30px);
+            height: 400px !important;
+        }
+             @include md{
+            width: calc(50% - 30px);
+            height: 400px !important;
+            
+        }
+             @include sm{
+            width: 100%;
+            height: 400px !important;
+            padding: 0px 10px;
+        }
+            .cleaning_images_wrapper{
+                width: 100%;
+                height: 370px;
+                @include nesthub{
+                    height: 330px;
+                }
+                @include md{
+                    height: 330px;
+                }
+                @include sm{
+                    height: 330px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .cleaning_contains_wrapper{
+                width: 100%;
+                height: 100px;
+                background-color: #ecf2fe;
+                @include flex(row, space-between, center);
+                padding: 0px 28px;
+                position: relative;
+                .cleaning_title{
+                    h4{
+                        font-family: $--font-family;
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: $--text_clr;
+                    }
+                    p{
+                        font-family: $--font-family;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 173%;
+                        text-transform: uppercase;
+                        color: #142137b3;
+                    }
+                }
+               .social_media{
+    position: absolute;
+    bottom: 28px;
+    right: 29px;
+    &:hover{
+        .social_icon{
+            gap: 8px;
+        transform: translateY(0px);
+        padding: 0;
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        @include transition(0.5s);
+        
+        }
+}
+    span{
+        
+                            box-shadow: 0 2px 4px 0 rgba(20, 33, 55, 0.14);
+                            background: $--white;
+                            width: 44px;
+                            height: 44px;
+                            display: block;
+                            text-align: center;
+                            line-height: 44px;
+                            color: $--text_clr;
+                            font-size: 18px;
+        cursor: pointer;
+        z-index: 5;
+        &:hover{
+            background-color: $--primary;
+            @include transition(0.4s);
+            color: $--white;
+        }
+    }
+    .social_icon{
+        transform: translateY(40px);
+        padding: 0;
+        opacity: 0;
+        visibility: hidden;
+        @include flex(column, center, center);
+        gap :10px;
+
+        li
+{
+    z-index: 1;
+    a{
+        
+            width: 40px;
+            height: 40px;
+            background-color:$--white;
+            text-align: center;
+            line-height: 40px;
+            display: block;
+            color: #142137;
+            &:hover{
+                background-color: $--primary;
+            @include transition(0.4s);
+            color: $--white;
+        }
+    }
+        }
+    }
+
+}
+            }
+        }
+    }
+}
+/*-------Cleaning Experts end------*/
+
+.slick-slide {
+  margin: 0 10px; }
+
+.slick-list {
+  margin: 0 -20px 0 -10px; }
+
+
+  
+.our_service_gallery{
+    margin-top: 158px;
+    @include sm{
+        margin-top: 80px;
+    }
+    @include nesthub{ 
+        margin-top: 120px;
+    }
+    &{
+        @include sm{
+            margin-top: 75px;
+            .btn_warpper{
+                padding: 0px !important;
+            }
+            .desc{
+            padding-left: 0px !important;
+            margin-top: 20px;
+        }
+        .btn_warpper{
+            padding-left: 0px !important;
+            margin-top: 5px;
+        }
+        }
+        @include md{
+            margin-top: 75px;
+            .btn_warpper{
+                padding: 0px !important;
+            }
+            .desc{
+            padding-left: 0px !important;
+            margin-top: 20px;
+        }
+        .btn_warpper{
+            padding-left: 0px !important;
+            margin-top: 5px;
+        }
+        }
+    }
+  
+.overly_content_text{
+    width: 420px;
+    @include nesthubmax{
+        width: 360px !important;
+    }
+    @include nesthub{
+        width: 305px !important;
+    }
+    
+    height: 100%;
+    display: block;
+    @include flex(column, center, flex-start);
+    z-index: 1;
+    position: absolute;
+    bottom: -80px;
+    left: -130%;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+h6{
+        font-family:$--font-family;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color:$--white;
+
+    }
+    b{
+        font-family:$--font-family;
+font-weight: 400;
+font-size: 40px;
+line-height: 125%;
+color: $--white;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery_parent {
+        flex-direction: column;
+        height        : auto;
+        .tab {
+        flex  : none;
+        width : 100%;
+        height: 200px;
+        & img {
+        height: 100%;
+    }
+    &.active {
+        height: 400px;
+    }
+    .content {
+        position: relative;
+        width   : 90%;
+        bottom  : 10px;
+        left    : 10px;
+        width: 200px !important;
+        height: 90px !important;
+        gap: 2px !important;
+        left: 10px !important;
+        bottom: 10px !important;
+        padding:12px 10px !important;
+        
+        h2{
+            font-size: 20px !important;
+        }
+        h3{
+            font-size: 10px !important;
+        }
+        p{
+            font-family: 8px !important;
+        }
+    }
+    }
+    }
+
+    
+}
+
+/* Gallery Section */
+.gallery_parent {
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    height: 623px;
+
+    .tab {
+        position: relative;
+        flex: 1;
+        transition: flex 0.5s ease-in-out;
+        cursor: pointer;
+        overflow: hidden;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.6);
+            transition: filter 0.3s ease-in-out;
+            
+        }
+
+        .overlay_content {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: opacity 0.3s ease;
+      
+           
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+           
+            h2{
+                margin: 0;
+                font-size: 20px;
+            }
+
+            p {
+                margin: 5px 0 0;
+                font-size: 14px;
+            }
+        }
+
+        &.active {
+            flex: 6;
+
+            img {
+                filter: brightness(1);
+            }
+
+            .overlay_content {
+                opacity: 0;
+            }
+
+            .content {
+                width: 461px;
+                height: 187px;
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                background-color: $--one;
+                padding: 20px;
+                @include flex(column, center, flex-start);
+                gap: 10px;
+               &:hover{
+                background-color: $--primary;
+                @include transition(0.5s);
+                color: $--white;
+                p{
+                    color: $--white;
+                }
+               }
+                b{
+                    font-family: $--font-family;
+                    font-weight: 400;
+                    font-size: 40px;
+                    line-height: 125%;
+                    color: $--nine;
+                }
+                h6{
+                    font-family: $--font-family;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: $--nine;
+                }
+                p{
+                    font-family: $--second-family;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 162%;
+                    color: $--eight;
+                }
+            }
+        }
+        
+    }
+}
+
+}

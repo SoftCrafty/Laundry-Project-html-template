@@ -55,6 +55,18 @@ document.addEventListener("DOMContentLoaded", function () {
         // autoplaySpeed: 2000,
     });
 
+    $('.cleaning_container_area').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: false,
+        nextArrow: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } }
+        ]
+    });
+
 })
 
 gsap.from(".header_contact_area .social_media span",{
@@ -77,7 +89,7 @@ gsap.from(".header-area .btn_wrapper",{
     delay: 0.5
 })
  let tl = gsap.timeline();
-tl.from(".header_contact_area .social_media li, .description, .review_card_wapper li",{
+tl.from(".header_contact_area .social_media li, .review_card_wapper li",{
          y: 50,
          opacity: 0,
          duration: 0.5,
@@ -130,3 +142,12 @@ pictl.from(".hero_user_meta img",{
 
 
 
+
+
+$(document).ready(function () {
+    // Tab Active Class Toggle
+    $(".tab").click(function () {
+        $(".tab").removeClass("active");
+        $(this).addClass("active");
+    });
+});
