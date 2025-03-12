@@ -72,29 +72,87 @@
 }
 /* ----hero section start-----*/
 .hero_section_area{
-    position: relative;
-    .hero_overly{
+    
+         position: relative;
+         .left-arrow{
+        backdrop-filter: blur(14px);
+        background: rgba(255, 255, 255, 0.14);
+        border-radius: 50%;
+        width: 54px;
+        height: 54px;
+        line-height: 54px;
+        text-align: center;
+        display: block;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        color: $--white;
+        position: absolute;
+        right: 8%;
+        top: 40%;
+        transform: translateY(-50%);
+        z-index: 10;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        &:hover{
+            background-color: $--primary;
+            @include transition(0.4s);
+        }
+}
+         .right-arrow{
+        backdrop-filter: blur(14px);
+        background: rgba(255, 255, 255, 0.14);
+        border-radius: 50%;
+        width: 54px;
+        height: 54px;
+        line-height: 54px;
+        text-align: center;
+        display: block;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        color: $--white;
+        position: absolute;
+        right: 8%;
+        top: 48%;
+        transform: translateY(-50%);
+        z-index: 10;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        &:hover{
+            background-color: $--primary;
+            @include transition(0.4s);
+        }
+}
+         .hero_overly{
         background: linear-gradient(90deg, #142137 0%, rgba(20, 33, 55, 0.1) 89.82%);
-        position:absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
         width: 100%;
-        z-index: 1;
-    }
-    .hero_section{
+        height: 100%;
         
+
+    }
+    
+    .hero_section{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 840px;
+        
         .hero_area_wrapper{
+            
+            z-index: 100;
             .hero_contains{
-                // background-color: darkred;
                 height: 840px;
                 @include flex(column, center, flex-start);
                 gap: 60px;
                 .heading_area{
+                    z-index: 10;
                     .heading{
                         h1{
                             margin-top: 44px;
@@ -103,6 +161,7 @@
                     }
                 }
                 .hero_user_info{
+                    z-index: 10;
                     @include flex(row, flex-start, center);
                     .hero_user_meta{
                         position: relative;
@@ -164,12 +223,22 @@
 /* ----hero section end-----*/
 
 .heading_area{
+    
     .sub_heading{
+        &.style_1{
+            h4{
+                color: #142137b3;
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 16px;
+                border: 1px solid #14213724;
+                line-height: 24px;
+            }
+        }
         h4{
             display: inline-block;
             backdrop-filter: blur(14px);
             background: rgba(255, 255, 255, 0.14);
-            margin-left: 20px;
             font-family: $--font-family;
             font-weight: 500;
             font-size: 16px;
@@ -178,6 +247,7 @@
             height: 29px;
             text-align: center;
             line-height: 29px;
+            margin-bottom: 24px;
             span{
                 margin-right: 8px;
             }
@@ -192,14 +262,30 @@
         letter-spacing: -0.02em;
         color: $--white;
         }
+        h2{
+            font-family: $--font-family;
+            font-weight: 600;
+            font-size: 54px;
+            line-height: 119%;
+            letter-spacing: -0.02em;
+            color: $--text_clr;
+        }
     }
     .description{
+        &.style_1{
+                p{
+                    color: $--text2;
+                }
+            }
         p{
             font-family: $--font-family;
             font-weight: 500;
             font-size: 18px;
             line-height: 167%;
-            color: rgba(255, 255, 255, 0.7);
+            
+            color: rgba(20, 33, 55, 0.7);
+            margin-top: 24px;
+            
         }
     }
 }
@@ -214,5 +300,138 @@
         font-weight: 500;
         font-size: 15px;
         color: $--white;
+        span{
+            margin-left: 5px;
+        }
     }
 }
+
+
+
+
+/*-------experts section start------*/
+.experts_section_area{
+    margin-top: 150px;
+    .experts_content_wrapper{
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+        .experts_img_area{
+            width: 785px;
+            height: 607px;
+            position: relative;
+            img{
+                &:nth-child(1){
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+                &:nth-child(2){
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                
+            }
+            .experience_card{
+                background-color: yellow;
+                width: 290px;
+                height: 290px;
+                position: absolute;
+                @include border-radius(50%);
+                right: 21%;
+                bottom: 40px;
+                img{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                }
+                .experience_card_contains{
+                    width: 250px;
+                    height: 250px;
+                    backdrop-filter: blur(10px);
+                    background: #f9f9f9;
+                    position: absolute;
+                    @include border-radius(50%);
+                    top: 50%;
+                    left: 50%;
+                    @include transform(-50%, -50%);
+                    h2{
+                        margin: 50px 0px 0px 50px;
+                        font-family: $--font-family;
+                        font-weight: 600;
+                        font-size: 150px;
+                        line-height: 73%;
+                        letter-spacing: -0.02em;
+                        background: url('/images/home1/experts_section/experts3.png') center/cover;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+
+                    
+                    }
+                    p{
+                        font-family: $--font-family;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 137%;
+                        text-transform: uppercase;
+                        text-align: center;
+                        color: rgba(20, 33, 55, 0.7);
+                        margin-top: 16px;
+                    }
+                    
+                }
+            }
+    }
+    .experts_contains_area{
+        // width: 650px;
+        padding-left: 100px;
+        .check_list_area{
+            margin-top: 31px;
+            ul{
+                padding: 0;
+                @include flex(column, center, flex-start);
+                gap: 14px;
+                li{
+                    font-family: $--font-family;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $--text_clr;
+
+                    span{
+                        color: $--primary;
+                    }
+                }
+            }
+        }
+        .contact_info{
+            @include flex(row, flex-start, center);
+            gap: 34px;
+            margin-top: 46px;
+            .experts_section_call{
+            @include flex(row, flex-start, center);
+            gap: 12px;
+            .number{
+                @include flex(column, center, flex-start);
+                gap: 5px;
+                p{
+                    font-family: var(--font-family);
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: #142137b3;
+                    margin-left: 3px;
+                }
+                a{
+                    font-family: $--font-family;
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: $--text_clr
+                }
+            }
+        }
+        }
+        
+    }
+    }
+    
+}
+/*-------experts section end------*/

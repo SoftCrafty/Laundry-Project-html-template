@@ -11,7 +11,7 @@ $(document).ready(function () {
     
 
     // Sticky Navbar
-    function addStickyNav(navSelector, scrollOffset = 120, activeClass = 'active') {
+    function addStickyNav(navSelector, scrollOffset = 200, activeClass = 'active') {
         let nav = $(navSelector);
         $(window).on('scroll', function () {
             $(window).scrollTop() > scrollOffset ? nav.addClass(activeClass) : nav.removeClass(activeClass);
@@ -19,7 +19,7 @@ $(document).ready(function () {
     }
     addStickyNav('#top_nav');
     $(window).on("scroll", function () {
-        $("#header-area").toggleClass("scrolled", $(window).scrollTop() > 100);
+        $("#header_area").toggleClass("scrolled", $(window).scrollTop() > 100);
     });
 
 
@@ -46,41 +46,86 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+    $('.hero_section_area').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
+        nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+    });
 
-    gsap.timeline({ repeat: -1, repeatDelay: 0 })
-        .to(".brand-marquee-wrapper", {
-            x: "-100%", 
-            duration: 10, 
-            ease: "none", 
-        })
-        .set(".brand-marquee-wrapper", { x: "100%" });
+})
 
-    // document.querySelectorAll(".single_what_do").forEach(item => {
-    //     item.addEventListener("mouseenter", () => {
-    //         gsap.to(item.querySelector("img"), {
-    //             opacity: 1,
-    //             rotation: 0,
-    //             x: 10,
-    //             duration: 0.5,
-    //             ease: "power2.out"
-    //         });
-    //     });
+gsap.from(".header_contact_area .social_media span",{
+    x: -200,
+    opacity: 0,
+    duration:1,
+    delay: 0.5,
+})
+gsap.from(".header-area .logo a",{
+    x: -200,
+    display: "none",
+        duration: 1,
+    delay: 0.3,
+})
 
-    //     item.addEventListener("mouseleave", () => {
-    //         gsap.to(item.querySelector("img"), {
-    //             opacity: 0,
-    //             rotation: -20,
-    //             x: 0,
-    //             duration: 0.5,
-    //             ease: "power2.out"
-    //         });
-    //     });
-    // });
+gsap.from(".header-area .btn_wrapper",{
+    x: 200,
+    opacity: 0,
+    duration: 1,
+    delay: 0.5
+})
+ let tl = gsap.timeline();
+tl.from(".header_contact_area .social_media li, .description, .review_card_wapper li",{
+         y: 50,
+         opacity: 0,
+         duration: 0.5,
+         delay: 0.5,
+         stagger:0.1
+ })
+ 
+ let ctl = gsap.timeline();
+ctl.from(".contact_info_wrapper, .review_card_wapper p",{
+         y: -100,
+         opacity: 0,
+         duration: 1,
+         delay: 0.2,
+         stagger:0.3
+ })
+ let menutl = gsap.timeline();
+menutl.from(".header-area .main_menu li",{
+    // y:30,
+    opacity:0,
+    duration:1,
+    delay:0.4,
+    stagger:0.1
+})
+gsap.from(".sub_heading h4",{
+    x:-290,
+    duration:1,
+    delay:0.6,
+    opacity:0,
 
+})
 
-    
+let hedingh1 = gsap.timeline();
+hedingh1.from(".heading h1",{
+    x:-400,
+    opacity:0,
+    duration:2,
+    delay:0.5,
+    stagger:0.4,
+})
 
-});
+let pictl = gsap.timeline();
+pictl.from(".hero_user_meta img",{
+    x: 100,
+    opacity:0,
+    duration: 1,
+    delay:0.5,
+    stagger: 0.2
+})
 
 
 
