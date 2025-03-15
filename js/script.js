@@ -60,12 +60,43 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesToScroll: 1,
         prevArrow: false,
         nextArrow: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        dots:true,
+        dotsClass: 'container_area docts-active',
+        // autoplay: true,
+        // autoplaySpeed: 2000,
         responsive: [
             { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } }
         ]
     });
+    $('.customers_reviews_wrapper').slick({
+        slidesToShow: 3.57,
+        slidesToScroll: 1,
+        arrows: false, // Hide prev/next buttons
+        dots: false,
+        // dotsClass: 'container_area docts-active',
+        autoplay: true,
+        autoplaySpeed: 0, // No delay
+        speed: 3000, // Smooth speed
+        cssEase: "linear", // Continuous motion
+        infinite: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: { slidesToShow: 2, slidesToScroll: 1 }
+            },
+            {
+                breakpoint: 768,
+                settings: { slidesToShow: 1, slidesToScroll: 1 }
+            },
+            {
+                breakpoint: 480,
+                settings: { slidesToShow: 1, slidesToScroll: 1 }
+            }
+        ]
+    });
+
 
 })
 
@@ -138,6 +169,7 @@ pictl.from(".hero_user_meta img",{
     delay:0.5,
     stagger: 0.2
 })
+
 
 
 

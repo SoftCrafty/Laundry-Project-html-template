@@ -1,0 +1,55 @@
+
+.btn_wrapper_area{
+    padding: 0px 34px;
+    background-color: $--primary;
+    text-align: center;
+    line-height: 54px;
+    &.style_1{
+        font-family: $--font-family;
+        font-weight: 500;
+        font-size: 15px;
+        color: $--text_clr;
+        background-color: transparent;
+        border: 1px solid $--border;
+        @include transition(0.3s);
+        &:hover{
+            background-color: $--primary;
+            a{
+                color: $--white;
+                span{
+           i{
+            @include transition(0.5s);
+             transform:rotate(0deg);
+             -webkit-transform:rotate(0deg);
+             -moz-transform:rotate(0deg);
+             -ms-transform:rotate(0deg);
+             -o-transform:rotate(0deg);
+}
+}
+            }
+        }
+        a{
+            font-family: $--font-family;
+        font-weight: 500;
+        font-size: 15px;
+        color: $--text_clr;
+
+        }
+    }
+    a{
+        font-family: $--font-family;
+        font-weight: 500;
+        font-size: 15px;
+        color: $--white;
+        span{
+            margin-left: 5px;
+           i{
+             transform:rotate(-45deg);
+             -webkit-transform:rotate(-45deg);
+             -moz-transform:rotate(-45deg);
+             -ms-transform:rotate(-45deg);
+             -o-transform:rotate(-45deg);
+}
+}
+    }
+}
