@@ -46,6 +46,15 @@
         line-height: 110%;
         letter-spacing: -0.02em;
         color: $--white;
+        @include nesthub{
+            font-size: 60px;
+        }
+        @include md{
+            font-size: 50px;
+        }
+        @include sm{
+            font-size: 35px;
+        }
         }
         h2{
             font-family: $--font-family;
@@ -54,6 +63,15 @@
             line-height: 119%;
             letter-spacing: -0.02em;
             color: $--text_clr;
+        @include nesthub{
+            font-size: 40px;
+        }
+        @include md{
+            font-size: 30px;
+        }
+        @include sm{
+            font-size: 30px;
+        }
         }
         
     }
@@ -63,11 +81,17 @@
                 font-weight: 400;
             font-size: 16px;
             line-height: 162%;
+             @include md{
+                        padding-right: 250px;
+                    }
             }
         }
         &.style_1{
                 p{
                     color: $--text2;
+                    @include md{
+                        padding-right: 250px;
+                    }
                 }
             }
         p{
