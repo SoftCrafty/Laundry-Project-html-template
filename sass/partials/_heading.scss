@@ -22,6 +22,14 @@
             border: 1px solid rgba(20, 33, 55, 0.14);
             }
         }
+        &.style_3{
+            h4{
+                @include border-radius(50px);
+            border: 1px solid $--border;
+            padding: 10px 20px;
+            color: $--text-clr;
+            }
+        }
         h4{
             display: inline-block;
             backdrop-filter: blur(14px);

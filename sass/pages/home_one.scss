@@ -74,6 +74,9 @@
 }
 /* ----hero section start-----*/
 .hero_section_area{
+    &.style_1{
+        background: #0b103e;
+    }
     overflow: hidden;
     &{
         @include sm{
@@ -152,10 +155,21 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 840px;
-        
+        position: relative;
+        .overly_tow{
+             border-radius: 100%;
+            background-color: #ffffff08;
+            width: 812px;
+            height: 812px;
+            position: absolute;
+            left: -160px;
+            top: 50%;
+            @include transformY(-50%);
+        }
         .hero_area_wrapper{
             
             z-index: 100;
+            position: relative;
             .hero_contains{
                 height: 840px;
                 @include flex(column, center, flex-start);
@@ -181,6 +195,9 @@
                     }
                 }
                 .hero_user_info{
+                    &.style_1{
+                        gap: 10px;
+                    }
                     z-index: 10;
                     @include flex(row, flex-start, center);
                     flex-wrap: wrap;
@@ -1308,7 +1325,7 @@
         flex-wrap: wrap;
         .blog_news_contains{
             max-width: 378px;
-            width: 100%;
+            width: calc(25% - 30px);
             @include md{
                 width: calc(50% - 30px);
             }

@@ -36,6 +36,81 @@
 
         }
     }
+    &.style_2{
+        padding: 0px 24px;
+        @include border-radius(100px);
+        background-color: $--white;
+        &:hover{
+            background: #142137;
+            @include transition(0.5s);
+            a{
+                color: $--white;
+            }
+        }
+        a{
+            color: $--text_clr;
+        }
+        span{
+            margin-right: 5px;
+            i{
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+}
+        }
+    }
+    &.style_3{
+        padding: 0px;
+        padding-left: 30px;
+        padding-right: 10px;
+        @include border-radius(50px);
+        background-color: $--text-clr;
+        &:hover{
+            background-color: $--white;
+            @include transition(0.3s);
+            a{
+                color: $--text-clr;
+                @include transition(0.3s);
+                span{
+                    @include transition(0.3s);
+                    background-color: $--text-clr;
+                    color: $--white;
+                    i{
+                        @include transition(0.3s);
+                        transform: rotate(0deg);
+                        -webkit-transform: rotate(0deg);
+                        -moz-transform: rotate(0deg);
+                        -ms-transform: rotate(0deg);
+                        -o-transform: rotate(0deg);
+}
+                }
+
+            }
+        }
+         a{
+            @include flex(row, space-between, center);
+            gap: 10px;
+            span{
+                        border-radius: 50px;
+                        width: 34px;
+                        height: 34px;
+                        background-color: $--white;
+                       display: block;
+                       color: $--text-clr;
+                       line-height: 34px;
+                       text-align: center;
+                       i{
+                        transform: rotate(-45deg);
+                        -webkit-transform: rotate(-45deg);
+                        -moz-transform: rotate(-45deg);
+                        -ms-transform: rotate(-45deg);
+                        -o-transform: rotate(-45deg);
+}
+                    }
+         }
+    }
     a{
         font-family: $--font-family;
         font-weight: 500;
@@ -53,3 +128,4 @@
 }
     }
 }
+

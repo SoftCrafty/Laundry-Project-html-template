@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // autoplay: true,
         // autoplaySpeed: 2000,
     });
-
+ 
     $(document).ready(function () {
         var $slider = $('.cleaning_container_area');
 

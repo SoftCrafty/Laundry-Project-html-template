@@ -1,0 +1,262 @@
+.hero_img{
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.overly_circle{
+    position: absolute;
+    top: -245px;
+    left: -445px;
+    width: 1502px;
+    height: 1502px;
+    @include border-radius(50%);
+    background-color: #ffffff08;
+}
+.home_two_dots{
+    // background-color: red;
+    @include flex(row, center, center);
+    gap: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    @include transformX(-50%);
+    button{
+        background-color: transparent;
+        border: none;
+        color: $--white;
+    }
+}
+
+/*-----------About Section Start------------*/
+.home_two_about_area{
+    .home_two_about_wrapper{
+        @include flex(row, space-between, center);
+        // flex-wrap: wrap;
+        @include tow12{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        gap: 40px;
+
+        .home_tow_contains_area{
+            @include flex(column, center, flex-start);
+            // flex-wrap: wrap;
+            gap: 65px;
+            .home_two_contains_wrapper{
+                @include flex(row, flex-start, center);
+                flex-wrap: wrap;
+                width: 100%;
+                gap: 60px;
+                .contains_img_area{
+                    width: 100%;
+                    height: 100%;
+                    img{
+                       width: 100%;
+                       height: 100%;
+                       object-fit: contain;
+                    }
+                }
+                .contains_title_area{
+                    @include flex(column, center, flex-start);
+                    gap: 32px;
+                  .border_area{
+                    width: 85%;
+                    height: 1px;
+                    background-color: $--border;
+                }
+                .contains_area{
+                    @include flex(row, flex-start, center);
+                    width: 100%;
+                    height: 100%;
+                    gap: 40px;
+                    .contains_info_area{
+                        h4{
+                            font-family: $--font-family;
+                            font-weight: 600;
+                            font-size: 30px;
+                            letter-spacing: -0.02em;
+                            color: $--text-clr;
+                        }
+                        p{
+                            font-family: --font-family;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 162%;
+                            color: #142137b3;
+                        }
+                    }
+                }  
+                .btn_wrapper_area{
+                    margin-top: 17px;
+                }
+                }
+                
+            }
+
+        }
+        .home_two_image_area{
+            .home_two_img{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                 span{
+            width: 100px;
+            height: 100px;
+            @include border-radius(50%);
+            background-color: $--white;
+            text-align: center;
+            line-height: 100px;
+            color: $--text-clr;
+            font-size: 34px;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            i{
+                margin-left: 10px;
+            }
+            @include transformX(-50%);
+            &:hover{
+                color: $--white;
+                background-color: $--primary;
+                @include transition(0.4s)
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background-color:#ffffff73;
+                @include border-radius(50%);
+                animation: pulse 1.5s infinite ease-out;
+
+            }
+            i{
+                position: relative;
+            }
+
+
+        }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        
+    }
+}
+/*-----------About Section End------------*/
+
+/*-----------Premium Service Start------------*/
+.premium_laundry_service_area{
+    .premium_service_wrapper{
+        @include flex(row, space-between, center);
+        .premium_service_info{
+            border: 1px solid $--border_bl;
+            &:hover{
+                background: #ebeff3;
+                @include transition(0.5s);
+                
+            }
+            width: calc(25% - 30px);
+            padding: 60px 40px;
+            .premium_icon{
+                width: 82px;
+                height: 70px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            h4{
+                font-family: $--font-family;
+                font-weight: 600;
+                font-size: 30px;
+                letter-spacing: -0.02em;
+                color: $--text-clr;
+                margin-top: 54px;
+            }
+            p{
+                font-family: $--font-family;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 162%;
+                color: #142137b3;
+                margin-top: 18px;
+            }
+            .premium_btn_wrapper{
+                margin-top: 72px;
+                a{
+                    @include flex(row, space-between, center);
+                    width: 100%;
+                    height: 54px;
+                    border: 1px solid $--border;
+                    padding: 0px 10px 0px 30px;
+                    @include border-radius(50px);
+                    font-family: $--font-family;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $--text-clr;
+                    &:hover{
+                        background-color: $--text-clr;
+                        color: $--white;
+                        @include transition(0.4s);
+                        border: 1px solid transparent;
+                        span{
+                            background-color: $--white;
+                            color: $--text-clr;
+                            @include transition(0.2s);
+                            i{
+                                @include transition(0.3s);
+                                transform: rotate(0deg);
+                                -webkit-transform: rotate(0deg);
+                                -moz-transform: rotate(0deg);
+                                -ms-transform: rotate(0deg);
+                                -o-transform: rotate(0deg);
+}
+                        }
+                    }
+                    span{
+                        border-radius: 50px;
+                        width: 34px;
+                        height: 34px;
+                        background-color: $--text-clr;
+                       display: block;
+                       color: $--white;
+                       line-height: 34px;
+                       text-align: center;
+                       i{
+                        transform: rotate(-45deg);
+                        -webkit-transform: rotate(-45deg);
+                        -moz-transform: rotate(-45deg);
+                        -ms-transform: rotate(-45deg);
+                        -o-transform: rotate(-45deg);
+}
+                    }
+                }
+            }
+        }
+    }
+}
+/*-----------Premium Service End------------*/
+
+/*-----------Collect section start------------*/
+.collect_section_area{
+    .collect_img_wrapper{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .colletct_section_wrapper{
+        
+    }
+}
+/*-----------Collect section End------------*/
