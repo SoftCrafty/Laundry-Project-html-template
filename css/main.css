@@ -23212,6 +23212,85 @@
 
 /*-----------Premium Service End------------*/
 /*-----------Collect section start------------*/
+.collect_section_area .collect_area_contains_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 950px; }
+.collect_section_area .collect_img_wrapper {
+  width: 50%;
+  height: 100%;
+  background-color: red; }
+  .collect_section_area .collect_img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+.collect_section_area .colletct_section_wrapper {
+  width: 50%;
+  height: 100%;
+  background: #181d4c;
+  padding: 125px 125px 80px 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
+  .collect_section_area .colletct_section_wrapper .collect_icon_area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%; }
+    .collect_section_area .colletct_section_wrapper .collect_icon_area .collect_icon {
+      padding-bottom: 40px;
+      border-bottom: 4px solid #4375e7; }
+  .collect_section_area .colletct_section_wrapper h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 122%;
+    letter-spacing: -0.02em;
+    color: #fff;
+    padding-top: 81px; }
+  .collect_section_area .colletct_section_wrapper p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: #ffffffb3;
+    padding-top: 43px; }
+  .collect_section_area .colletct_section_wrapper .btn_wrapper_area {
+    margin-top: 172px; }
+  .collect_section_area .colletct_section_wrapper ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 10px; }
+    .collect_section_area .colletct_section_wrapper ul li a {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      -moz-border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+      text-align: center;
+      line-height: 40px;
+      background-color: #ffffff09;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      display: block; }
+      .collect_section_area .colletct_section_wrapper ul li a:hover {
+        background-color: #fff;
+        color: #142137; }
+
 /*-----------Collect section End------------*/
 /*=================navigation start=======================*/
 #top_nav.style_1 {
