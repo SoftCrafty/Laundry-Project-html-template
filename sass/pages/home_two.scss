@@ -325,3 +325,147 @@
     }
 }
 /*-----------Collect section End------------*/
+
+/*-----------counting section start------------*/
+.counting_section_area{
+    .counting_info_wrapper{
+        @include flex(row, center, center);
+        position: relative;
+        height: 440px;
+        // background-color: rgb(146, 141, 186);
+        @include sm{
+                height: 1600px;
+            }
+        .counting_info{
+            border-radius: 100%;
+            border: 1px solid $--border_bl;
+            width: 440px;
+            height: 440px;
+            @include sm{
+                width: 300px;
+                height: 300px;
+                left: 50%;
+                @include transformX(-50%);
+            }
+            text-align: center;
+            @include flex(column, center, center);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            // @include sm{
+                
+            // }
+            &:nth-child(2){
+                left: 378px;
+            }
+            &:nth-child(3){
+                left: 762px;
+            }
+            &:nth-child(4){
+                left: 1146px;
+            }
+
+            h4{
+                font-family: $--font-family;
+                font-weight: 600;
+                font-size: 120px;
+                line-height: 53%;
+                letter-spacing: -0.02em;
+                text-align: center;
+                color: $--text-clr;
+            }
+        }
+    }
+}
+/*-----------counting section End------------*/
+
+/*-----------Team Members Start------------*/
+.team_members_area{
+    .team_member_area_wrapper{
+        .team_member_card_area{
+            @include flex(row, space-between, center);
+            @include sm{
+                justify-content: center;
+            }
+            @include md{
+                justify-content: center;
+            }
+            gap: 30px;
+            flex-wrap: wrap;
+            .team_member_card_wrapper{
+                width: calc(25% - 30px);
+                padding: 40px;
+                border: 1px solid $--border_bl;
+                @include flex(column, flex-start, flex-start);
+                h4{
+                    font-family: $--font-family;
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: $--text-clr;
+                }
+                h5{
+                    font-family: $--font-family;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 173%;
+                    text-transform: uppercase;
+                    color: #142137b3;
+                    margin-top: 3px;
+                }
+                p{
+                    font-family: $--font-family;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 162%;
+                    color: #14213799;
+                    margin-top: 18px;
+                }
+                .team_crad_img{
+                    width: 100%;
+                    margin-top: 32px;
+                    img{
+                        object-fit: contain;
+                        float: right;
+                    }
+                }
+                .team_card_social_media{
+                    @include flex(row, flex-start, center);
+                    gap: 4px;
+                    margin-top: 43px;
+                    a{
+                        &:nth-child(1){
+                            width: 34px;
+                            height: 34px;
+                            border: 1px solid #00000024;
+                            @include border-radius(50%);
+                            color: $--text-clr;
+                            display: block;
+                            text-align: center;
+                            line-height: 34px;
+                            &:hover{
+                                background-color: $--text-clr;
+                                color: $--white;
+                                @include transition(0.4s);
+                                
+                            }
+                        }
+                        &:nth-child(2){
+                            padding: 5px 22px;
+                            @include border-radius(50px);
+                            border: 1px solid $--border_bl;
+                            color: $--text-clr;
+                            text-align: center;
+                            &:hover{
+                                background-color: $--text-clr;
+                                color: $--white;
+                                @include transition(0.4s);
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*-----------Team Members End------------*/
