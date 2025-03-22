@@ -1,5 +1,9 @@
 .footer{
     background-color: $--nine;
+    padding: 0px 20px;
+    @include sm{
+        padding: 0px 10px;
+    }
         .footer_area_quick_menu{
             @include flex(row, space-between, flex-start);
             padding: 0;

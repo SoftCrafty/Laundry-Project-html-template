@@ -87,6 +87,10 @@
                 @include navbtn{
                     display: none;
                 }
+                @include three13
+                {
+                    display: none;
+                }
                         @include flex(row, flex-start, center);
                         gap: 14px;
                         .icon{
@@ -190,6 +194,17 @@
     z-index: 2000;
     margin: auto;
     background-color: $--white;
+    &.style_1{
+        background-color: #0b103e !important;
+        .mobile-menu-bar{
+            z-index: 50;
+            a{
+                i{
+                    color: $--white;
+                }
+            }
+        }
+    }
     .header_menu_wrapper{
         @include flex(row, space-between, center);
         height: 80px !important;
@@ -306,7 +321,7 @@
         }
          }
         .btn_wrapper{
-            @include navbtn{
+            @media (max-width:1050px){
                 display: none;
             }
         a{

@@ -111,6 +111,11 @@
 
 
 
+@mixin three13 {
+  @media only screen and (min-width: 0px) and (max-width: 1310px){
+      @content;
+  }
+}
 @mixin tow12 {
   @media only screen and (min-width: 0px) and (max-width: 1200px){
       @content;
@@ -126,11 +131,11 @@
       @content;
   }
 }
-@mixin navmenu {
-  @media only screen and (min-width: 0px) and (max-width: 998px){
-      @content;
-  }
-}
+// @mixin navmenu {
+//   @media only screen and (min-width: 0px) and (max-width: 998px){
+//       @content;
+//   }
+// }
 // @for $i from 1 through 1000 {
 //   .mt-#{$i} {
 //     margin-top: #{$i}px;

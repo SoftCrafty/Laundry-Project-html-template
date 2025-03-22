@@ -62,7 +62,7 @@
         }
     }
     &.style_3{
-        padding: 0px;
+    padding: 0px;
         padding-left: 30px;
         padding-right: 10px;
         @include border-radius(50px);
@@ -107,6 +107,58 @@
                         -moz-transform: rotate(-45deg);
                         -ms-transform: rotate(-45deg);
                         -o-transform: rotate(-45deg);
+}
+                    }
+         }
+    }
+    &.style_4{
+        padding: 0px;
+        padding-left: 30px;
+        padding-right: 10px;
+        @include border-radius(50px);
+        border: 1px solid $--border_bl;
+        background-color: transparent;
+        &:hover{
+            background-color: $--text-clr;
+            @include transition(0.3s);
+            a{
+                color: $--white;
+                @include transition(0.3s);
+                span{
+                    @include transition(0.3s);
+                    background-color: $--white;
+                    color: $--text-clr;
+                    i{
+                        @include transition(0.3s);
+                        transform: rotate(0deg);
+                        -webkit-transform: rotate(0deg);
+                        -moz-transform: rotate(0deg);
+                        -ms-transform: rotate(0deg);
+                        -o-transform: rotate(0deg);
+}
+                }
+
+            }
+        }
+         a{
+            @include flex(row, space-between, center);
+            gap: 10px;
+            color: $--text-clr;
+            span{
+                 border-radius: 50px;
+                 width: 34px;
+                 height: 34px;
+                 background-color: $--text-clr;
+                   display: block;
+                   color: $--white;
+                   line-height: 34px;
+                   text-align: center;
+                   i{
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
 }
                     }
          }

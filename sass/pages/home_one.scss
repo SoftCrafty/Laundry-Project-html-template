@@ -74,6 +74,7 @@
 }
 /* ----hero section start-----*/
 .hero_section_area{
+    width: 100%;
     &.style_1{
         background: #0b103e;
     }
@@ -154,7 +155,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 840px;
+        // height: 840px;
         position: relative;
         .overly_tow{
              border-radius: 100%;
@@ -164,10 +165,12 @@
             position: absolute;
             left: -160px;
             top: 50%;
+            @include sm{
+            display: none;
+            }
             @include transformY(-50%);
         }
         .hero_area_wrapper{
-            
             z-index: 100;
             position: relative;
             .hero_contains{
