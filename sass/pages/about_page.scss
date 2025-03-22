@@ -1,0 +1,46 @@
+.inner_hero_section_area{
+    h1{
+        font-family: $--font-family;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 183%;
+        letter-spacing: -0.02em;
+        color: $--white;
+    }
+    ul{
+        backdrop-filter: blur(14px);
+        background: #ffffff1a;
+        @include flex(row,center,center);
+        width: 197px;
+        height: 34px;
+        padding: 0px 16px;
+        gap: 8px;
+        @include border-radius(195px);
+        li{
+            span{
+                &:nth-child(1){
+                    padding-right: 4px;
+                }
+                &:nth-child(2){
+                    padding-right: 4px;
+                }
+            }
+            a{
+                font-family: $--font-family;
+                font-weight: 500;
+                font-size: 16px;
+                letter-spacing: -0.02em;
+                color: $--white;
+                &:hover{
+                    color: $--primary;
+                }
+                
+            }
+           &:nth-child(2){
+            a{
+                color: $--primary;
+            }
+           }
+        }
+}
+}
