@@ -52,6 +52,10 @@
         }
     }
     .heading{
+        @include sm{
+            width: 100%;
+            // text-align: center;
+        }
         &.style_1{
             h2{
                 color: $--white;
@@ -88,7 +92,8 @@
             font-size: 30px;
         }
         @include sm{
-            font-size: 30px;
+            font-size: 28px;
+            width: 100%;
         }
         }
         
@@ -134,6 +139,10 @@
         }
         @include  sm {
             @include flex(column, center, flex-start);
+            gap: 30px;
+            .heading_area{
+                width: 100%;
+            }
         }
         @include  md {
             @include flex(column, center, flex-start);

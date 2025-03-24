@@ -88,6 +88,9 @@
     }
          position: relative;
          .left-arrow{
+            @include sm{
+                display: none !important;
+            }
         backdrop-filter: blur(14px);
         background: rgba(255, 255, 255, 0.14);
         border-radius: 50%;
@@ -116,6 +119,9 @@
         }
 }
          .right-arrow{
+            @include sm{
+                display: none !important;
+            }
         backdrop-filter: blur(14px);
         background: rgba(255, 255, 255, 0.14);
         border-radius: 50%;
@@ -155,7 +161,6 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        // height: 840px;
         position: relative;
         .overly_tow{
              border-radius: 100%;
@@ -172,9 +177,25 @@
         }
         .hero_area_wrapper{
             z-index: 100;
+            @include sm{
+                &.style_1{
+                height: 710px;
+            }
+            }
             position: relative;
             .hero_contains{
                 height: 840px;
+                &.style_1{
+                    @include sm{
+                    .heading_area{
+                        padding-top: 260px;
+                    }
+                    }
+                }
+                @include sm{
+                    padding: 50px 0px;
+                    height: fit-content
+                }
                 @include flex(column, center, flex-start);
                 gap: 60px;
                 @include nesthub{
@@ -186,6 +207,10 @@
                         h1{
                             margin-top: 44px;
                             margin-bottom: 60px;
+                            @include sm{
+                                margin-top: 10px;
+                                margin-bottom: 30px;
+                            }
                             @include nesthub{
                                 margin: 27px 0px 40px 0px;
                             }
@@ -193,11 +218,21 @@
                         }
                         p{
                             padding-right: 70px;
-                            background-color: red;
+                            @include sm{
+                                padding: 0;
+                            }
                         }
                     }
                 }
                 .hero_user_info{
+                    .profile_review_area{
+                        @include flex(row, flex-start, center);
+                        gap: 18px;
+                        @include sm{
+                            gap: 5px;
+                            margin-top:15px;
+                        }
+                    }
                     &.style_1{
                         gap: 10px;
                     }
@@ -206,6 +241,7 @@
                     flex-wrap: wrap;
                     @include sm{
                         gap: 20px;
+                        margin-top: -25px;
                     }
                     .hero_user_meta{
                         position: relative;
@@ -298,7 +334,7 @@
 .experts_section_area{
     overflow: hidden;
     @include sm{
-        padding-top: 75px;
+        padding-top: 0px !important;
         padding-bottom: 75px !important;
     }
     .experts_content_wrapper{
@@ -643,7 +679,6 @@
 
 /*-------Service setps start------*/
 .laundry_service_steps{
-    padding-top: 140px;
     .view_our_services{
         margin-top: 63px;
         background-color: rebeccapurple;
@@ -753,15 +788,22 @@
 
 /*-------Cleaning Experts Start------*/
 .cleaning_experts_section{
-    padding-top: 150px;
+    overflow: hidden;
     .cleaning_container_area{
         margin-top: 56px;
         padding-bottom: 96px;
+        @include sm{
+            padding-bottom: 30px;
+        }
         @include flex(row, space-between, center);
         gap: 30px;
         .cleaning_experts_info{
+            @include sm{
+                padding-right: 10px;
+            }
            max-width: 378px;
             height: 470px;
+            width: 100%;
             .cleaning_images_wrapper{
                 width: 100%;
                 height: 370px;
@@ -879,16 +921,9 @@
 
 /*--------working Proces start---------*/
 .working_proces_area{
-    padding-top: 150px;
-    @include sm{
-        margin-top: 80px;
-    }
-    @include nesthub{ 
-        margin-top: 120px;
-    }
     &{
         @include sm{
-            margin-top: 75px;
+            // margin-top: 75px;
             .btn_warpper{
                 padding: 0px !important;
             }
@@ -1136,8 +1171,6 @@
 
 /*--------working Proces start---------*/
 .price_packages_area{
-    padding-top: 87px;
-    padding-bottom: 150px;
     .price_packages_wrapper{
         margin-top: 56px;
         @include flex(row, space-between, center);
@@ -1235,28 +1268,28 @@
 /*--------customers reviews start---------*/
 .customers_reviews_area{
     background-color: #ecf2fe;
-    padding-top: 100px;
-    padding-bottom: 135px;
+    overflow: hidden;
     .heading_area{
         margin-bottom:58px;
     }
     .customers_reviews_wrapper{
+        &.style_1{
+            @include sm{
+                display: none;
+            }
+        }
         @include flex(row, center, center);
         margin-top: 30px;
         gap: 30px;
         background-color: transparent;
         .review_card_wappers{
-            max-width: 513px;
-            @include nesthub{
-                width: 400px;
-            }
             @include flex(column, center, flex-start);
             padding: 35px 40px 45px 40px; 
-            position: relative;
-            @include sm{
-                width: 100%;
+            @include nesthub{
+                padding: 15px 20px 20px 20px;
+                min-height: 350px;
             }
-            height: 280px;
+            position: relative;
             box-shadow: 0 10px 10px 0 #14213733;
             background: $--white;
             ul{
@@ -1288,6 +1321,10 @@
                         object-fit: contain;
                     }
                     .meta_name{
+                        background-color: red;
+                        @include nesthub{
+                            // background-color: red
+                        }
                         @include flex(column, center, flex-start);
                         gap:16px ;
                         h4{
@@ -1295,6 +1332,7 @@
                             font-weight: 600;
                             font-size: 18px;
                             color: $--text_clr;
+                           background-color: red;
                         }
                         b{
                             font-family: $--font-family;
@@ -1319,13 +1357,14 @@
 
 /*--------Blog News start---------*/
 .blog_news_area{
-    padding: 150px 0px;
-
     .blog_news_container{
         @include flex(row, space-between, center);
         gap: 30px;
-        margin-top: 80px;
+        // margin-top: 80px;
         flex-wrap: wrap;
+        @include sm{
+            gap: 50px;
+        }
         .blog_news_contains{
             max-width: 378px;
             width: calc(25% - 30px);
@@ -1337,6 +1376,9 @@
             }
             @include nesthubmax{
                 width: calc(25% - 30px);
+            }
+            @include sm{
+                width: 100%;
             }
             height: fit-content;
             .blog_images_wrapper{
@@ -1398,6 +1440,9 @@
                         font-size: 15px;
                         line-height: 173%;
                         color: #142137b3;
+                        &:hover{
+                            color: $--primary;
+                        }
                         span{
                             margin-right:5px ;
                         }

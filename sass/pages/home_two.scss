@@ -219,6 +219,9 @@
 /*-----------Premium Service Start------------*/
 .premium_laundry_service_area{
     .premium_service_wrapper{
+        &.style_1{
+            margin-top: 30px;
+        }
         @include flex(row, center, center);
         flex-wrap: wrap;
         gap: 30px;
@@ -330,39 +333,65 @@
 
 /*-----------Collect section start------------*/
 .collect_section_area{
+  overflow: hidden;
     .collect_area_contains_wrapper{
         @include flex(row, space-between, center);
         flex-wrap: wrap;
-        // max-height: 950px;
     }
     .collect_img_wrapper{
         width: 50%;
-        height: 100%;
-        background-color: red;
-        @include navmenu{
+        @include tow12{
             width: 100%;
+        }
+        height: 100%;
+        @include tow12{
+            width: 100%;
+            height: fit-content;
         }
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
+
         }
     }
     .colletct_section_wrapper{
         width: 50%;
-         @include navmenu{
+         @include tow12{
             width: 100%;
+            
+        }
+         @include tow12{
+            width: 100%;
+            height: fit-content;
         }
         height: 100%;
         background: #181d4c;
         padding: 125px 125px 80px 125px;
+        @include sm{
+            padding: 20px
+        }
         @include flex(column, center, flex-start);
         .collect_icon_area{
             @include flex(row, space-between, flex-start);
             width: 100%;
             .collect_icon{
+                @include sm{
+                    img{
+                    width: 100px;
+                    height: 100px;
+                }
+                }
                 padding-bottom: 40px;
                 border-bottom: 4px solid #4375e7;
+            }
+            .colletct_number{
+              @include sm{
+                  img{
+                    width: 100px;
+                    height: 100px;
+                }
+              }
             }
         }
         h2{
@@ -373,6 +402,10 @@
             letter-spacing: -0.02em;
             color: $--white;
             padding-top: 81px;
+            @include sm{
+                font-size: 40px;
+                margin-top: -40px;
+            }
         }
         p{
             font-family: $--font-family;
@@ -381,9 +414,15 @@
             line-height: 162%;
             color: $--text2;
             padding-top: 43px;
+            @include sm{
+                padding-top: 20px;
+            }
         }
         .btn_wrapper_area{
             margin-top: 172px;
+            @include sm{
+                margin-top: 30px;
+            }
         }
         ul{
             padding: 0;
@@ -391,6 +430,10 @@
             margin-top: 5px;
             @include flex(row, flex-end, center);
             width: 100%;
+            @include sm{
+                justify-content: flex-start;
+                margin-top: 20px;
+            }
             gap: 10px;
             li{
                 a{
@@ -473,6 +516,8 @@
 /*-----------Team Members Start------------*/
 .team_members_area{
     .team_member_area_wrapper{
+        @include flex(column, center, center);
+        gap: 40px;
         .team_member_card_area{
             @include flex(row, space-between, center);
             @include sm{
@@ -577,19 +622,56 @@
 /*-----------Price Packages Start------------*/
 .second_price_packages_area{
     background: #181d4c;
-
     .price_packages_wrapper{
+        .style_1{
+            @media (max-width:1311px) {
+                display: none;
+            }
+        }
+        .style_2{
+            @media (min-width:1312px) {
+                display: none;
+            }
+        }
         @include flex(row, center, center);
         flex-wrap: nowrap;
-        // flex-wrap: wrap;
+        @include three13{
+        flex-wrap: wrap;
+        }
         gap: 16px;
+        @include nesthubmax{
+            gap: 50px;
+        }
+        @include md{
+            gap: 30px;
+        }
+        @include sm{
+            gap: 30px;
+        }
             margin-top: 43px;
         .price_packages_card_area{
             @include flex(column, flex-start, flex-start);
             gap: 30px;
+            @include nesthubmax{
+                gap: 50px;
+            }
+            @include nesthub{
+                flex-direction: row;
+                justify-content: center;
+            }
+            @include md{
+                align-items: center;
+            }
             .price_packages_card_wrapper{
                 border: 1px solid #ffffff24;
-                width: 378px;
+                max-width: 378px;
+                width: 100%;
+                @include nesthubmax{
+                    width: 100%;
+                }
+                @include sm{
+                    width: 100%;
+                }
                 height: 320px;
                 backdrop-filter: blur(90px);
                 background: #181d4cb3;
@@ -679,24 +761,69 @@
                 }
             }
         }
-        .price_packages_img_area{
-            border-radius: 100%;
-            background-color: #ffffff0f;
-            -webkit-border-radius: 100%;
-            -moz-border-radius: 100%;
-            -ms-border-radius: 100%;
-            -o-border-radius: 100%;
-            width: 812px;
-            height: 812px;
-            position: relative;
-            img{
-                object-fit: contain;
-                position: absolute;
-                bottom: 0px;
-                left: 50%;
-                @include transformX(-43%);
-            }
-}
+        .price_image{
+            width: 100%;
+            @include flex(row, center, center);
+            .price_packages_img_area{
+                
+                border-radius: 100%;
+                background-color: #ffffff0f;
+                -webkit-border-radius: 100%;
+                -moz-border-radius: 100%;
+                -ms-border-radius: 100%;
+                -o-border-radius: 100%;
+                // width: 812px;
+                width: 100%;
+                max-width: 812px;
+                height: 812px;
+                position: relative;
+                @include sm{
+                    width: 100%;
+                    height: 350px;
+                }
+                @include md{
+                    width: 100%;
+                    max-width: 600px;
+                    height: 600px;
+                }
+                @include nesthubmax{
+                    width: 100%;
+                    height: 600px;
+                }
+                img{
+                    @include nesthubmax{
+                        object-fit: cover;
+                        width: 550px;
+                        height: 550px;
+                        overflow: visible;
+                        @include transformX(-50%);
+    
+                    }
+                    @include md{
+                        object-fit: cover;
+                        width: 550px;
+                        height: 550px;
+                        overflow: visible;
+                        @include transformX(-55%);
+    
+                    }
+                    
+                    @include sm{
+                        object-fit: cover;
+                        width: 300px;
+                        height: 300px;
+                        overflow: visible;
+                        @include transformX(-50%);
+    
+                    }
+                    object-fit: contain;
+                    @include transformX(-43%);
+                    position: absolute;
+                    bottom: 0px;
+                    left: 50%;
+                }
+    }
+        }
     }
 }
 /*-----------Price Packages End------------*/
@@ -890,32 +1017,79 @@
 /*-----------Blog and News Start------------*/
 .second_blog_news_area{
     .second_blog_news_wrapper{
-        // background-color: red;
         padding: 0;
         margin: 0;
         @include flex(row, space-between, flex-start);
         flex-wrap: wrap;
+        @include nesthubmax{
+                    gap: 50px;
+                    .col-lg-6{
+                        width: 100%;
+                    }
+                }
+        @include nesthub{
+                    gap: 50px;
+                    .col-lg-6{
+                        width: 100%;
+                    }
+                }
+        @include md{
+                    gap: 50px;
+                    .col-lg-6{
+                        width: 100%;
+                    }
+                }
+        @include sm{
+                    gap: 50px;
+                    .col-lg-6{
+                        width: 100%;
+                    }
+                }
         .heading_area{
             padding-right: 50px;
+            @include navmenu{
+                padding: 0;
+            }
+
         }
         .blog_news_card_wrapper{
             @include flex(column, flex-start, flex-start);
             gap: 30px;
             .blog_news_card{
                 @include flex(row, flex-start, center);
+                flex-wrap: wrap;
                 border: 1px solid rgba(20, 33, 55, 0.2);
-                width: 815px;
-                height: 340px;
+                width: 100%;
+                @include nesthub{
+                    max-width: 800px;
+                }
+                @include nesthubmax{
+                    max-width: 800px;
+                }
                 .blog_news_card_img{
+                    
+                    @include sm{
+                        width: 100%;
+                        // padding-right: 20px;
+                    }
                     width: fit-content;
                     height: 100%;
                     img{
-                        object-fit: contain;
+                        object-fit: cover;
                         width: 100%;
                         height: 100%;
                     }
                 }
                 .blog_news_card_contains{
+                    @include md{
+                        width: 50%;
+                        flex-wrap: nowrap;
+                        padding-right: 0px;
+                    }
+                    @include sm{
+                        width: 100%;
+                        padding: 20px;
+                    }
                     padding: 40px;
                     .blog_publish_date{
                         @include flex(row, center, center);
