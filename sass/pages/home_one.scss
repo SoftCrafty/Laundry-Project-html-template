@@ -803,6 +803,10 @@
             @include sm{
                 margin-left: 8px;
             }
+            @include xs{
+                margin-left: 0px;
+                padding-right: 10px;
+            }
            max-width: 378px;
             height: 470px;
             width: 100%;
@@ -923,6 +927,7 @@
 
 /*--------working Proces start---------*/
 .working_proces_area{
+    
     &{
         @include sm{
             .btn_warpper{
@@ -930,7 +935,6 @@
             }
             .desc{
             padding-left: 0px !important;
-            margin-top: 20px;
         }
         .btn_warpper{
             padding-left: 0px !important;
@@ -952,7 +956,15 @@
         }
         }
     }
-  
+  .heading_area{
+        @include sm{
+            .description{
+            p{
+                margin-top: 0px !important;
+            }
+        }
+        }
+    }
 
 
 @media (max-width: 768px) {

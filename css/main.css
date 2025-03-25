@@ -22419,6 +22419,10 @@
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .cleaning_experts_section .cleaning_container_area .cleaning_experts_info {
           margin-left: 8px; } }
+      @media only screen and (min-width: 0px) and (max-width: 576px) {
+        .cleaning_experts_section .cleaning_container_area .cleaning_experts_info {
+          margin-left: 0px;
+          padding-right: 10px; } }
       .cleaning_experts_section .cleaning_container_area .cleaning_experts_info .cleaning_images_wrapper {
         width: 100%;
         height: 370px; }
@@ -22521,8 +22525,7 @@
     .working_proces_area .btn_warpper {
       padding: 0px !important; }
     .working_proces_area .desc {
-      padding-left: 0px !important;
-      margin-top: 20px; }
+      padding-left: 0px !important; }
     .working_proces_area .btn_warpper {
       padding-left: 0px !important;
       margin-top: 5px; } }
@@ -22537,6 +22540,9 @@
       .working_proces_area .btn_warpper {
         padding-left: 0px !important;
         margin-top: 5px; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .working_proces_area .heading_area .description p {
+      margin-top: 0px !important; } }
   @media (max-width: 768px) {
     .working_proces_area .gallery_parent {
       flex-direction: column;
