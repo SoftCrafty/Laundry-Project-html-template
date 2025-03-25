@@ -90,19 +90,24 @@
             color: #142137;
         }
         .answer {
-            //display: none;
              max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
             @include sm{
                 padding-right: 0;
             }
              transition: all 0.3s ease-in-out; 
-             font-family: $--font-family;
+             p{
+            font-family: $--font-family;
+            padding-top: 34px;
             font-weight: 400;
             font-size: 16px;
             line-height: 162%;
             color: #142137b3;
+            @include tow12min{
+                padding-right: 100px;
+            }
+             }
         }
 
         .icon {

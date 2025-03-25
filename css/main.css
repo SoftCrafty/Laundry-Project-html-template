@@ -25793,15 +25793,20 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.4s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 162%;
-        color: #142137b3; }
+        transition: all 0.3s ease-in-out; }
         @media only screen and (min-width: 0px) and (max-width: 767px) {
           .faq_section_area .faq_section_wrapper .faq_section .faq .answer {
             padding-right: 0; } }
+        .faq_section_area .faq_section_wrapper .faq_section .faq .answer p {
+          font-family: "Poppins", sans-serif;
+          padding-top: 34px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 162%;
+          color: #142137b3; }
+          @media only screen and (min-width: 1200px) {
+            .faq_section_area .faq_section_wrapper .faq_section .faq .answer p {
+              padding-right: 100px; } }
       .faq_section_area .faq_section_wrapper .faq_section .faq .icon {
         font-size: 20px;
         font-weight: bold;
