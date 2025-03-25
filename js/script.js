@@ -23,20 +23,9 @@ $(document).ready(function () {
     });
 
     // Dropdown Menu
-    $(".dropdown_btn").on("click", function () {
-        let dropdown = $(this).parent().next(".dropdown");
+   
 
-        if (dropdown.hasClass("active")) {
-            dropdown.removeClass("active");
-            $(this).html('<i class="fal fa-plus"></i>');
-        } else {
-            $(".dropdown").removeClass("active");
-            $(".dropdown_btn i").removeClass("fa-minus").addClass("fa-plus");
 
-            dropdown.addClass("active");
-            $(this).html('<i class="fal fa-minus"></i>');
-        }
-    });
 
     // Slick Sliders
     $('.hero_section_area').slick({
@@ -117,5 +106,32 @@ document.querySelectorAll(".about_count").forEach(counter => {
         onStart: () => {
             gsap.to(counter, { opacity: 1, scale: 1, duration: 0.5 });
         }
+    });
+});
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdownBtns = document.querySelectorAll(".dropdown_btn");
+
+    dropdownBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+            const dropdown = this.parentElement.nextElementSibling;
+
+            if (dropdown.classList.contains("active")) {
+                dropdown.classList.remove("active");
+                this.innerHTML = '<i class="fal fa-plus"></i>';
+            } else {
+
+                document.querySelectorAll(".dropdown").forEach((drop) => drop.classList.remove("active"));
+                document.querySelectorAll(".dropdown_btn i").forEach((icon) => icon.classList.replace("fa-minus", "fa-plus"));
+
+
+                dropdown.classList.add("active");
+                this.innerHTML = '<i class="fal fa-minus"></i>';
+            }
+        });
     });
 });
