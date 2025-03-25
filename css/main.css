@@ -25776,7 +25776,7 @@
       padding: 15px 0;
       padding: 36px 10px; }
       .faq_section_area .faq_section_wrapper .faq_section .faq.active {
-        max-height: 400px; }
+        max-height: 600px; }
       .faq_section_area .faq_section_wrapper .faq_section .faq .question {
         font-size: 18px;
         font-weight: bold;
@@ -25807,6 +25807,9 @@
           @media only screen and (min-width: 1200px) {
             .faq_section_area .faq_section_wrapper .faq_section .faq .answer p {
               padding-right: 100px; } }
+          @media only screen and (min-width: 0px) and (max-width: 767px) {
+            .faq_section_area .faq_section_wrapper .faq_section .faq .answer p {
+              padding-right: 10px; } }
       .faq_section_area .faq_section_wrapper .faq_section .faq .icon {
         font-size: 20px;
         font-weight: bold;

@@ -77,7 +77,7 @@
         padding: 15px 0;
         padding: 36px 10px;
         &.active{
-            max-height: 400px;
+            max-height: 600px;
         }
         .question {
             font-size: 18px;
@@ -106,6 +106,9 @@
             color: #142137b3;
             @include tow12min{
                 padding-right: 100px;
+            }
+            @include sm{
+                padding-right: 10px;
             }
              }
         }
