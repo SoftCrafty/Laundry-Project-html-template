@@ -25771,11 +25771,13 @@
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .faq_section_area .faq_section_wrapper .faq_section {
         padding-left: 0px; } }
-    .faq_section_area .faq_section_wrapper .faq_section .faq_item {
+    .faq_section_area .faq_section_wrapper .faq_section .faq {
       border-bottom: 1px solid #14213724;
       padding: 15px 0;
       padding: 36px 10px; }
-      .faq_section_area .faq_section_wrapper .faq_section .faq_item .faq_question {
+      .faq_section_area .faq_section_wrapper .faq_section .faq.active {
+        max-height: 400px; }
+      .faq_section_area .faq_section_wrapper .faq_section .faq .question {
         font-size: 18px;
         font-weight: bold;
         cursor: pointer;
@@ -25787,10 +25789,10 @@
         font-weight: 500;
         font-size: 20px;
         color: #142137; }
-      .faq_section_area .faq_section_wrapper .faq_section .faq_item .faq_answer {
-        display: none;
-        padding-top: 28px;
-        padding-right: 100px;
+      .faq_section_area .faq_section_wrapper .faq_section .faq .answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
         transition: all 0.3s ease-in-out;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
@@ -25798,18 +25800,14 @@
         line-height: 162%;
         color: #142137b3; }
         @media only screen and (min-width: 0px) and (max-width: 767px) {
-          .faq_section_area .faq_section_wrapper .faq_section .faq_item .faq_answer {
+          .faq_section_area .faq_section_wrapper .faq_section .faq .answer {
             padding-right: 0; } }
-      .faq_section_area .faq_section_wrapper .faq_section .faq_item .icon {
+      .faq_section_area .faq_section_wrapper .faq_section .faq .icon {
         font-size: 20px;
         font-weight: bold;
         width: 40px;
         height: 40px;
         display: block; }
-      .faq_section_area .faq_section_wrapper .faq_section .faq_item.active .faq_answer {
-        display: block; }
-      .faq_section_area .faq_section_wrapper .faq_section .faq_item.active .icon {
-        content: "-"; }
 
 .blog_details_area .blog_details_wrapper {
   display: flex;

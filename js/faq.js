@@ -1,20 +1,29 @@
 $(document).ready(function () {
-    $(".faq_item .faq_question").click(function () {
-        let parent = $(this).parent();
+    const $faqs = $(".faq");
 
-        if (parent.hasClass("active")) {
-            parent.removeClass("active");
-            parent.find(".faq-answer").slideUp(300); 
-            parent.find(".icon").text("+");
+    // Set second FAQ active initially
+    if ($faqs.length > 1) {
+        $faqs.eq(1).addClass("active");
+        $faqs.eq(1).find(".answer").css("max-height", $faqs.eq(1).find(".answer")[0].scrollHeight + "px");
+        $faqs.eq(1).find(".icon").text("−");
+    }
+
+    $faqs.on("click", function () {
+        const $this = $(this);
+        const $answer = $this.find(".answer");
+        const $icon = $this.find(".icon");
+
+        if (!$this.hasClass("active")) {
+            $faqs.removeClass("active").find(".answer").css("max-height", "0");
+            $faqs.find(".icon").text("+");
+
+            $this.addClass("active");
+            $answer.css("max-height", $answer[0].scrollHeight + "px");
+            $icon.text("−");
         } else {
-            $(".faq_item").removeClass("active");
-            $(".faq_answer").slideUp(300); 
-            $(".icon").text("+");
-
-            parent.addClass("active");
-            parent.find(".faq_answer").slideDown(300); 
-            parent.find(".icon").text("-");
+            $this.removeClass("active");
+            $answer.css("max-height", "0");
+            $icon.text("+");
         }
     });
 });
-

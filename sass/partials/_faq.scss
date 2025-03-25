@@ -72,11 +72,14 @@
     @include sm{
         padding-left: 0px;
     }
-    .faq_item {
+    .faq {
         border-bottom: 1px solid $--border_bl;
         padding: 15px 0;
         padding: 36px 10px;
-        .faq_question {
+        &.active{
+            max-height: 400px;
+        }
+        .question {
             font-size: 18px;
             font-weight: bold;
             cursor: pointer;
@@ -86,10 +89,11 @@
             font-size: 20px;
             color: #142137;
         }
-        .faq_answer {
-            display: none;
-            padding-top: 28px;
-            padding-right: 100px;
+        .answer {
+            //display: none;
+             max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
             @include sm{
                 padding-right: 0;
             }
@@ -108,15 +112,7 @@
             height: 40px;
             display: block;
         }
-
-        &.active {
-            .faq_answer {
-                display: block;
-            }
-            .icon {
-                content: "-";
-            }
-        }
+        
     }
 }
 
