@@ -333,8 +333,12 @@
 /*-------experts section start------*/
 .experts_section_area{
     overflow: hidden;
-    @include sm{
+    @include xs{
         padding-top: 0px !important;
+        padding-bottom: 75px !important;
+    }
+    @include sm{
+        padding-top: 75px !important;
         padding-bottom: 75px !important;
     }
     .experts_content_wrapper{
@@ -528,13 +532,15 @@
     background: #ecf2fe;
     @include flex(column, center, center);
     flex-wrap: wrap;
+    @include sm{
+        padding-bottom: 33px !important;
+    }
     .our_service_container{
-        padding: 0px 30px;
+        // padding: 0px 30px;
         @include sm{
             padding: 0px 10px;
-            margin-top: 70px;
+            // margin-top: 70px;
         }
-        padding-top: 80px;
         width: 100%;
         max-width: 1920px;
         @include flex(row, center, center);
@@ -556,12 +562,6 @@
         }
         }
         .our_service_contains{
-            &.style_1{
-                @include sm{
-                    margin-top: 50px;
-                }
-            }
-            
             max-width: 481px;
             height: fit-content;
             width: 25%;
@@ -682,7 +682,7 @@
 /*-------Service setps start------*/
 .laundry_service_steps{
     .view_our_services{
-        margin-top: 63px;
+        // margin-top: 63px;
         background-color: rebeccapurple;
         width: 100%;
         height: fit-content;
@@ -792,7 +792,7 @@
 .cleaning_experts_section{
     overflow: hidden;
     .cleaning_container_area{
-        margin-top: 56px;
+        // margin-top: 56px;
         padding-bottom: 96px;
         @include sm{
             padding-bottom: 30px;
@@ -801,7 +801,7 @@
         gap: 30px;
         .cleaning_experts_info{
             @include sm{
-                padding-right: 10px;
+                margin-left: 8px;
             }
            max-width: 378px;
             height: 470px;
@@ -925,7 +925,6 @@
 .working_proces_area{
     &{
         @include sm{
-            // margin-top: 75px;
             .btn_warpper{
                 padding: 0px !important;
             }
@@ -1000,7 +999,6 @@
 
 /* Gallery Section */
 .gallery_parent {
-    margin-top: 60px;
     display: flex;
     width: 100%;
     overflow: hidden;
@@ -1174,7 +1172,6 @@
 /*--------working Proces start---------*/
 .price_packages_area{
     .price_packages_wrapper{
-        margin-top: 56px;
         @include flex(row, space-between, center);
         flex-wrap: wrap;
         gap: 30px;
@@ -1271,9 +1268,6 @@
 .customers_reviews_area{
     background-color: #ecf2fe;
     overflow: hidden;
-    .heading_area{
-        margin-bottom:58px;
-    }
     .customers_reviews_wrapper{
         &.style_1{
             @include sm{
@@ -1281,7 +1275,6 @@
             }
         }
         @include flex(row, center, center);
-        margin-top: 30px;
         gap: 30px;
         background-color: transparent;
         .review_card_wappers{
@@ -1362,7 +1355,6 @@
     .blog_news_container{
         @include flex(row, space-between, center);
         gap: 30px;
-        // margin-top: 80px;
         flex-wrap: wrap;
         @include sm{
             gap: 50px;

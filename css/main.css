@@ -21990,9 +21990,13 @@
 /*-------experts section start------*/
 .experts_section_area {
   overflow: hidden; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
+  @media only screen and (min-width: 0px) and (max-width: 576px) {
     .experts_section_area {
       padding-top: 0px !important;
+      padding-bottom: 75px !important; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .experts_section_area {
+      padding-top: 75px !important;
       padding-bottom: 75px !important; } }
   .experts_section_area .experts_content_wrapper {
     display: flex;
@@ -22182,9 +22186,10 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .our_service_area {
+      padding-bottom: 33px !important; } }
   .our_service_area .our_service_container {
-    padding: 0px 30px;
-    padding-top: 80px;
     width: 100%;
     max-width: 1920px;
     display: flex;
@@ -22195,8 +22200,7 @@
     margin: auto; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .our_service_area .our_service_container {
-        padding: 0px 10px;
-        margin-top: 70px; } }
+        padding: 0px 10px; } }
     .our_service_area .our_service_container .heading {
       margin-top: 50px;
       margin-bottom: 16px; }
@@ -22212,9 +22216,6 @@
       max-width: 481px;
       height: fit-content;
       width: 25%; }
-      @media only screen and (min-width: 0px) and (max-width: 767px) {
-        .our_service_area .our_service_container .our_service_contains.style_1 {
-          margin-top: 50px; } }
       @media only screen and (min-width: 1025px) and (max-width: 1280px) {
         .our_service_area .our_service_container .our_service_contains {
           width: 50%; } }
@@ -22303,7 +22304,6 @@
 /*-------our services section end------*/
 /*-------Service setps start------*/
 .laundry_service_steps .view_our_services {
-  margin-top: 63px;
   background-color: rebeccapurple;
   width: 100%;
   height: fit-content;
@@ -22403,7 +22403,6 @@
 .cleaning_experts_section {
   overflow: hidden; }
   .cleaning_experts_section .cleaning_container_area {
-    margin-top: 56px;
     padding-bottom: 96px;
     display: flex;
     flex-direction: row;
@@ -22419,7 +22418,7 @@
       width: 100%; }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .cleaning_experts_section .cleaning_container_area .cleaning_experts_info {
-          padding-right: 10px; } }
+          margin-left: 8px; } }
       .cleaning_experts_section .cleaning_container_area .cleaning_experts_info .cleaning_images_wrapper {
         width: 100%;
         height: 370px; }
@@ -22568,7 +22567,6 @@
           .working_proces_area .gallery_parent .tab .content p {
             font-family: 8px !important; } }
   .working_proces_area .gallery_parent {
-    margin-top: 60px;
     display: flex;
     width: 100%;
     overflow: hidden;
@@ -22729,7 +22727,6 @@
 /* -------SLICK SLIDER END------- */
 /*--------working Proces start---------*/
 .price_packages_area .price_packages_wrapper {
-  margin-top: 56px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -22833,14 +22830,11 @@
 .customers_reviews_area {
   background-color: #ecf2fe;
   overflow: hidden; }
-  .customers_reviews_area .heading_area {
-    margin-bottom: 58px; }
   .customers_reviews_area .customers_reviews_wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
     gap: 30px;
     background-color: transparent; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -23089,6 +23083,9 @@
           width: 100% !important; }
         .home_two_about_area .home_two_about_wrapper .col-lg-4.style_1 {
           width: 100% !important; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .home_two_about_area .home_two_about_wrapper {
+        gap: 63px; } }
     .home_two_about_area .home_two_about_wrapper .home_tow_contains_area {
       display: flex;
       flex-direction: column;
@@ -23125,6 +23122,9 @@
           justify-content: center;
           align-items: flex-start;
           gap: 32px; }
+          @media only screen and (min-width: 0px) and (max-width: 767px) {
+            .home_two_about_area .home_two_about_wrapper .home_tow_contains_area .home_two_contains_wrapper .contains_title_area {
+              padding: 0px 7px; } }
           .home_two_about_area .home_two_about_wrapper .home_tow_contains_area .home_two_contains_wrapper .contains_title_area .border_area {
             width: 85%;
             height: 1px;

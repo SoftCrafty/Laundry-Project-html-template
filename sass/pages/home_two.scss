@@ -85,6 +85,9 @@
                 }
             }
         }
+        @include sm{
+            gap: 63px;
+        }
 
         .home_tow_contains_area{
             @include flex(column, center, flex-start);
@@ -115,6 +118,9 @@
                 .contains_title_area{
                     @include flex(column, center, flex-start);
                     gap: 32px;
+                    @include sm{
+                        padding: 0px 7px;
+                    }
                   .border_area{
                     width: 85%;
                     height: 1px;
