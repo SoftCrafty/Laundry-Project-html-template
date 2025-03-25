@@ -22212,8 +22212,9 @@
       max-width: 481px;
       height: fit-content;
       width: 25%; }
-      .our_service_area .our_service_container .our_service_contains.style_1 {
-        margin-top: 50px; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .our_service_area .our_service_container .our_service_contains.style_1 {
+          margin-top: 50px; } }
       @media only screen and (min-width: 1025px) and (max-width: 1280px) {
         .our_service_area .our_service_container .our_service_contains {
           width: 50%; } }
@@ -24727,19 +24728,16 @@
         padding: 5px 10px;
         color: #fff; }
     .mean-nav ul li .dropdown {
-      display: none;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; }
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-in-out; }
       .mean-nav ul li .dropdown ul li {
         padding: 10px 0px;
         border-bottom: 1px solid #ccc; }
         .mean-nav ul li .dropdown ul li a:hover {
           color: #4375e7; }
     .mean-nav ul li .dropdown.active {
-      display: block;
-      opacity: 1;
-      visibility: visible; }
+      max-height: 300px; }
     .mean-nav ul li ul li a {
       color: #26262c;
       font-size: 14px;

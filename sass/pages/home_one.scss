@@ -557,7 +557,9 @@
         }
         .our_service_contains{
             &.style_1{
-                margin-top: 50px;
+                @include sm{
+                    margin-top: 50px;
+                }
             }
             
             max-width: 481px;

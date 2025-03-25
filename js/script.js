@@ -111,27 +111,47 @@ document.querySelectorAll(".about_count").forEach(counter => {
 
 
 
+const dropdownButtons = document.querySelectorAll(".dropdown_btn");
 
+dropdownButtons.forEach(btn => {
+    btn.addEventListener("click", (event) => {
+        event.stopPropagation(); // Prevents event bubbling
+        const parentLi = btn.closest("li");
+        const dropdown = parentLi.querySelector(".dropdown");
 
-document.addEventListener("DOMContentLoaded", function () {
-    const dropdownBtns = document.querySelectorAll(".dropdown_btn");
-
-    dropdownBtns.forEach((btn) => {
-        btn.addEventListener("click", function () {
-            const dropdown = this.parentElement.nextElementSibling;
-
+        if (dropdown) {
             if (dropdown.classList.contains("active")) {
+                dropdown.style.maxHeight = "0"; // Collapse
                 dropdown.classList.remove("active");
-                this.innerHTML = '<i class="fal fa-plus"></i>';
             } else {
-
-                document.querySelectorAll(".dropdown").forEach((drop) => drop.classList.remove("active"));
-                document.querySelectorAll(".dropdown_btn i").forEach((icon) => icon.classList.replace("fa-minus", "fa-plus"));
-
-
+                dropdown.style.maxHeight = dropdown.scrollHeight + "px"; // Expand
                 dropdown.classList.add("active");
-                this.innerHTML = '<i class="fal fa-minus"></i>';
             }
-        });
+        }
     });
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const dropdownBtns = document.querySelectorAll(".dropdown_btn");
+
+//     dropdownBtns.forEach((btn) => {
+//         btn.addEventListener("click", function () {
+//             const dropdown = this.parentElement.nextElementSibling;
+
+//             if (dropdown.classList.contains("active")) {
+//                 dropdown.classList.remove("active");
+//                 this.innerHTML = '<i class="fal fa-plus"></i>';
+//             } else {
+
+//                 document.querySelectorAll(".dropdown").forEach((drop) => drop.classList.remove("active"));
+//                 document.querySelectorAll(".dropdown_btn i").forEach((icon) => icon.classList.replace("fa-minus", "fa-plus"));
+
+
+//                 dropdown.classList.add("active");
+//                 this.innerHTML = '<i class="fal fa-minus"></i>';
+//             }
+//         });
+//     });
+// });
+
+
