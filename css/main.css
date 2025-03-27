@@ -22156,6 +22156,9 @@
           justify-content: flex-start;
           align-items: center;
           gap: 12px; }
+          .experts_section_area .experts_content_wrapper .experts_contains_area .contact_info .experts_section_call:hover img {
+            animation: tada 1s infinite;
+            -webkit-animation: tada 1s infinite; }
           .experts_section_area .experts_content_wrapper .experts_contains_area .contact_info .experts_section_call .number {
             display: flex;
             flex-direction: column;
@@ -22401,7 +22404,8 @@
 /*-------Service setps end------*/
 /*-------Cleaning Experts Start------*/
 .cleaning_experts_section {
-  overflow: hidden; }
+  overflow: hidden;
+  border: transparent; }
   .cleaning_experts_section .cleaning_container_area {
     padding-bottom: 96px;
     display: flex;
@@ -24488,7 +24492,6 @@
           font-weight: 400;
           font-size: 15px;
           line-height: 147%;
-          text-transform: uppercase;
           color: #1a1a1a; }
         .header-area .header_menu_wrapper .main_menu ul li ul {
           display: flex;
@@ -24497,7 +24500,7 @@
           align-items: center;
           position: absolute;
           box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-          top: 70px;
+          top: 52px;
           left: -20px;
           padding: 0px 0px;
           width: 210px;
@@ -24532,7 +24535,8 @@
               -o-transition: all 0.5s ease-out; }
             .header-area .header_menu_wrapper .main_menu ul li ul li:hover a {
               background-color: #4375e7;
-              color: #ffffff; }
+              color: #ffffff;
+              border: 1 transparent; }
         .header-area .header_menu_wrapper .main_menu ul li:not(:hover) ul {
           transition-delay: 0.2s; }
   @media (max-width: 1050px) {
@@ -24724,7 +24728,6 @@
       .mean-nav ul li > span a {
         color: #26262c;
         font-size: 14px;
-        text-transform: capitalize;
         line-height: 1.5;
         font-weight: 500; }
         .mean-nav ul li > span a:hover {
@@ -24747,7 +24750,6 @@
     .mean-nav ul li ul li a {
       color: #26262c;
       font-size: 14px;
-      text-transform: capitalize;
       line-height: 1.5;
       font-weight: 500; }
 
@@ -24928,7 +24930,21 @@
   padding: 0px 34px;
   background-color: #4375e7;
   text-align: center;
-  line-height: 54px; }
+  line-height: 54px;
+  border: 1px solid transparent;
+  transition: all 0.4s ease; }
+  .btn_wrapper_area:hover {
+    background-color: #fff;
+    border: 1px solid #d9dbdf; }
+    .btn_wrapper_area:hover a {
+      color: #142137; }
+      .btn_wrapper_area:hover a span i {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transition: all 0.4s ease; }
   .btn_wrapper_area.style_1 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;

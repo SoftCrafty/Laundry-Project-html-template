@@ -498,6 +498,13 @@
             .experts_section_call{
             @include flex(row, flex-start, center);
             gap: 12px;
+            &:hover{
+                        img{
+                
+                    animation: tada 1s infinite;
+                -webkit-animation: tada 1s infinite;
+}
+            }
             .number{
                 @include flex(column, center, flex-start);
                 gap: 5px;
@@ -789,8 +796,10 @@
 /*-------Service setps end------*/
 
 /*-------Cleaning Experts Start------*/
+
 .cleaning_experts_section{
     overflow: hidden;
+    border: transparent;
     .cleaning_container_area{
         // margin-top: 56px;
         padding-bottom: 96px;

@@ -57,7 +57,9 @@ hedingh1.from(".heading h1", {
     duration: 2,
     delay: 0.5,
     stagger: 0.4,
-})
+});
+
+
 
 let pictl = gsap.timeline();
 pictl.from(".hero_user_meta img", {
@@ -67,4 +69,80 @@ pictl.from(".hero_user_meta img", {
     delay: 0.5,
     stagger: 0.2
 })
+let checktl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".check_list_area",
+        start: "top 80%",  
+        end: "bottom 50%", 
+        toggleActions: "play none none none" 
+    }
+});
+
+checktl.from(".check_list_area ul li", {
+    x: 100,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2
+});
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+document.querySelectorAll("h2").forEach((h2) => {
+    gsap.from(h2, {
+        x: -100,
+        opacity: 0,
+        duration: 1.5,
+        scrollTrigger: {
+            trigger: h2,
+            start: "top 80%",
+            toggleActions: "play none none none",
+        }
+    });
+});
+
+
+// document.querySelectorAll("p").forEach((p) => {
+//     gsap.from(p, {
+//         opacity: 0,
+//         y: 50,
+//         duration: 1.2,
+//         scrollTrigger: {
+//             trigger: p,
+//             start: "top 85%",
+//             toggleActions: "play none none none",
+//         }
+//     });
+// });
+
+
+document.querySelectorAll("img").forEach((img) => {
+    gsap.from(img, {
+        scale: 0.5,
+        opacity: 0,
+        duration: 1.5,
+        scrollTrigger: {
+            trigger: img,
+            start: "top 90%",
+            toggleActions: "play none none none",
+        }
+    });
+});
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".blog_news_contains", {
+    x: -400,
+    opacity: 0,
+    duration: 2,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: ".blog_news_section",
+        start: "top 80%",
+        end: "top 0%",
+        toggleActions: "play none none none",
+        // markers: true, 
+    }
+});
+
 

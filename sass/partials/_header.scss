@@ -260,7 +260,7 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 147%;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         color: $--nine;
     }
 
@@ -269,7 +269,7 @@
         @include flex(column, center, center);
         position: absolute;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); 
-        top: 70px;
+        top: 52px;
         left: -20px;
         padding: 0px 0px;
         width: 210px;
@@ -307,6 +307,7 @@
             &:hover a {
                background-color: $--primary;
   color: #ffffff;
+  border:1px solid transparent;
             }
         }
     }
