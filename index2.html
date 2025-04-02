@@ -43,12 +43,17 @@
                     </ul>
                 </li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#">Service <span><i class="fa-solid fa-angle-down"></i></span></a>
+                    <ul>
+                       <li><a href="services.html">Service</a></li>
+                       <li><a href="team.html">Team</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Pages <span><i class="fa-solid fa-angle-down"></i></span></a>
                         <ul>
-                           <li><a href="team.html">Team</a></li>
                            <li><a href="faq.html">FAQ</a></li>
                            <li><a href="price_packages.html">Price Packages</a></li>
+                           <li><a href="error.html">Page Not Found</a></li>
                         </ul>
                 </li>
                  <li><a href="#">Blog <span><i class="fa-solid fa-angle-down"></i></span></a>
@@ -128,15 +133,23 @@
         </nav>
       </li>
       <li><span><a href="about.html">About Us</a></span></li>
+      
       <li>
-        <span><a href="services.html">Services</a></span> </li>
+        <span><a href="#">Service</a><span class="dropdown_btn"><i class="fal fa-plus"></i></span></span>
+        <nav class="dropdown">
+          <ul>
+             <li><a href="services.html">Service</a></li>
+             <li><a href="team.html">Team</a></li>
+          </ul>
+        </nav>
+      </li>
       <li>
         <span><a href="#">Pages</a><span class="dropdown_btn"><i class="fal fa-plus"></i></span></span>
         <nav class="dropdown">
           <ul>
-             <li><a href="team.html">Team</a></li>
              <li><a href="faq.html">FAQ</a></li>
              <li><a href="price_packages.html">Price Packages</a></li>
+             <li><a href="error.html">Page Not Found</a></li>
           </ul>
         </nav>
       </li>
@@ -208,9 +221,12 @@
    <div class="body-overlay"></div>
   <!-- Menu sidebar End -->
     <!-- hero section start -->
-   <section class="hero_section_area style_1 home_tow_area">
+   <section class="hero_section_area style_1 home_tow_area" style="background-image: url(./images/home2/hero/her.png);">
     <div class="hero_section">
+      <div class="page_number_count">01</div>
+      <div class="overly_color_bg" style="background-image: url(./images/home2/hero/ellipse.png);"></div>
       <div class="hero_overly">
+
         <div class="container_area">
           <div class="row">
             <div class="col-12">
@@ -247,17 +263,20 @@
        </div>
     </div>
     <div class="hero_section">
+      <div class="page_number_count">02</div>
+      <div class="overly_color_bg" style="background-image: url(./images/home2/hero/ellipse.png);"></div>
       <div class="hero_overly">
+
         <div class="container_area">
           <div class="row">
             <div class="col-12">
-              <div class="hero_area_wrapper">
+              <div class="hero_area_wrapper style_1">
                 <div class="overly_circle"></div>
                <div class="overly_tow"></div>
               <div class="hero_img">
             <img src="./images/home2/hero/hero1.png" alt="">
           </div>
-                <div class="hero_contains">
+                <div class="hero_contains style_1">
                    <div class="heading_area">
                     <div class="heading">
                         <h1>Nonstop Laundry & <br> Dry Cleaning.</h1>
@@ -315,7 +334,7 @@
                 </div>
                 <div class="contains_info_area">
                   <h4>Our Mission</h4>
-                  <p>Our mission is simple: to provide high-quality, convenient & <br> eco-friendly laundry & dry cleaning services.</p>
+                  <p>Our mission is simple: to provide high-quality, convenient & eco-friendly laundry & dry cleaning services.</p>
                 </div>
                   </div>
                   <div class="border_area"></div>
@@ -325,7 +344,7 @@
                 </div>
                 <div class="contains_info_area">
                   <h4>Our Vission</h4>
-                  <p>Laundry & dry cleaning effortless convenience, exceptional <br> quality, and eco-friendly solutions.</p>
+                  <p>Laundry & dry cleaning effortless convenience, exceptional  quality, and eco-friendly solutions.</p>
                 </div>
                   </div>
                   <div class="btn_wrapper_area style_3">
@@ -368,7 +387,7 @@
                   <h2>Pro Laundry & Dry Cleaning Free <br> Collection & Return.</h2>
                  </div>
              </div>
-        <div class="premium_service_wrapper pt-73">
+        <div class="premium_service_wrapper pt-55">
           <div class="premium_service_info">
             <div class="premium_icon">
               <img src="./images/home2/premium_service/icon1.png" alt="">
@@ -490,7 +509,7 @@
    <!-- Team Members Start -->
   <section class="team_members_area pt-150">
     <div class="container_area">
-      <div class="heading_area_wrapper pb-70">
+      <div class="heading_area_wrapper pb-67">
          <div class="heading_area">
             <div class="sub_heading style_3">
                <h4>Team Members</h4>
@@ -704,10 +723,11 @@
               <p>CEO & OWNER</p>
             </div>
             <div class="testimonial_play_btn">
-              <span><i class="fa-solid fa-play"></i></span>
+              <span class="playBtn"><i class="fa-solid fa-play"></i></span>
             </div>
            </div>
             </div>
+            
            <div class="testimonial_overly"></div>
           </div>
           <div class="testimonial_card_wrapper">
@@ -731,6 +751,7 @@
               <h5>Lurch Schpellchek</h5>
               <p>CEO & OWNER</p>
             </div>
+            
            </div>
           </div>
           <div class="testimonial_card_wrapper style_1" style="background-image: url(./images/home2/clients_testimonial/bg2.png);">
@@ -801,6 +822,11 @@
                      your laundry, and we’ll take care of the rest. With hassle-free pickup & professional
                      cleaning, your garments will be treated with the utmost care.</p>
                  </div>
+                  <div class="about_page_btn">
+                        <div class="btn_wrapper_area style_3">
+                        <a href="#"> Discover More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    </div>
+                      </div>
         </div>
         </div>
         <div class="col-lg-6 col-12">

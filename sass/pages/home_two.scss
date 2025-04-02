@@ -70,6 +70,7 @@
 }
 /*-----------About Section Start------------*/
 .home_two_about_area{
+    
     overflow: hidden;
     .home_two_about_wrapper{
         @include flex(row, space-between, center);
@@ -91,7 +92,7 @@
 
         .home_tow_contains_area{
             @include flex(column, center, flex-start);
-            gap: 65px;
+            gap: 55px;
             .home_two_contains_wrapper{
                 @include flex(row, flex-start, center);
                 flex-wrap: wrap;
@@ -133,7 +134,7 @@
                     @include flex(row, flex-start, center);
                     width: 100%;
                     height: 100%;
-                    gap: 40px;
+                    gap: 37px;
                     .contains_info_area{
                         h4{
                             font-family: $--font-family;
@@ -143,11 +144,12 @@
                             color: $--text-clr;
                         }
                         p{
-                            font-family: --font-family;
+                            font-family: $--font-family;
                             font-weight: 400;
                             font-size: 16px;
                             line-height: 162%;
                             color: #142137b3;
+                            margin-top: 10px;
                         }
                     }
                 }  
@@ -162,7 +164,10 @@
         .home_two_image_area{
             width: 100%;
             height: 100%;
-            background-color: green;
+            padding-left: 16px;
+            @include tow12{
+                padding: 0px;
+            }
             .home_two_img{
                 width: 100%;
                 height: 100%;
@@ -237,6 +242,7 @@
             &:hover{
                 background: #ebeff3;
                 @include transition(0.5s);
+                border: 1px solid transparent;
                 
             }
             width: calc(25% - 30px);
@@ -498,6 +504,7 @@
                 @include border-radius(50%);
                 opacity: 0;
                 visibility: hidden;
+                z-index: 10;
             }
             &:hover{
               &::after{
@@ -603,7 +610,7 @@
             letter-spacing: -0.02em;
             text-align: center;
             color: $--text-clr;
-            z-index: 10;
+            z-index: 15;
             @include sm{
                 font-size: 80px;
             }
@@ -615,7 +622,7 @@
             text-transform: uppercase;
             text-align: center;
             color: #142137b3;
-            z-index: 10;
+            z-index: 15;
            }
         }
     }
@@ -654,6 +661,8 @@
                 &:hover{
                     background-color: #ebeff3;
                     @include transition(0.4s);
+                    border: 1px solid transparent;
+                   
                 }
                 h4{
                     font-family: $--font-family;
@@ -690,6 +699,14 @@
                     @include flex(row, flex-start, center);
                     gap: 4px;
                     margin-top: 43px;
+                     &:hover{
+                       a{
+                        color: $--white !important;
+                        background-color: $--text-clr;
+                            @include transition(0.4s);
+                       }
+                                
+                            }
                     a{
                         &:nth-child(1){
                             width: 34px;
@@ -700,12 +717,6 @@
                             display: block;
                             text-align: center;
                             line-height: 32px;
-                            &:hover{
-                                background-color: $--text-clr;
-                                color: $--white;
-                                @include transition(0.4s);
-                                
-                            }
                         }
                         &:nth-child(2){
                             padding: 5px 22px;
@@ -713,12 +724,6 @@
                             border: 1px solid $--border_bl;
                             color: $--text-clr;
                             text-align: center;
-                            &:hover{
-                                background-color: $--text-clr;
-                                color: $--white;
-                                @include transition(0.4s);
-
-                            }
                         }
                     }
                 }
@@ -1186,12 +1191,16 @@
                 }
                 .blog_news_card_img{
                     width: 30%;
+
                     @include sm{
                         width: 100%;
                         // padding-right: 20px;
                     }
                     width: fit-content;
-                    height: 100%;
+                    height: 350px;
+                    @include sm{
+                        height: 100%;
+                    }
                     img{
                         object-fit: cover;
                         width: 100%;

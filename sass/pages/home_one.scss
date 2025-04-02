@@ -13,7 +13,6 @@
         background-color: $--primary;
         .contact_info_area{
             @include flex(row, space-between, center);
-            // padding: 0;
             min-height: 38px;
             flex-wrap: wrap;
             .social_media{
@@ -22,7 +21,7 @@
                 gap: 21px;
                 span{
                     font-family: $--font-family;
-                    font-weight: 500;
+                    font-weight: 400;
                     font-size: 16px;
                     color: $--white;
                 }
@@ -34,7 +33,7 @@
                     li{
                         a{
                             color: $--white;
-                            opacity: 0.3;
+                            opacity: 0.5;
                             &:hover{
                                 opacity: 1;
                                 @include transition(0.4s);
@@ -59,7 +58,7 @@
                     
                     a{
                         font-family: $--font-family;
-                        font-weight: 500;
+                        font-weight: 400;
                         font-size: 15px;
                         color: $--white;
                         opacity: 0.7;
@@ -75,17 +74,54 @@
 /* ----hero section start-----*/
 .hero_section_area{
     width: 100%;
+    .overly_color_bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background-repeat: no-repeat;
+
+    }
     &.style_1{
         background: #0b103e;
+        .left-arrow{
+            display: none !important;
+        }
+        .right-arrow{
+            right: 3% !important;
+            top: 50%;
+            transform:translateY(-50%) ;
+            -webkit-transform:translateY(-50%) ;
+            -moz-transform:translateY(-50%) ;
+            -ms-transform:translateY(-50%) ;
+            -o-transform:translateY(-50%) ;
+            width: 34px;
+            height: 34px;
+            background-color: $--text-clr;
+            line-height: 34px;
+        }
+        .page_number_count{
+            font-family: $--font-family;
+            font-weight: 500;
+            font-size: 17px;
+            color: $--text-clr;
+            line-height: 50px;
+            padding-left: 22px;
+            border-radius: 50px;
+            width: 101px !important;
+            height: 50px;
+            background-color: $--white;
+            position: absolute;
+            top: 50%;
+            right: 3% !important;
+            transform:translateY(-50%) ;
+            -webkit-transform:translateY(-50%) ;
+            -moz-transform:translateY(-50%) ;
+            -ms-transform:translateY(-50%) ;
+            -o-transform:translateY(-50%) ;
+}
     }
     overflow: hidden;
-    &{
-        @include sm{
-            .left-arrow{
-                background-color: red;
-            }
-        }
-    }
          position: relative;
          .left-arrow{
             @include sm{
@@ -156,12 +192,22 @@
         
 
     }
-    
+
     .hero_section{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+         
+            .container_area{
+                position: relative;
+                .line{
+                position: absolute;
+                top: 49%;
+                left: 110px;
+                z-index: 100;
+            }
+            }
         .overly_tow{
              border-radius: 100%;
             background-color: #ffffff08;
@@ -176,6 +222,7 @@
             @include transformY(-50%);
         }
         .hero_area_wrapper{
+           
             z-index: 100;
             @include sm{
                 &.style_1{
@@ -197,34 +244,19 @@
                     height: fit-content
                 }
                 @include flex(column, center, flex-start);
-                gap: 60px;
+                gap: 48px;
                 @include nesthub{
                     gap: 40px;
                 }
                 .heading_area{
                     z-index: 10;
-                    .heading{
-                        h1{
-                            margin-top: 44px;
-                            margin-bottom: 60px;
-                            @include sm{
-                                margin-top: 10px;
-                                margin-bottom: 30px;
-                            }
-                            @include nesthub{
-                                margin: 27px 0px 40px 0px;
-                            }
-
-                        }
-                        p{
-                            padding-right: 70px;
-                            @include sm{
-                                padding: 0;
-                            }
-                        }
+                    .description{
+                        margin-top: 32px;
                     }
                 }
                 .hero_user_info{
+                    @include flex(row, flex-start, center);
+                    gap: 34px;
                     .profile_review_area{
                         @include flex(row, flex-start, center);
                         gap: 18px;
@@ -246,39 +278,38 @@
                     .hero_user_meta{
                         position: relative;
                         height: 54px;
-                        width: 200px;
+                        width: 143px;
+                        
                         img{
                             position: absolute;
                             top: 0;
                             left: 0;
                             &:nth-child(1){
-                                left: 18%;
+                                left: 0;
                                 z-index: 2;
                             }
                             &:nth-child(2){
-                                left: 36%;
+                                left: 0px;
                                 z-index: 2;
                             }
                             &:nth-child(3){
-                                left: 54%;
+                                left: 30px;
                                 z-index: 2;
                             }
                             &:nth-child(4){
-                                left: 72%;
+                                left: 60px;
                                 z-index: 2;
                             }
-                            @include sm{
-                                &:nth-child(4){
-                                    left: 0;
-                                }
+                            &:nth-child(5){
+                                left: 90px;
+                                z-index: 2;
                             }
 
                         }
                     }
                     .review_card_wapper{
                         @include flex(column, center, flex-start);
-                        margin-left: 14px;
-                        gap: 13px;
+                        gap: 3px;
                         @include sm{
                             margin: 0px;
                         }
@@ -333,6 +364,7 @@
 /*-------experts section start------*/
 .experts_section_area{
     overflow: hidden;
+    
     @include xs{
         padding-top: 0px !important;
         padding-bottom: 75px !important;
@@ -689,15 +721,12 @@
 /*-------Service setps start------*/
 .laundry_service_steps{
     .view_our_services{
-        // margin-top: 63px;
-        background-color: rebeccapurple;
         width: 100%;
         height: fit-content;
         padding: 0px;
         position: relative;
         span{
             position: absolute;
-            color: red;
             top: 50%;
             left: 50%;
             font-size: 70px;
@@ -714,7 +743,7 @@
         }
     }
     .servers_card_wrapper{
-        margin-top: 59px;
+        // margin-top: 59px;
         @include flex(row, space-between, center);
         @include navmenu{
             flex-wrap: wrap;
@@ -801,11 +830,6 @@
     overflow: hidden;
     border: transparent;
     .cleaning_container_area{
-        // margin-top: 56px;
-        padding-bottom: 96px;
-        @include sm{
-            padding-bottom: 30px;
-        }
         @include flex(row, space-between, center);
         gap: 30px;
         .cleaning_experts_info{
@@ -858,6 +882,7 @@
                         line-height: 173%;
                         text-transform: uppercase;
                         color: #142137b3;
+                        margin-top: 3px;
                     }
                 }
                .social_media{
@@ -866,30 +891,29 @@
     right: 29px;
     &:hover{
         .social_icon{
-            gap: 8px;
-        transform: translateY(0px);
+        //gap: 8px;
+        transform: translateY(9px);
         padding: 0;
         opacity: 1;
         visibility: visible;
-        -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-        -o-transform: translateY(0px);
+        -webkit-transform: translateY(9px);
+        -moz-transform: translateY(9px);
+        -ms-transform: translateY(9px);
+        -o-transform: translateY(9px);
         @include transition(0.5s);
-        
-        }
+}
 }
     span{
         
-                            box-shadow: 0 2px 4px 0 rgba(20, 33, 55, 0.14);
-                            background: $--white;
-                            width: 44px;
-                            height: 44px;
-                            display: block;
-                            text-align: center;
-                            line-height: 44px;
-                            color: $--text_clr;
-                            font-size: 18px;
+        box-shadow: 0 2px 4px 0 rgba(20, 33, 55, 0.14);
+        background: $--white;
+        width: 44px;
+        height: 44px;
+        display: block;
+        text-align: center;
+        line-height: 44px;
+        color: $--text_clr;
+        font-size: 18px;
         cursor: pointer;
         z-index: 5;
         &:hover{
@@ -904,15 +928,16 @@
         opacity: 0;
         visibility: hidden;
         @include flex(column, center, center);
-        gap :10px;
+        gap :6px;
+
 
         li
 {
     z-index: 1;
     a{
         
-            width: 40px;
-            height: 40px;
+            width: 44px;
+            height: 44px;
             background-color:$--white;
             text-align: center;
             line-height: 40px;
@@ -1244,8 +1269,11 @@
                 left: 50%;
                 @include transformX(-50%);
                 padding: 30px 10px 0px 30px;
+
                 ul{
                     padding: 0px;
+                    @include flex(column, flex-start, flex-start);
+                    gap: 18px;
                     li{
                         @include flex(row, flex-start, flex-start);
                         gap: 10px;
@@ -1280,6 +1308,22 @@
             @include flex(row, center, center);
             gap: 20px;
             flex-wrap: wrap;
+            .btn_wrapper_area{
+                &:nth-child(1){
+                    background-color: $--primary;
+                    &:hover{
+                        background-color: $--text-clr;
+                        color: $--white !important;
+                    }
+                }
+                &:nth-child(2){
+                    background-color: $--text-clr;
+                    &:hover{
+                        background-color: $--primary;
+                        color: $--white !important;
+                    }
+                }
+            }
         }
     }
 }
@@ -1337,10 +1381,6 @@
                         object-fit: contain;
                     }
                     .meta_name{
-                        background-color: red;
-                        @include nesthub{
-                            // background-color: red
-                        }
                         @include flex(column, center, flex-start);
                         gap:16px ;
                         h4{
@@ -1348,7 +1388,6 @@
                             font-weight: 600;
                             font-size: 18px;
                             color: $--text_clr;
-                           background-color: red;
                         }
                         b{
                             font-family: $--font-family;
@@ -1397,7 +1436,7 @@
             }
             height: fit-content;
             .blog_images_wrapper{
-                height: 240px;
+                height: 330px;
                 width: 100%;
                 img{
                     width: 100%;
@@ -1406,7 +1445,7 @@
                 }
             }
             .blog_text_wrapper{
-                padding-top: 30px;
+                padding-top: 13px;
                 @include flex(column, flex-end, flex-start);
                 h4{
                     font-family: $--font-family;
@@ -1425,16 +1464,16 @@
                     line-height: 142%;
                     letter-spacing: -0.02em;
                     color: $--text_clr;
-                    margin-top: 20px;
+                    margin-top: 16px;
                     &:hover{
                         color: $--primary;
+                        text-decoration: underline;
                     }
                 }
                 .border{
                     border:1px solid #14213724;
                     width: 100%;
-                    margin-top: 20px;
-                    margin-bottom:18px;
+                    margin-top: 13px;
                 }
                 .blog_news_meta{
                     @include flex(row, flex-start, flex-start);
@@ -1446,7 +1485,7 @@
                         line-height: 173%;
                         color: #142137b3;
                         span{
-                            margin-right:5px ;
+                            color: $--text-clr;
                         }
                     }
                     a{
@@ -1455,11 +1494,12 @@
                         font-size: 15px;
                         line-height: 173%;
                         color: #142137b3;
+                        span{
+                            margin-right: 5px;
+                            color: $--text-clr;
+                        }
                         &:hover{
                             color: $--primary;
-                        }
-                        span{
-                            margin-right:5px ;
                         }
                     }
                 }

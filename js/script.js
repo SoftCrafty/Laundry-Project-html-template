@@ -34,6 +34,12 @@ $(document).ready(function () {
         prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
         nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
     });
+    $('.blog_slider_wrapper').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
+        nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+    });
 
     var $cleaningSlider = $('.cleaning_container_area');
     $cleaningSlider.slick({
