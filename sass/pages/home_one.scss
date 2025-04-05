@@ -604,6 +604,13 @@
             max-width: 481px;
             height: fit-content;
             width: 25%;
+            &.style_5{
+                .heading{
+                    &.style_1{
+                        margin-top: 65px;
+                    }
+                }
+            }
             @include nesthubmax{
                 width: 50%;
             }
@@ -620,6 +627,7 @@
             }
             &:hover{
                 .service_img_wrapper{
+                    
                 .service_images{
                     visibility: visible;
                     opacity: 1;
@@ -639,8 +647,8 @@
         }
             }
             .service_contains_wrapper{
-                // background-color: green;
                 padding:0px 60px 40px 60px;
+               
                 @include md{
                     padding: 0;
 

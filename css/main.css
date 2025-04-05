@@ -22253,6 +22253,8 @@
       max-width: 481px;
       height: fit-content;
       width: 25%; }
+      .our_service_area .our_service_container .our_service_contains.style_5 .heading.style_1 {
+        margin-top: 65px; }
       @media only screen and (min-width: 1025px) and (max-width: 1280px) {
         .our_service_area .our_service_container .our_service_contains {
           width: 50%; } }
@@ -23222,6 +23224,7 @@
           height: 100%;
           object-fit: cover; }
         .home_two_about_area .home_two_about_wrapper .home_two_image_area .home_two_img span {
+          z-index: 10;
           width: 100px;
           height: 100px;
           border-radius: 50%;
@@ -23231,6 +23234,7 @@
           -o-border-radius: 50%;
           background-color: #fff;
           text-align: center;
+          padding-right: 10px;
           line-height: 100px;
           color: #142137;
           font-size: 34px;
@@ -24821,6 +24825,7 @@
   opacity: 0;
   visibility: hidden;
   transform: scale(1.1);
+  z-index: 20;
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, visibility 0.4s; }
   .video-modal.active {
     opacity: 1;
@@ -24846,10 +24851,9 @@
       background: red;
       width: 30px;
       height: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      line-height: 24px;
       border-radius: 50%;
+      text-align: center;
       cursor: pointer; }
   .video-modal.active .modal-content {
     transform: translateY(0); }
@@ -25133,6 +25137,27 @@
           -moz-transform: rotate(-45deg);
           -ms-transform: rotate(-45deg);
           -o-transform: rotate(-45deg); }
+  .btn_wrapper_area.style_5 {
+    background-color: transparent;
+    border: 1px solid #d9dbdf; }
+    .btn_wrapper_area.style_5 a {
+      color: #142137; }
+    .btn_wrapper_area.style_5:hover {
+      background-color: #4375e7;
+      border: 1px solid transparent; }
+      .btn_wrapper_area.style_5:hover a {
+        color: #fff; }
+        .btn_wrapper_area.style_5:hover a span i {
+          transition: 0.5s;
+          transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          -webkit-transition: 0.5s;
+          -moz-transition: 0.5s;
+          -ms-transition: 0.5s;
+          -o-transition: 0.5s; }
   .btn_wrapper_area a {
     font-family: "Poppins", sans-serif;
     font-weight: 500;

@@ -178,11 +178,13 @@
                     object-fit: cover;
                 }
                  span{
+                    z-index: 10;
             width: 100px;
             height: 100px;
             @include border-radius(50%);
             background-color: $--white;
             text-align: center;
+            padding-right: 10px;
             line-height: 100px;
             color: $--text-clr;
             font-size: 34px;

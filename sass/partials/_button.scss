@@ -185,6 +185,33 @@
                     }
          }
     }
+    &.style_5{
+        background-color: transparent;
+        border: 1px solid $--border;
+        a{
+            color: $--text-clr;
+        }
+        &:hover{
+            background-color: $--primary;
+            border: 1px solid transparent;
+            a{
+                color: $--white;
+                span i{
+                    transition: 0.5s;
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                    -webkit-transition: 0.5s;
+                    -moz-transition: 0.5s;
+                    -ms-transition: 0.5s;
+                    -o-transition: 0.5s;
+}
+            }
+            
+        }
+    }
     a{
         font-family: $--font-family;
         font-weight: 500;
