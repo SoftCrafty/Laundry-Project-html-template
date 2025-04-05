@@ -25532,7 +25532,6 @@
   flex-wrap: wrap;
   gap: 30px; }
   .about_section_area .about_section_wrapper .about_page_img_area .about_page_img_wrapper {
-    padding-top: 100px;
     position: relative; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .about_section_area .about_section_wrapper .about_page_img_area .about_page_img_wrapper {
