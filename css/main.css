@@ -22303,6 +22303,10 @@
         width: 100%;
         height: 223px;
         position: relative; }
+        .our_service_area .our_service_container .our_service_contains .service_img_wrapper.style_1 {
+          margin-top: 7px; }
+        .our_service_area .our_service_container .our_service_contains .service_img_wrapper.style_5 {
+          margin-top: 4px; }
         .our_service_area .our_service_container .our_service_contains .service_img_wrapper.style_2 {
           border: none;
           padding-left: 10px; }

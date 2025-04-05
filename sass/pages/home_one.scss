@@ -648,7 +648,6 @@
             }
             .service_contains_wrapper{
                 padding:0px 60px 40px 60px;
-               
                 @include md{
                     padding: 0;
 
@@ -673,6 +672,12 @@
                 }
             }
             .service_img_wrapper{
+               &.style_1{
+                margin-top: 7px;
+               }
+               &.style_5{
+                margin-top: 4px;
+               }
                 border-right: 1px solid rgba(20, 33, 55, 0.14);
                 &.style_2{
                     border: none;
