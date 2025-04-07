@@ -22476,6 +22476,7 @@
     align-items: center;
     gap: 30px; }
     .cleaning_experts_section .cleaning_container_area .cleaning_experts_info {
+      overflow: hidden;
       max-width: 378px;
       height: 470px;
       width: 100%; }
@@ -22488,6 +22489,7 @@
           padding-right: 10px; } }
       .cleaning_experts_section .cleaning_container_area .cleaning_experts_info .cleaning_images_wrapper {
         width: 100%;
+        overflow: hidden;
         height: 370px; }
         @media only screen and (min-width: 992px) and (max-width: 1024px) {
           .cleaning_experts_section .cleaning_container_area .cleaning_experts_info .cleaning_images_wrapper {
@@ -22502,6 +22504,13 @@
           width: 100%;
           height: 100%;
           object-fit: cover; }
+          .cleaning_experts_section .cleaning_container_area .cleaning_experts_info .cleaning_images_wrapper img:hover {
+            transform: scale(1.1);
+            transition: all 0.4s ease;
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1); }
       .cleaning_experts_section .cleaning_container_area .cleaning_experts_info .cleaning_contains_wrapper {
         width: 100%;
         height: 100px;
@@ -22745,9 +22754,9 @@
               font-size: 16px;
               line-height: 162%;
               color: #142137b3;
-              margin-top: 20px; }
+              margin-top: -8px; }
             .working_proces_area .gallery_parent .tab.active .content .how_it_work_contains .check_list_area {
-              margin-top: -30px; }
+              margin-top: -3px; }
 
 /*--------working Proces end---------*/
 /* -------SLICK SLIDER START------- */
@@ -22856,6 +22865,11 @@
       -ms-transform: translateX(-50%);
       -o-transform: translateX(-50%);
       padding: 30px 10px 0px 30px; }
+      .price_packages_area .price_packages_wrapper .packages_contains .packages_details:hover {
+        background-color: #4375e7;
+        transition: all 0.4s ease; }
+        .price_packages_area .price_packages_wrapper .packages_contains .packages_details:hover p {
+          color: #fff; }
       .price_packages_area .price_packages_wrapper .packages_contains .packages_details ul {
         padding: 0px;
         display: flex;
@@ -22931,7 +22945,6 @@
       align-items: flex-start;
       padding: 35px 40px 45px 40px;
       position: relative;
-      box-shadow: 0 10px 10px 0 #14213733;
       background: #fff; }
       @media only screen and (min-width: 992px) and (max-width: 1024px) {
         .customers_reviews_area .customers_reviews_wrapper .review_card_wappers {
@@ -22967,24 +22980,23 @@
             width: 100%;
             height: 100%;
             object-fit: contain; }
-          .customers_reviews_area .customers_reviews_wrapper .review_card_wappers .review_info_meta .meta_profile .meta_name {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 16px; }
-            .customers_reviews_area .customers_reviews_wrapper .review_card_wappers .review_info_meta .meta_profile .meta_name h4 {
-              font-family: "Poppins", sans-serif;
-              font-weight: 600;
-              font-size: 18px;
-              color: #142137; }
-            .customers_reviews_area .customers_reviews_wrapper .review_card_wappers .review_info_meta .meta_profile .meta_name b {
-              font-family: "Poppins", sans-serif;
-              font-weight: 500;
-              font-size: 15px;
-              line-height: 173%;
-              text-transform: uppercase;
-              color: #142137b3; }
+        .customers_reviews_area .customers_reviews_wrapper .review_card_wappers .review_info_meta .meta_name {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start; }
+          .customers_reviews_area .customers_reviews_wrapper .review_card_wappers .review_info_meta .meta_name h4 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            color: #142137; }
+          .customers_reviews_area .customers_reviews_wrapper .review_card_wappers .review_info_meta .meta_name b {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 173%;
+            text-transform: uppercase;
+            color: #142137b3; }
       .customers_reviews_area .customers_reviews_wrapper .review_card_wappers .reviews_vector {
         position: absolute;
         bottom: 54px;

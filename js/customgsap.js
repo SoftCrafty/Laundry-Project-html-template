@@ -82,21 +82,7 @@ pictl.from(".hero_user_meta img", {
     stagger: 0.2,
 });
 
-// ✅ Check List Area (on scroll)
-let checktl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".check_list_area",
-        start: "top 80%",
-        end: "bottom 50%",
-        toggleActions: "play none none none",
-    },
-});
-checktl.from(".check_list_area ul li", {
-    x: 100,
-    opacity: 0,
-    duration: 1,
-    stagger: 0.2,
-});
+
 
 // ✅ H2 Headings Scroll Animation
 document.querySelectorAll("h2").forEach((h2) => {
@@ -153,7 +139,7 @@ gsap.from(".about_card_wrapper", {
         // markers: true,
     },
 });
-gsap.from(".service_icon", {
+gsap.from(".service_icon_1", {
     x: -100,
     opacity: 0,
     rotate: 360,
@@ -229,4 +215,19 @@ gsap.from(".blog_news_contains", {
 gsap.from(".packages_title_wrapper", {
     scrollTrigger: { trigger: ".packages_contains", start: "top 80%", toggleActions: "play none none reverse" },
     opacity: 0, y: 50, duration: 1, stagger: 0.3,
+});
+// ✅ Check List Area (on scroll)
+let checktl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".check_list_area",
+        start: "top 80%",
+        // end: "bottom 50%",
+        toggleActions: "play none none none",
+    },
+});
+checktl.from(".check_list_area ul li", {
+    x: 100,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
 });
