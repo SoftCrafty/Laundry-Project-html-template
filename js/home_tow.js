@@ -12,10 +12,12 @@ $('.collect_area').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     prevArrow: false,
     nextArrow: false,
     dots: true,
+    speed: 2000,
+    easing: 'ease-in-out', 
     dotsClass: 'docts-active-collect',
 });
 $('.testimonial_card_area').slick({

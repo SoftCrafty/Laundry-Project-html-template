@@ -119,6 +119,7 @@ gsap.from(".price_packages_card_wrapper", {
     opacity: 0,
     duration: 1.5,
     stagger: 0.3,
+    rotate: 70,
     scrollTrigger: {
         trigger: ".price_packages_card_area",
         start: "top 80%",
@@ -134,6 +135,19 @@ gsap.from(".about_card_wrapper", {
     stagger: 0.3,
     scrollTrigger: {
         trigger: ".about_counting_card_area",
+        start: "top 80%",
+        toggleActions: "play none none none",
+        // markers: true,
+    },
+});
+gsap.from(".counting_info", {
+    x: -200,
+    opacity: 0,
+    rotate: 360,
+    duration: 2,
+    stagger: 0.4,
+    scrollTrigger: {
+        trigger: ".counting_info_wrapper",
         start: "top 80%",
         toggleActions: "play none none none",
         // markers: true,
@@ -216,6 +230,64 @@ gsap.from(".packages_title_wrapper", {
     scrollTrigger: { trigger: ".packages_contains", start: "top 80%", toggleActions: "play none none reverse" },
     opacity: 0, y: 50, duration: 1, stagger: 0.3,
 });
+gsap.from(".premium_service_info", {
+    scrollTrigger: { trigger: ".premium_service_wrapper", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, y: 50, duration: 1, stagger: 0.4,
+});
+gsap.from(".team_member_card_wrapper", {
+    scrollTrigger: { trigger: ".team_member_card_area", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, y: 50, duration: 1, stagger: 0.4,
+});
+gsap.from(".blog_news_card", {
+    scrollTrigger: { trigger: ".blog_news_card_wrapper", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, x: 50, duration: 2, stagger: 0.4,
+});
+gsap.from(".principle_text_wrapper", {
+    scrollTrigger: { trigger: ".principle_text_area", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, y: 50, duration: 2, stagger: 0.4,
+});
+gsap.from(".principle_img_wrapper", {
+    scrollTrigger: { trigger: ".principle_img_wrapper", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, x: -300, duration: 2, stagger: 0.4,
+});
+gsap.from(".faq_card_wrapper", {
+    scrollTrigger: { trigger: ".faq_card_wrapper", start: "top 60%", toggleActions: "play none none reverse" },
+    opacity: 0, x: -300, duration: 2, stagger: 0.4,
+});
+gsap.from(".faq", {
+    scrollTrigger: { trigger: ".faq_area", start: "top 60%", toggleActions: "play none none reverse" },
+    opacity: 0, x: 300, duration: 2, stagger: 0.4,
+});
+gsap.from(".sidebar_wrapper", {
+    scrollTrigger: { trigger: ".sidebar_wrapper", start: "top 70%", toggleActions: "play none none reverse" },
+    opacity: 0, y: 100, duration: 2, stagger: 0.7,
+});
+gsap.from(".blog_details_summery", {
+    scrollTrigger: { trigger: ".blog_details_summery", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, y: 100, duration: 2, stagger: 0.7,
+});
+gsap.from(".founder_img_wrapper img", {
+    scrollTrigger: { trigger: ".founder_img_wrapper", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, x: -100, duration: 2, stagger: 0.3,
+});
+gsap.from(".founder_info_wrapper ul li", {
+    scrollTrigger: { trigger: ".founder_img_wrapper", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, x: 100, duration: 1, stagger: 0.3,
+});
+gsap.from(".blog_tag_wrapper ul li",{
+    scrollTrigger: { trigger: ".blog_tag_social_area", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, x: 100, duration: 1, stagger: 0.3,
+});
+gsap.from(".blog_social_wrapper ul li",{
+    scrollTrigger: { trigger: ".blog_tag_social_area", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, y: 30, duration: 1, stagger: 0.3,
+});
+
+gsap.from(".founder_info_wrapper h4, .founder_info_wrapper h5, .founder_info_wrapper p", {
+    scrollTrigger: { trigger: ".founder_info_wrapper", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, y: 40, duration: 1, stagger: 0.3,
+});
+
 // ✅ Check List Area (on scroll)
 let checktl = gsap.timeline({
     scrollTrigger: {

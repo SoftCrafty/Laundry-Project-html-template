@@ -285,6 +285,20 @@
         .premium_service_info{
             border: 1px solid $--border_bl;
             &:hover{
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+                    .premium_icon{
+                        img{
+                            @include transition(1.5s);
+                            transform: rotateY(360deg);
+                            -webkit-transform: rotateY(360deg);
+                            -moz-transform: rotateY(360deg);
+                            -ms-transform: rotateY(360deg);
+                            -o-transform: rotateY(360deg);
+}
+                    }
+                }
+            &:hover{
                 background: #ebeff3;
                 @include transition(0.5s);
                 border: 1px solid transparent;
@@ -591,6 +605,7 @@ li {
             }
         .counting_info{
             overflow: hidden;
+
             &::after{
                 content: "";
                 width: 100%;
@@ -616,6 +631,7 @@ li {
             border-radius: 100%;
             border: 1px solid $--border_bl;
             width: 440px;
+            z-index: 1;
             height: 440px;
             @include nesthub{
                 width: 360px;
