@@ -316,6 +316,10 @@ gsap.from(".price_packages_card_wrapper", {
     scrollTrigger: { trigger: ".price_packages_card_area", start: "top 70%", toggleActions: "play none none reverse" },
     opacity: 0, x:-200, duration: 2, stagger: 0.3, rotate:70,
 });
+gsap.from(".our_service_contains", {
+    scrollTrigger: { trigger: ".our_service_container", start: "top 70%", toggleActions: "play none none reverse" },
+    opacity: 0, x:-200, duration: 2, stagger: 0.3
+});
 
 // ✅ Check List Area (on scroll)
 let checktl = gsap.timeline({
