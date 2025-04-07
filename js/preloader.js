@@ -1,6 +1,6 @@
 // Remove preloader after page load
 window.addEventListener("load", function () {
-    const preloader = document.getElementById("preloader");
+    const preloader = document.querySelector(".preloader_area");
 
     preloader.style.transition = "all 0.5s ease";
     preloader.style.opacity = "0";
