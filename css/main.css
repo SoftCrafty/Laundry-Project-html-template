@@ -22284,7 +22284,12 @@
         visibility: visible;
         opacity: 1;
         transition: all 0.5s ease; }
-      .our_service_area .our_service_container .our_service_contains:hover .service_img_wrapper a {
+        .our_service_area .our_service_container .our_service_contains:hover .service_img_wrapper .service_images a {
+          display: block;
+          width: 100%;
+          padding: 0 !important;
+          margin: 0 !important; }
+      .our_service_area .our_service_container .our_service_contains:hover .service_img_wrapper .service_img_btn_wrapper a {
         display: none; }
       .our_service_area .our_service_container .our_service_contains:hover .heading a {
         color: #4375e7; }
@@ -22310,6 +22315,7 @@
           margin-top: 40px;
           margin-bottom: 20px; }
       .our_service_area .our_service_container .our_service_contains .service_img_wrapper {
+        padding: 0 !important;
         border-right: 1px solid rgba(20, 33, 55, 0.14);
         width: 100%;
         height: 223px;
@@ -22327,7 +22333,7 @@
         @media only screen and (min-width: 0px) and (max-width: 767px) {
           .our_service_area .our_service_container .our_service_contains .service_img_wrapper {
             border: none; } }
-        .our_service_area .our_service_container .our_service_contains .service_img_wrapper a {
+        .our_service_area .our_service_container .our_service_contains .service_img_wrapper .service_img_btn_wrapper a {
           position: absolute;
           top: 30px;
           left: 60px;
@@ -22336,24 +22342,29 @@
           font-size: 15px;
           color: #142137; }
           @media only screen and (min-width: 768px) and (max-width: 991px) {
-            .our_service_area .our_service_container .our_service_contains .service_img_wrapper a {
+            .our_service_area .our_service_container .our_service_contains .service_img_wrapper .service_img_btn_wrapper a {
               left: 20px; } }
           @media only screen and (min-width: 0px) and (max-width: 767px) {
-            .our_service_area .our_service_container .our_service_contains .service_img_wrapper a {
+            .our_service_area .our_service_container .our_service_contains .service_img_wrapper .service_img_btn_wrapper a {
               display: none; } }
-          .our_service_area .our_service_container .our_service_contains .service_img_wrapper a span {
+          .our_service_area .our_service_container .our_service_contains .service_img_wrapper .service_img_btn_wrapper a span {
             margin-left: 5px; }
         .our_service_area .our_service_container .our_service_contains .service_img_wrapper .service_images {
           visibility: hidden;
           opacity: 0; }
+          .our_service_area .our_service_container .our_service_contains .service_img_wrapper .service_images a {
+            display: block;
+            margin: 0px !important;
+            width: 100%;
+            height: 100%; }
+            .our_service_area .our_service_container .our_service_contains .service_img_wrapper .service_images a img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
           @media only screen and (min-width: 0px) and (max-width: 767px) {
             .our_service_area .our_service_container .our_service_contains .service_img_wrapper .service_images {
               visibility: visible;
               opacity: 1; } }
-          .our_service_area .our_service_container .our_service_contains .service_img_wrapper .service_images img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; }
 
 /*-------our services section end------*/
 /*-------Service setps start------*/
@@ -23924,13 +23935,16 @@
         backdrop-filter: blur(90px);
         background: #181d4cb3;
         padding: 40px; }
-        .second_price_packages_area .price_packages_wrapper .price_packages_card_area .price_packages_card_wrapper:hover .price_icon img {
-          transition: all 1.5s ease;
-          transform: rotateY(360deg);
-          -webkit-transform: rotateY(360deg);
-          -moz-transform: rotateY(360deg);
-          -ms-transform: rotateY(360deg);
-          -o-transform: rotateY(360deg); }
+        .second_price_packages_area .price_packages_wrapper .price_packages_card_area .price_packages_card_wrapper:hover {
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+          transform: translateY(-5px); }
+          .second_price_packages_area .price_packages_wrapper .price_packages_card_area .price_packages_card_wrapper:hover .price_icon img {
+            transition: all 1.5s ease;
+            transform: rotateY(360deg);
+            -webkit-transform: rotateY(360deg);
+            -moz-transform: rotateY(360deg);
+            -ms-transform: rotateY(360deg);
+            -o-transform: rotateY(360deg); }
         @media only screen and (min-width: 1025px) and (max-width: 1280px) {
           .second_price_packages_area .price_packages_wrapper .price_packages_card_area .price_packages_card_wrapper {
             width: 100%; } }
@@ -25753,7 +25767,36 @@
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
         -ms-border-radius: 50%;
-        -o-border-radius: 50%; }
+        -o-border-radius: 50%;
+        overflow: hidden; }
+        .about_section_area .about_section_wrapper .about_counting_area .about_counting_card_area .about_card_wrapper::after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 350px;
+          left: -100px;
+          background-color: #4375e7;
+          border-radius: 50%;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          opacity: 0;
+          visibility: hidden;
+          z-index: 10; }
+        .about_section_area .about_section_wrapper .about_counting_area .about_counting_card_area .about_card_wrapper:hover p {
+          color: #fff;
+          z-index: 30; }
+        .about_section_area .about_section_wrapper .about_counting_area .about_counting_card_area .about_card_wrapper:hover h2 {
+          color: #fff;
+          z-index: 30; }
+        .about_section_area .about_section_wrapper .about_counting_area .about_counting_card_area .about_card_wrapper:hover::after {
+          top: 0;
+          left: 0;
+          transition: all 0.6s ease;
+          visibility: visible;
+          opacity: 1; }
         .about_section_area .about_section_wrapper .about_counting_area .about_counting_card_area .about_card_wrapper h2 {
           font-family: "Poppins", sans-serif;
           font-weight: 600;
@@ -27081,6 +27124,34 @@
     margin-top: 30px; }
     .error_contains_wrapper .about_page_btn .btn_wrapper_area {
       width: 242px !important; }
+
+.back_top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 1000; }
+  .back_top span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #d9dbdf; }
+    .back_top span:hover {
+      border: 1px solid transparent;
+      color: #fff;
+      background-color: #4375e7;
+      transition: all 0.4s ease; }
+
+.show {
+  display: block; }
 
 * {
   margin: 0;

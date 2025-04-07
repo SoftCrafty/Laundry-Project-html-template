@@ -32,17 +32,22 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 6000,
         prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
         nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+        speed: 3000, 
+        easing: 'ease-in-out', 
     });
+
     $('.blog_slider_wrapper').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
         nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+        speed: 2000,
+        easing: 'ease-in-out',
     });
 
     var $cleaningSlider = $('.cleaning_container_area');
@@ -52,8 +57,10 @@ $(document).ready(function () {
         dots: true,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         dotsClass: 'container_area docts-active',
+        speed: 2000,
+        easing: 'ease-in-out', 
         responsive: [
             { breakpoint: 1190, settings: { slidesToShow: 3 } },
             { breakpoint: 924, settings: { slidesToShow: 2 } },
@@ -143,6 +150,23 @@ dropdownButtons.forEach(btn => {
         }
     });
 });
+
+
+// Show the button when the user scrolls down and hide it when at the top
+window.onscroll = function () {
+    var button = document.querySelector('.back_top');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 200) {
+        button.classList.add('show');
+    } else {
+        button.classList.remove('show');
+    }
+};
+
+// Scroll smoothly to the top when the button is clicked
+document.querySelector('.back_top').onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 
 // document.addEventListener("DOMContentLoaded", function () {
 //     const dropdownBtns = document.querySelectorAll(".dropdown_btn");

@@ -925,6 +925,8 @@ li {
                 max-width: 378px;
                 width: 100%;
                 &:hover{
+                    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
                     .price_icon{
                         img{
                             @include transition(1.5s);
