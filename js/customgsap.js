@@ -18,7 +18,7 @@ gsap.from(".header-area .btn_wrapper", {
     delay: 0.5
 })
 let tl = gsap.timeline();
-tl.from(".header_contact_area .social_media li, .review_card_wapper li", {
+tl.from(".header_contact_area .social_media li", {
     y: 50,
     opacity: 0,
     duration: 0.5,
@@ -117,18 +117,18 @@ document.querySelectorAll("h2").forEach((h2) => {
 // });
 
 
-document.querySelectorAll("img").forEach((img) => {
-    gsap.from(img, {
-        scale: 0.5,
-        opacity: 0,
-        duration: 1.5,
-        scrollTrigger: {
-            trigger: img,
-            start: "top 90%",
-            toggleActions: "play none none none",
-        }
-    });
-});
+// document.querySelectorAll("img").forEach((img) => {
+//     gsap.from(img, {
+//         scale: 0.5,
+//         opacity: 0,
+//         duration: 1.5,
+//         scrollTrigger: {
+//             trigger: img,
+//             start: "top 90%",
+//             toggleActions: "play none none none",
+//         }
+//     });
+// });
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".blog_news_contains", {

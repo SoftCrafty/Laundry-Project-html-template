@@ -8,6 +8,16 @@ $('.hero_section_area.home_tow_area').slick({
     // autoplay: true,
     // autoplaySpeed: 2000,
 });
+$('.collect_area').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: false,
+    nextArrow: false,
+    dots: true,
+    dotsClass: 'docts-active-collect',
+});
 $('.testimonial_card_area').slick({
     slidesToShow: 4,
     slidesToScroll: 1,

@@ -31,12 +31,16 @@ $(document).ready(function () {
     $('.hero_section_area').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
         prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
         nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
     });
     $('.blog_slider_wrapper').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
         prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
         nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
     });
@@ -47,6 +51,8 @@ $(document).ready(function () {
         slidesToScroll: 1,
         dots: true,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 1000,
         dotsClass: 'container_area docts-active',
         responsive: [
             { breakpoint: 1190, settings: { slidesToShow: 3 } },
@@ -54,6 +60,7 @@ $(document).ready(function () {
             { breakpoint: 600, settings: { slidesToShow: 1 } }
         ]
     });
+
 
     var $reviewSlider = $('.customers_reviews_wrapper');
     function initReviewSlider() {

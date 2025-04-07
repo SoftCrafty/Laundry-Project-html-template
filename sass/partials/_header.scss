@@ -7,11 +7,13 @@
                 position: absolute;
                 top: 0px;
                 left: 0px;
-                backdrop-filter: blur(14px);
-                background: #ffffff1a;
+                //background-color: red;
+                filter: blur(14px);
+                background: #ffffff0d;
                 height: 80px;
                 width: 100%;
-            }
+                -webkit-filter: blur(14px);
+}
            
             .header_contact_btn_wrapper{
                 display: flex;

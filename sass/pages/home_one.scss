@@ -19,6 +19,7 @@
                 @include flex(row, flex-start, center);
                 height: 100%;
                 gap: 21px;
+
                 span{
                     font-family: $--font-family;
                     font-weight: 400;
@@ -26,6 +27,7 @@
                     color: $--white;
                 }
                 ul{
+                    padding: 0;
                     @include flex(row, flex-start, center);
                     gap: 18px;
                     height: 100%;
@@ -1347,6 +1349,7 @@
     background-color: #ecf2fe;
     overflow: hidden;
     .customers_reviews_wrapper{
+        
         &.style_1{
             @include sm{
                 display: none;

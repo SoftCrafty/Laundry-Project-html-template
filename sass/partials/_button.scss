@@ -212,6 +212,16 @@
             
         }
     }
+    &.style_6{
+        background-color: $--white;
+        a{
+            color: $--text-clr;
+            span{
+                background-color: $--text-clr;
+                color: $--white;
+            }
+        }
+    }
     a{
         font-family: $--font-family;
         font-weight: 500;
