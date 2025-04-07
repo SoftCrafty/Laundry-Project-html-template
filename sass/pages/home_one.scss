@@ -812,6 +812,11 @@
                     text-align: center;
                     line-height: 170px;
                     position: relative;
+                    &:hover{
+                      @include transition(0.6s);
+                        animation: moveText 2s infinite ;
+                        -webkit-animation: moveText 2s infinite ;
+}
                     z-index: 50;
                     img{
                         position: absolute;

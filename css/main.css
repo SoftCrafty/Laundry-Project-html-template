@@ -22431,6 +22431,10 @@
         line-height: 170px;
         position: relative;
         z-index: 50; }
+        .laundry_service_steps .servers_card_wrapper .service_card_info .service_card_img .service_icon:hover {
+          transition: all 0.6s ease;
+          animation: moveText 2s infinite;
+          -webkit-animation: moveText 2s infinite; }
         .laundry_service_steps .servers_card_wrapper .service_card_info .service_card_img .service_icon img {
           position: absolute;
           top: 50%;
