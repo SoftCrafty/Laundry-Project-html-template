@@ -114,19 +114,19 @@ document.querySelectorAll("h2").forEach((h2) => {
 gsap.registerPlugin(ScrollTrigger);
 
 // LEFT theke asbe (style_1)
-gsap.from(".price_packages_card_wrapper", {
-    x: -400,
-    opacity: 0,
-    duration: 1.5,
-    stagger: 0.3,
-    rotate: 70,
-    scrollTrigger: {
-        trigger: ".price_packages_card_area",
-        start: "top 80%",
-        toggleActions: "play none none none",
-        // markers: true,
-    },
-});
+// gsap.from(".price_packages_card_wrapper", {
+//     x: -400,
+//     opacity: 0,
+//     duration: 1.5,
+//     stagger: 0.3,
+//     rotate: 70,
+//     scrollTrigger: {
+//         trigger: ".price_packages_card_area",
+//         start: "top 80%",
+//         toggleActions: "play none none none",
+//         // markers: true,
+//     },
+// });
 gsap.from(".about_card_wrapper", {
     x: -400,
     opacity: 0,
@@ -166,14 +166,23 @@ gsap.from(".service_icon_1", {
         // markers: true,
     },
 });
-gsap.to(".about_page_overly_card",{
-    x: 150,
-    duration: 3,
-    yoyo: true,
-    repeat: -1,
-    ease: "power1.inOut"
+// gsap.to(".about_page_overly_card",{
+//     x: 150,
+//     duration: 3,
+//     yoyo: true,
+//     repeat: -1,
+//     ease: "power1.inOut"
 
-})
+// })
+if (window.innerWidth > 768) { // Desktop & Tablet only (not small mobile)
+    gsap.to(".about_page_overly_card", {
+        x: 150,
+        duration: 3,
+        yoyo: true,
+        repeat: -1,
+        ease: "power1.inOut"
+    });
+}
 
 
 // Initialize GSAP ScrollTrigger
@@ -286,6 +295,26 @@ gsap.from(".blog_social_wrapper ul li",{
 gsap.from(".founder_info_wrapper h4, .founder_info_wrapper h5, .founder_info_wrapper p", {
     scrollTrigger: { trigger: ".founder_info_wrapper", start: "top 80%", toggleActions: "play none none reverse" },
     opacity: 0, y: 40, duration: 1, stagger: 0.3,
+});
+gsap.from(".quicklink ul li", {
+    scrollTrigger: { trigger: ".quicklink ul", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, y: 40, duration: 0.8, stagger: 0.5,
+});
+gsap.from(".contains_area", {
+    scrollTrigger: { trigger: ".contains_title_area", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, y: 120, duration: 1, stagger: 0.5,
+});
+gsap.from(".contains_img_area img", {
+    scrollTrigger: { trigger: ".contains_img_area", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, y: -80, duration: 1, stagger: 0.5,
+});
+gsap.from(".home_two_image_area", {
+    scrollTrigger: { trigger: ".home_two_image_area", start: "top 50%", toggleActions: "play none none reverse" },
+    opacity: 0, x:200, duration: 2, stagger: 0.5,
+});
+gsap.from(".price_packages_card_wrapper", {
+    scrollTrigger: { trigger: ".price_packages_card_area", start: "top 70%", toggleActions: "play none none reverse" },
+    opacity: 0, x:-200, duration: 2, stagger: 0.3, rotate:70,
 });
 
 // ✅ Check List Area (on scroll)
