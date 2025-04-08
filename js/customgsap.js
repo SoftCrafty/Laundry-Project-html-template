@@ -260,8 +260,8 @@ gsap.from(".principle_img_wrapper", {
     opacity: 0, x: -300, duration: 2, stagger: 0.4,
 });
 gsap.from(".faq_card_wrapper", {
-    scrollTrigger: { trigger: ".faq_card_wrapper", start: "top 60%", toggleActions: "play none none reverse" },
-    opacity: 0, x: -300, duration: 2, stagger: 0.4,
+    scrollTrigger: { trigger: ".faq_card_wrapper", start: "top 90%", toggleActions: "play none none reverse" },
+    opacity: 0, x: -300, duration: 1, stagger: 0.4,
 });
 gsap.from(".faq", {
     scrollTrigger: { trigger: ".faq_area", start: "top 60%", toggleActions: "play none none reverse" },
@@ -296,8 +296,16 @@ gsap.from(".founder_info_wrapper h4, .founder_info_wrapper h5, .founder_info_wra
     scrollTrigger: { trigger: ".founder_info_wrapper", start: "top 80%", toggleActions: "play none none reverse" },
     opacity: 0, y: 40, duration: 1, stagger: 0.3,
 });
-gsap.from(".quicklink ul li", {
-    scrollTrigger: { trigger: ".quicklink ul", start: "top 80%", toggleActions: "play none none reverse" },
+gsap.from(".f_gsap_1 ul li", {
+    scrollTrigger: { trigger: ".f_gsap_1 ul", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, y: 40, duration: 0.8, stagger: 0.5,
+});
+gsap.from(".f_gsap_2 ul li", {
+    scrollTrigger: { trigger: ".f_gsap_2 ul", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, y: 40, duration: 0.8, stagger: 0.5,
+});
+gsap.from(".f_gsap_3 ul li", {
+    scrollTrigger: { trigger: ".f_gsap_3 ul", start: "top 80%", toggleActions: "play none none reverse" },
     opacity: 0, y: 40, duration: 0.8, stagger: 0.5,
 });
 gsap.from(".contains_area", {
@@ -319,6 +327,53 @@ gsap.from(".price_packages_card_wrapper", {
 gsap.from(".our_service_contains", {
     scrollTrigger: { trigger: ".our_service_container", start: "top 70%", toggleActions: "play none none reverse" },
     opacity: 0, x:-200, duration: 2, stagger: 0.3
+});
+gsap.from(".f_gsap_4 ul li", {
+    scrollTrigger: { trigger: ".f_gsap_4", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, x: 100, duration: 1, stagger: 0.3,
+});
+gsap.from(".footer_contact_wrapper", {
+    scrollTrigger: { trigger: ".footer_contact_area", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, y: 100, duration: 1, stagger: 0.3,
+});
+gsap.from(".footer_last p", {
+    scrollTrigger: { trigger: ".footer_last", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, x: -200, duration: 1, stagger: 0.3,
+});
+gsap.from(".footer_last_menu nav ul li", {
+    scrollTrigger: { trigger: ".footer_last_menu", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, x: 200, duration: 1, stagger: 0.3,
+});
+gsap.from(".pre_wrapper.style_1", {
+    scrollTrigger: { trigger: ".pre_next_btn_area", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, x: -100, duration: 1.5, stagger: 0.3, rotate: -30,
+});
+gsap.from(".pre_wrapper.style_2", {
+    scrollTrigger: { trigger: ".pre_next_btn_area", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, x: 100, duration: 1.5, stagger: 0.3, rotate: 30,
+});
+gsap.from(".comment_card_wrapper.style_1", {
+    scrollTrigger: { trigger: ".comment_card_area", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, x: 200, duration: 2, stagger: 0.3,
+});
+gsap.from(".comment_card_wrapper.style_2", {
+    scrollTrigger: { trigger: ".comment_card_area", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, x: -200, duration: 2, stagger: 0.3,
+});
+gsap.from(".leave_signle_box .leave_name", {
+    scrollTrigger: { trigger: ".leave_signle_box", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, y:50, duration: 1, stagger: 0.3,
+});
+gsap.from(".contact_card_wrapper", {
+    scrollTrigger: { trigger: ".contact_card_area", start: "top 80%", toggleActions: "play none none reverse" },
+    opacity: 0, y:50, duration: 1, stagger: 0.3,
+});
+gsap.from(".inner_page_overly .container_area h1 span", {
+    x: 100,
+    opacity: 0,
+    duration: 2,
+    stagger:0.3,
+    ease: "power3.out"
 });
 
 // ✅ Check List Area (on scroll)

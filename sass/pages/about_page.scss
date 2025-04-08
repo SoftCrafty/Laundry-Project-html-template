@@ -15,12 +15,23 @@
     background-size: cover;
     height: 370px;
     h1{
+        @include flex(row, flex-start, center);
+
         font-family: $--font-family;
         font-weight: 600;
         font-size: 60px;
         line-height: 183%;
         letter-spacing: -0.02em;
         color: $--white;
+        span{
+            font-family: $--font-family;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 183%;
+        letter-spacing: -0.02em;
+        color: $--white;
+            
+        }
     }
     ul{
         backdrop-filter: blur(14px);
