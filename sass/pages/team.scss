@@ -155,8 +155,7 @@
     }
        .progressbar_area{
             @include flex(column, flex-start, flex-start);
-            gap: 34px;
-            width: 80%;
+            width: 100%;
         }
         .progress-container {
             width: 100%;
@@ -165,13 +164,12 @@
             justify-content: space-between;
             font-size: 16px;
             font-weight: bold;
-            margin-bottom: 5px;
             span{
                 font-family: $--font-family;
-                        font-weight: 400;
-                        font-size: 20px;
-                        line-height: 150%;
-                        color: $--nine;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 162%;
+                color: $--text_clr;
                         
             }
         }

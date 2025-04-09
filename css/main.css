@@ -27870,22 +27870,20 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 34px;
-  width: 80%; }
+  width: 100%; }
 .skills_area .progress-container {
   width: 100%; }
   .skills_area .progress-container .progress-label {
     display: flex;
     justify-content: space-between;
     font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px; }
+    font-weight: bold; }
     .skills_area .progress-container .progress-label span {
       font-family: "Poppins", sans-serif;
       font-weight: 400;
-      font-size: 20px;
-      line-height: 150%;
-      color: #1a1a1a; }
+      font-size: 16px;
+      line-height: 162%;
+      color: #142137; }
   .skills_area .progress-container .progress-bar {
     width: 100%;
     height: 5px;
