@@ -17,6 +17,7 @@
 @import "./pages/error.scss";
 @import "./partials/back_top";
 @import "./partials/preloader";
+@import "./pages/team.scss";
 
 * {
     margin: 0;
@@ -34,13 +35,6 @@ letter-spacing: -0.02em;
 text-align: center;
 color: #142137;
 }
-// p{
-//     font-family: $--font-family;
-// font-weight: 500;
-// font-size: 16px;
-// line-height: 162%;
-// color: rgba(20, 33, 55, 0.6);
-// }
 ul,
 ol {
     list-style-type: none;
@@ -57,13 +51,6 @@ h6,
 p {
     margin: 0;
 }
-// p{
-//     font-family: $--second-family;
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 162%;
-//     color: $--eight;
-// }
 
 
 

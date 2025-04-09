@@ -195,7 +195,7 @@
     z-index: 2000;
     margin: auto;
     background-color: $--white;
-    width: 100%;
+    width: 100% !important;
     @include nesthub{
         padding: 0px 40px;
     }

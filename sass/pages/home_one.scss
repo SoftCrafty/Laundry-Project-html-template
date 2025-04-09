@@ -841,6 +841,7 @@
     }
     .servers_card_wrapper{
         // margin-top: 59px;
+        height: fit-content;
         @include flex(row, space-between, center);
         @include navmenu{
             flex-wrap: wrap;
@@ -1406,10 +1407,19 @@
                 left: 50%;
                 @include transformX(-50%);
                 padding: 30px 10px 0px 30px;
+                @include nesthub{
+                    padding: 20px 10px 0px 20px;
+                }
+                @include nesthubmax{
+                    padding: 20px 10px 0px 20px;
+                }
                 ul{
                     padding: 0px;
                     @include flex(column, flex-start, flex-start);
                     gap: 18px;
+                    @include nesthubmax{
+                        gap:10px;
+                    }
                     li{
                         @include flex(row, flex-start, flex-start);
                         gap: 10px;

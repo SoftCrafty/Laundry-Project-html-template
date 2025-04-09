@@ -228,3 +228,28 @@ $(document).ready(function () {
     //     speed: 3000, 
     //     easing: 'ease-in-out', 
     // });
+
+
+
+document.querySelectorAll('.categories_area.style_1 ul li a').forEach(link => {
+    const img = link.querySelector('.download_btn img');
+
+    link.addEventListener('mouseenter', () => {
+        img.src = './images/service/icon3.png';
+    });
+
+    link.addEventListener('mouseleave', () => {
+        img.src = './images/service/icon2.png';
+    });
+});
+document.querySelectorAll('.categories_area.style_1 ul li a').forEach(link => {
+    const img = link.querySelector('.pdf_btn img');
+
+    link.addEventListener('mouseenter', () => {
+        img.src = './images/service/icon5.png';
+    });
+
+    link.addEventListener('mouseleave', () => {
+        img.src = './images/service/icon4.png';
+    });
+});
