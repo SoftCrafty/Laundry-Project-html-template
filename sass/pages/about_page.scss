@@ -1,4 +1,9 @@
 .inner_hero_section_area{
+    .container_area{
+        @include nesthub{
+        padding: 0px 40px;
+        }
+    }
     position: relative;
     .inner_page_overly{
         background: linear-gradient(90deg, #192f54 0%, rgba(20, 33, 55, 0.1) 89.82%);
@@ -27,6 +32,9 @@
             font-family: $--font-family;
         font-weight: 600;
         font-size: 60px;
+        @include sm{
+            font-size: 40px;
+        }
         line-height: 183%;
         letter-spacing: -0.02em;
         color: $--white;
@@ -186,17 +194,19 @@
                 text-align: center;
                 @include border-radius(50%);
                 overflow: hidden;
+                position: relative;
             &::after{
                 content: "";
                 width: 100%;
                 height: 100%;
                 position: absolute;
-                top: 350px;
+                top: 200px;
                 left: -100px;
                 background-color: $--primary;
                 @include border-radius(50%);
                 opacity: 0;
                 visibility: hidden;
+                @include transition(0.9s);
                 z-index: 10;
             }
             &:hover{
@@ -211,7 +221,7 @@
               &::after{
                   top: 0;
                 left: 0;
-                @include transition(0.6s);
+                
                 visibility: visible;
                 opacity: 1;
               }
@@ -224,6 +234,7 @@
                     text-transform: uppercase;
                     text-align: center;
                     color: $--text_clr;
+                    @include transition(0.4s);
                 }
                 p{
                    font-family: $--font-family;
@@ -232,6 +243,7 @@
                     line-height: 137%;
                     text-align: center;
                     color: #142137b3;
+                    @include transition(0.4s);
                 }
             }
         }

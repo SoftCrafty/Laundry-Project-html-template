@@ -28,16 +28,16 @@ $(document).ready(function () {
 
 
     // Slick Sliders
-    $('.hero_section_area').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 6000,
-        prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
-        nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
-        speed: 3000, 
-        easing: 'ease-in-out', 
-    });
+    // $('.hero_section_area').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     autoplaySpeed: 6000,
+    //     prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
+    //     nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+    //     speed: 3000, 
+    //     easing: 'ease-in-out', 
+    // });
 
     $('.blog_slider_wrapper').slick({
         slidesToShow: 1,
@@ -192,3 +192,39 @@ document.querySelector('.back_top').onclick = function () {
 // });
 
 
+$(document).ready(function () {
+    $('.hero_section_area').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
+        nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+        speed: 1000, 
+        easing: 'ease-in-out', 
+    });
+
+    $('.slick-current .hero_contains .heading').addClass('animated');
+    $('.slick-current .hero_contains .sub_heading').addClass('animated');
+
+    $('.hero_section_area').on('afterChange', function (event, slick, currentSlide) {
+        $('.hero_contains .heading').removeClass('animated'); 
+        $('.slick-current .hero_contains .heading').addClass('animated'); 
+    });
+    $('.hero_section_area').on('afterChange', function (event, slick, currentSlide) {
+        $('.hero_contains .sub_heading').removeClass('animated'); 
+        $('.slick-current .hero_contains .sub_heading').addClass('animated'); 
+    });
+});
+
+
+ // $('.hero_section_area').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     autoplaySpeed: 6000,
+    //     prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
+    //     nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+    //     speed: 3000, 
+    //     easing: 'ease-in-out', 
+    // });
