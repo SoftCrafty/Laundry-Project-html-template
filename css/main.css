@@ -1,86 +1,39 @@
 /*
-Error: Mixin flex is missing argument $justify.
-        on line 30 of sass/pages/team.scss, in `flex'
-        from line 30 of sass/pages/team.scss
+Error: Invalid CSS after "...r: #142137b3;gi": expected "{", was "}"
+        on line 49 of sass/pages/team.scss
         from line 20 of sass/style.scss
 
-25:     box-sizing: border-box;
-26: }
-27: a {
-28:     text-decoration: none;
-29: }
-30: h3{
-31:     font-family: $--font-family;
-32: font-weight: 600;
-33: font-size: 30px;
-34: letter-spacing: -0.02em;
-35: text-align: center;
+44:         font-family: $--font-family;
+45:         font-weight: 400;
+46:         font-size: 16px;
+47:         // line-height: 162%;
+48:         color: #142137b3;gi
+49:     }
+50: }
 
 Backtrace:
-sass/pages/team.scss:30:in `flex'
-sass/pages/team.scss:30
+sass/pages/team.scss:49
 sass/style.scss:20
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:73:in 'block in Sass::Tree::Visitors::Perform.perform_arguments'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:65:in 'Array#zip'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:65:in 'Sass::Tree::Visitors::Perform.perform_arguments'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:358:in 'block in Sass::Tree::Visitors::Perform#visit_mixin'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:98:in 'block in Sass::Stack#with_mixin'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in 'Sass::Stack#with_frame'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:98:in 'Sass::Stack#with_mixin'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:346:in 'Sass::Tree::Visitors::Perform#visit_mixin'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in 'Sass::Tree::Visitors::Base#visit'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'block in Sass::Tree::Visitors::Perform#visit'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'block in Sass::Stack#with_base'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in 'Sass::Stack#with_frame'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'Sass::Stack#with_base'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'Sass::Tree::Visitors::Perform#visit'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block (2 levels) in Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'Array#map'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block in Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in 'Sass::Tree::Visitors::Perform#with_environment'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in 'Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in 'Sass::Tree::Visitors::Base#visit'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'block in Sass::Tree::Visitors::Perform#visit'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'block in Sass::Stack#with_base'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in 'Sass::Stack#with_frame'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'Sass::Stack#with_base'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'Sass::Tree::Visitors::Perform#visit'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block (2 levels) in Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'Array#map'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block in Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in 'Sass::Tree::Visitors::Perform#with_environment'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in 'Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in 'Sass::Tree::Visitors::Base#visit'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'block in Sass::Tree::Visitors::Perform#visit'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'block in Sass::Stack#with_base'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in 'Sass::Stack#with_frame'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'Sass::Stack#with_base'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'Sass::Tree::Visitors::Perform#visit'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block (2 levels) in Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'Array#map'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block in Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in 'Sass::Tree::Visitors::Perform#with_environment'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in 'Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in 'Sass::Tree::Visitors::Base#visit'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'block in Sass::Tree::Visitors::Perform#visit'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'block in Sass::Stack#with_base'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in 'Sass::Stack#with_frame'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'Sass::Stack#with_base'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'Sass::Tree::Visitors::Perform#visit'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block (2 levels) in Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'Array#map'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block in Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in 'Sass::Tree::Visitors::Perform#with_environment'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in 'Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in 'Sass::Tree::Visitors::Base#visit'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'block in Sass::Tree::Visitors::Perform#visit'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'block in Sass::Stack#with_base'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in 'Sass::Stack#with_frame'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'Sass::Stack#with_base'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'Sass::Tree::Visitors::Perform#visit'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in 'block (2 levels) in Sass::Tree::Visitors::Perform#visit_import'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in 'Array#map'
-C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in 'block in Sass::Tree::Visitors::Perform#visit_import'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in 'Sass::SCSS::Parser.expected'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in 'Sass::SCSS::Parser#expected'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in 'Sass::SCSS::Parser#tok!'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in 'Sass::SCSS::Parser#block'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in 'Sass::SCSS::Parser#declaration_or_ruleset'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in 'Sass::SCSS::Parser#block_child'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in 'Sass::SCSS::Parser#block_contents'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in 'Sass::SCSS::Parser#block'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in 'Sass::SCSS::Parser#declaration_or_ruleset'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in 'Sass::SCSS::Parser#block_child'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in 'Sass::SCSS::Parser#block_contents'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in 'Sass::SCSS::Parser#block'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in 'Sass::SCSS::Parser#ruleset'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in 'Sass::SCSS::Parser#block_child'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in 'Sass::SCSS::Parser#block_contents'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in 'Sass::SCSS::Parser#stylesheet'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in 'Sass::SCSS::Parser#parse'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in 'Sass::Engine#_to_tree'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in 'Sass::Engine#to_tree'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in 'block in Sass::Tree::Visitors::Perform#visit_import'
 C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in 'block in Sass::Stack#with_import'
 C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in 'Sass::Stack#with_frame'
 C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in 'Sass::Stack#with_import'
@@ -124,4 +77,4 @@ C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-listen/
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Mixin flex is missing argument $justify.\A         on line 30 of sass/pages/team.scss, in `flex'\A         from line 30 of sass/pages/team.scss\A         from line 20 of sass/style.scss\A \A 25:     box-sizing: border-box;\A 26: }\A 27: a {\A 28:     text-decoration: none;\A 29: }\A 30: h3{\A 31:     font-family: $--font-family;\A 32: font-weight: 600;\A 33: font-size: 30px;\A 34: letter-spacing: -0.02em;\A 35: text-align: center;"; }
+  content: "Error: Invalid CSS after \"...r: #142137b3;gi\": expected \"{\", was \"}\"\A         on line 49 of sass/pages/team.scss\A         from line 20 of sass/style.scss\A \A 44:         font-family: $--font-family;\A 45:         font-weight: 400;\A 46:         font-size: 16px;\A 47:         // line-height: 162%;\A 48:         color: #142137b3;gi\A 49:     }\A 50: }"; }
