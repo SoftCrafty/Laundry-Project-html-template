@@ -194,3 +194,20 @@ document.querySelectorAll('.categories_area.style_1 ul li a').forEach(link => {
         img.src = './images/service/icon4.png';
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    let progressBars = document.querySelectorAll(".progress-fill");
+    let progressValues = document.querySelectorAll(".progress-value");
+
+    progressBars.forEach((bar, index) => {
+        let value = bar.getAttribute("data-value");
+        gsap.to(bar, { width: value + "%", duration: 2, ease: "power2.out" });
+
+        gsap.to(progressValues[index], {
+            innerHTML: value + "%",
+            duration: 2,
+            snap: { innerHTML: 1 },
+            ease: "power2.out"
+        });
+    });
+});
