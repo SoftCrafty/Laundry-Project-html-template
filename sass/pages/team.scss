@@ -1,4 +1,11 @@
 .team_details_area{
+    P{
+                font-family: $--font-family;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 162%;
+                color: #142137b3;
+            }
     .team_details_wrapper{
         @include flex(row, space-between, center);
         flex-wrap: wrap;
@@ -15,20 +22,37 @@
         .meta_area{
             // background-color: red;
             border-bottom: 1px solid $--border;
-            padding-bottom: 30px;
-            P{
+            .meta_para{
+                P{
                 font-family: $--font-family;
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 162%;
                 color: #142137b3;
             }
+            }
         }
         .team_contact_area{
             ul{
                 padding: 0;
+                @include flex(column, center, flex-start);
+                gap: 6px;
+                li{
+                    font-family: $--font-family;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 162%;
+                    color: #142137b3;
+                    span{
+                        color: $--text_clr;
+                    }
+                }
             }
         }
+    }
+    .team_about_area{
+        @include flex(column, center, flex-start);
+        gap: 20px;
     }
 }
 .team_meta_name{
@@ -47,3 +71,64 @@
     }
 }
 
+ .blog_social_wrapper{
+                    @include flex(row, flex-start, center);
+                    gap: 12px;
+                    &.style_1{
+                        gap: 20px;
+                        a{
+                            @include border-radius(0px);
+                        }
+                    }
+                    h4{
+                        font-family: $--font-family;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 142%;
+                        letter-spacing: -0.02em;
+                        color: $--text-clr;
+                    }
+                    ul{
+                        padding: 0;
+                        margin: 0;
+                        @include flex(row, flex-start, center);
+                        gap: 6px;
+                        li{
+                            a{
+                                width: 40px;
+                                height: 40px;
+                                display: block;
+                                line-height: 40px;
+                                text-align: center;
+                                @include border-radius(50%);
+                                background-color: $--primary;
+                                color: $--white; color: $--white;
+                                @include transition(0.4s);
+                                &:hover{
+                                    background-color: $--border_bl;
+                                    color: $--text-clr;
+                                }
+                            }
+                            &:nth-child(2){
+                                   a{
+                                     background-color: $--text-clr;
+                                    color: $--white;
+                                    &:hover{
+                                    background-color: $--border_bl;
+                                    color: $--text-clr;
+                                }
+                                   }
+                                }
+                            &:nth-child(4){
+                                   a{
+                                     background-color: #cb2027;;
+                                    color: $--white;
+                                    &:hover{
+                                    background-color: $--border_bl;
+                                    color: $--text-clr;
+                                }
+                                   }
+                                }
+                        }
+                    }
+                }
