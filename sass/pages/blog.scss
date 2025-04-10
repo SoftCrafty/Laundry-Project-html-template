@@ -86,7 +86,7 @@
                             }
                         }
                     }
-     .blog_details_contains_area{
+     .blog-post{
             width: 100%;
             padding-right: 75px;
             @include nesthub{
@@ -95,7 +95,7 @@
             @include navmenu{
                 padding: 0;
             }
-            .blog_details_img_wrapper{
+            .single-post-iteam{
 
                 &.style_1{
                     background-color: #ebeff3;
@@ -113,7 +113,7 @@
                 &.style_2{
                     background-color: transparent;
                 }
-                .blog_details_img_card{
+                .post-thumbnail{
                     position: relative;
                     img{
                         width: 100%;
@@ -154,7 +154,17 @@
             }
 }
                 }
-                .blog_details_user_meta{
+                .post-gallery{
+                        overflow: hidden;
+                        width: 100%;
+                        position: relative;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                .post-meta{
                     @include flex(row, flex-start, center);
                     flex-wrap: wrap;
                     gap: 20px;
@@ -274,7 +284,7 @@
                     }
                 }
             }
-            .blog_details_summery{
+            blockquote{
                 @include flex(column, center, center);
                 gap: 15px;
                 padding: 40px;
@@ -298,7 +308,7 @@
                     line-height: 162%;
                     color: #142137b3;
                 }
-                h5{
+                footer{
                     font-family: $--font-family;
                     font-weight: 500;
                     font-size: 20px;
@@ -308,7 +318,7 @@
                     margin-top: 19px;
                 }
             }
-             .founder_info_area{
+             .author{
                     @include flex(row, space-between, center);
                     flex-wrap: wrap;
                     padding: 14px;
@@ -317,7 +327,7 @@
                         padding-right: 14px;
                     }
                     background: #ebeff3;
-                    .founder_img_wrapper{
+                    .author-img{
                         height: 342px;
                         background-color: red;
                         width: 100%;
@@ -327,7 +337,7 @@
                             object-fit: cover;
                         }
                     }
-                    .founder_info_wrapper{
+                    .author-text{
                         padding-left: 49px;
                         @include sm{
                             padding: 0;
@@ -359,10 +369,10 @@
                             color: #142137b3;
                             margin-top: 16px;
                         }
-                        .founder_social{
+                        .author-icon{
                             @include flex(row, space-between, center);
                             margin-top: 35px;
-                            .founder_btn{
+                            .author-btn{
                                 a{
                                     font-family: $--font-family;
                                 font-weight: 500;
@@ -589,7 +599,7 @@
                 }
                
             }
-             .blog_comment_area{
+             .post-comment{
                 
                     .blog_comment_wrapper{
                         h2{
@@ -675,7 +685,7 @@
                         }
                     }
                 }
-                .leave_comment_area{
+                .post-comments-form{
                     .leave_comment_wrapper{
                         h2{
                             font-family: $--font-family;
@@ -770,9 +780,16 @@
                     }
                 }
         }
-          .blog_details_contains{
-                    margin-top: 19px;
-                    h2{
+                    .post-title{
+                        padding-left: 40px;
+                        @include sm{
+                            padding-left: 20px;
+                        }
+                        &.style_1{
+                            padding-left: 0;
+                        }
+                        text-align: left;
+                        a{
                         font-family: $--font-family;
                         font-weight: 600;
                         font-size: 34px;
@@ -780,25 +797,56 @@
                         letter-spacing: -0.02em;
                         color: $--text_clr;
                         margin-bottom: 14px;
+                        @include transition(0.4s);
+                        &:hover{
+                            color: $--primary;
+                        }
                         @include sm{
                             font-size: 32px;
                         }
+                    
+                        }
                     }
-                    p{
+                    .post-content{
+                        padding-left: 40px;
+                        @include sm{
+                            padding-left: 20px;
+                        }
+                        &.style_1{
+                            padding-left: 0;
+                        }
+                        p{
                         font-family: $--font-family;
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 162%;
                         color: #142137b3;
                     }
+                    }
+                    .read-more{
+                        padding-left: 40px;
+                        @include sm{
+                            padding-left: 20px;
+                        }
+                        .btn_wrapper_area{
+                            width: fit-content;
+                        }
+                    }
+                    p{
+                     font-family: $--font-family;
+                     font-weight: 400;
+                     font-size: 16px;
+                     line-height: 162%;
+                     color: #142137b3;
+                                    }
                     .blog_checkbox_area{
-                        // margin-top: 38px;
                         margin-bottom: 28px;
                        @include flex(row, space-between, center);
                        @include sm{
                         gap: 30px;
                        }
                        flex-wrap: wrap;
+                       
                         .blog_checkbox_wrapper{
                             width: 50%;
                             @include sm{
@@ -827,7 +875,7 @@
                         }
                         }
                     }
-                }
+                
     .blog_details_wrapper{
                  .left-arrow{
             @include sm{
@@ -848,7 +896,7 @@
         color: $--white;
         position: absolute;
         left: 30px;
-        top: 34%;
+        top: 50%;
         transform: translateY(-50%);
         z-index: 10;
         -webkit-transform: translateY(-50%);
@@ -879,7 +927,7 @@
         color: $--white;
         position: absolute;
         right: 30px;
-        top: 34%;
+        top: 50%;
         transform: translateY(-50%);
         z-index: 10;
         -webkit-transform: translateY(-50%);
@@ -913,7 +961,7 @@
             justify-content: center;
         }
        
-        .sidebar_area{
+        .sidebar{
             @include flex(column, flex-end, flex-start);
             gap: 30px;
             width: 100%;
@@ -925,7 +973,7 @@
                 letter-spacing: -0.02em;
                 color: $--text-clr;
             }
-            .sidebar_wrapper{
+            .widget{
                 // border: 1px solid #1421371a;
                 background: #ebeff3;
                 width: 100%;
@@ -934,7 +982,7 @@
                 @include nesthubmax{
                     padding: 10px;
                 }
-                .search_box{
+                .search-form{
                     margin-top: 24px;
                     width: 100%;
                     height: 44px;
@@ -954,7 +1002,7 @@
                             color: #142137b3;
                         }
                     }
-                    span{
+                    button{
                         width: 44px;
                         height: 44px;
                         display: block;
@@ -1037,6 +1085,10 @@
                             line-height: 46px;
                             @include flex(row, space-between, center);
                             padding: 0px 20px;
+                            
+                            .dot{
+                                margin-right: 6px;
+                            }
                             .pdf_btn{
                                 margin-right: 6px;
                             }

@@ -22,11 +22,12 @@ $(document).ready(function () {
         $("#header_area").toggleClass("scrolled", $(window).scrollTop() > 100);
     });
 
-    $('.blog_slider_wrapper').slick({
+    $('.post-gallery').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        fade: true,
+        autoplaySpeed: 4000,
         prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
         nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
         speed: 2000,

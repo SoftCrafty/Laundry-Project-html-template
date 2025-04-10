@@ -312,12 +312,12 @@
     <div class="container_area">
       <div class="blog_details_wrapper">
         <div class="col-lg-9">
-          <div class="blog_details_contains_area">
-            <div class="blog_details_img_wrapper">
-              <div class="blog_details_img_card">
+          <div class="blog-post">
+            <div class="single-post-iteam">
+              <div class="post-thumbnail">
                 <img src="./images/blog_details/blog_details1.png" alt="">
               </div>
-              <div class="blog_details_user_meta">
+              <div class="post-meta">
                 <div class="blog_details_user">
                   <div class="user_img">
                     <a href="#"><img src="./images/blog_details/blog_details2.png" alt=""></a>
@@ -337,12 +337,13 @@
                   <a href="#">3 Comment</a>
                 </div>
               </div>
-              <div class="blog_details_contains">
-                <h2>How to Keep Your Garments Fresh & Clean Laundry Tips.</h2>
-                <p>Cleaning is more than just visiting places—it's about creating lasting memories, discovering new cultures, and experiencing the extrinary.
+                <h3 class="post-title style_1 pt-23"><a href="blog_details.html">How to Keep Your Garments Fresh & Clean Laundry Tips.</a></h3 class="post-title">
+               <div class="post-content style_1 pt-23">
+                 <p>Cleaning is more than just visiting places—it's about creating lasting memories, discovering new cultures, and experiencing the extrinary.
                    From breathtaking landscapes to immersive local adventures, we curate seamless travel experiences tailored to your dreams. Whether
                     you seek relaxation, adventure, or cultural exploration, we are here to turn your journey into a story worth telling. Sed consectetur lobortis 
                     arcu, ut fringilla dolor lobortis et. Maecenas ut tincidunt enim. Mauris eu condimentum.</p>
+               </div>
                 <div class="blog_checkbox_area mt-48">
                   <div class="blog_checkbox_wrapper">
                     <div class="checkbox">
@@ -364,9 +365,9 @@
                 <p>Cleaning is more than just visiting places—it's about creating lasting memories,
                    discovering new cultures, and experiencing the extrinary.
                    From breathtaking landscapes to immersive local adventures, we curate seamless trave.</p>
-              </div>
+              
             </div>
-             <div class="blog_details_summery mt-70">
+              <blockquote class="mt-60">
               <div class="summery_icon">
                 <img src="./images/blog_details/summery/icon.png" alt="">
               </div>
@@ -375,8 +376,8 @@
                 the extrinary. From breathtaking landscapes to immercal advres, ate seamless travel experiences tailored to
                 your dreams. Whether  adventure exploration, we are here to turn your journey.
               </p>
-              <h5>Don Guidelines</h5>
-            </div>
+              <footer>Don Guidelines</footer>
+             </blockquote>
             <div class="blog_details_cleaned_area pt-78">
               <div class="blog_details_cleaned_wrapper">
                 <div class="blog_details_cleaned_img">
@@ -397,21 +398,21 @@
                    Whether you seek relaxation, adventure, or cultural exploration, we are here to turn your journey.
               </p>
             </div>
-            <div class="founder_info_area mt-72">
+            <div class="author mt-72">
                <div class="col-lg-4 col-12">
-                 <div class="founder_img_wrapper">
+                 <div class="author-img">
                 <img src="./images/blog_details/founder/founder.png" alt="">
               </div>
                </div>
               <div class="col-lg-8 col-12">
-                <div class="founder_info_wrapper">
+                <div class="author-text">
                 <h4>Ceo & co-founder</h4>
                 <h5>Lurch Schpellchek</h5>
                 <p>We believe that fresh clean clothes bring confidence and comfort. With a passion
                 for quality and convenience, we provide top-notch laundry & dry cleaning services
                 tailored to meet your needs.</p>
-                <div class="founder_social">
-                  <div class="founder_btn">
+                <div class="author-icon">
+                  <div class="author-btn">
                     <a href="#">See All Post<span><i class="fa-solid fa-arrow-right"></i></span></a>
                   </div>
                   <ul> 
@@ -466,9 +467,11 @@
                 </div>
               </div>
             </div>
-            <div class="blog_comment_area mt-84">
+            <div class="post-comment mt-84">
               <div class="blog_comment_wrapper">
-                <h2>2 Comments</h2>
+                <div class="blog-comment-title">
+                  <h2>2 Comments</h2>
+                </div>
                 <div class="comment_card_area">
                   <div class="comment_card_wrapper style_2">
                     <div class="comment_user_meta">
@@ -513,11 +516,14 @@
                 </div>
               </div>
             </div>
-             <div class="leave_comment_area mt-80">
+             <div class="post-comments-form mt-80">
             <div class="leave_comment_wrapper">
-            <h2>Leave a Comment</h2>
-            <div class="leave_comment_box">
-              <div class="leave_signle_box">
+            <div class="post-comments-title">
+              <h2>Leave a Comment</h2>
+            </div>
+            <form action="#" method="post" class="comment-form">
+                <div class="leave_comment_box">
+                <div class="leave_signle_box">
                  <div class="leave_name style_1">
                    <p>Your Name *</p>
                    <input type="text">
@@ -540,21 +546,30 @@
                         <a href="#">Get Cost Estimate <span><i class="fa-solid fa-arrow-right"></i></span></a>
                  </div>
                </div>
-            </div>
+              </div>
+              </form>
           </div>
           </div>
           </div>
         </div>
         <div class="col-lg-3">
-          <div class="sidebar_area">
-            <div class="sidebar_wrapper">
-              <h4>Search</h4>
+          <div class="sidebar">
+            <div class="widget widget_search">
+              <div class="widget-title-box">
+                <h4 class="wp-block-heading">Search</h4>
+              </div>
               <div class="search_box">
-                <input type="search" placeholder="Search Here...."><span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <!-- <input type="search" placeholder="Search Here...."><span><i class="fa-solid fa-magnifying-glass"></i></span> -->
+                 <form class="search-form" action="#" method="get">
+                  <input type="text" placeholder="Search Here...">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
               </div>
             </div>
-            <div class="sidebar_wrapper">
-              <h4>Recent Posts</h4>
+            <div class="widget widget_latest_post">
+              <div class="widget-title-box">
+                <h4 class="wp-block-heading">Recent Posts</h4>
+              </div>
               <div class="recent_post_area">
                 <div class="recent_post_wrapper">
                   <div class="recent_post_img">
@@ -594,8 +609,10 @@
                 </div>
               </div>
             </div>
-            <div class="sidebar_wrapper">
-              <h4>Categories</h4>
+            <div class="widget widget_categories">
+              <div class="widget-title-box">
+                <h4 class="wp-block-heading">Categories</h4>
+              </div>
               <div class="categories_area">
                 <ul>
                 <li><a href="#"> <span><span class="dot">•</span>Laundry Services</span><span>(6)</span></a></li>
@@ -606,8 +623,10 @@
               </ul>
               </div>
             </div>
-            <div class="sidebar_wrapper">
-              <h4>Tag</h4>
+            <div class="widget widget_tag_cloud">
+              <div class="widget-title-box">
+                <h4 class="wp-block-heading">Tag</h4>
+              </div>
              <div class="tag_area">
               <ul>
                   <li><a href="#">Fresh</a></li>
@@ -621,8 +640,10 @@
               </ul>
              </div>
             </div>
-            <div class="sidebar_wrapper">
-              <h4>Follow Us</h4>
+            <div class="widget widget_social_profile">
+              <div class="widget-title-box">
+                <h4 class="wp-block-heading">Follow Us</h4>
+              </div>
              <div class="social_area">
               <ul> 
                     <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
