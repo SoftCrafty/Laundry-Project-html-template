@@ -1,4 +1,6 @@
-
+(function ($) {
+    "use strict";
+    $(document).ready(function () {
     $('.hero_section_area.home_tow_area').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -23,18 +25,7 @@
         $('.slick-current .hero_contains .sub_heading').addClass('animated'); 
     });
 
-$('.collect_area').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    prevArrow: false,
-    nextArrow: false,
-    dots: true,
-    speed: 2000,
-    easing: 'ease-in-out', 
-    dotsClass: 'docts-active-collect',
-});
+
 $('.testimonial_card_area').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -59,4 +50,21 @@ $('.testimonial_card_area').slick({
             settings: { slidesToShow: 1, slidesToScroll: 1 }
         }
     ]
+});
+
+
+    });
+})(jQuery);
+
+$('.collect_area').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    prevArrow: false,
+    nextArrow: false,
+    dots: true,
+    speed: 2000,
+    easing: 'ease-in-out',
+    dotsClass: 'docts-active-collect',
 });

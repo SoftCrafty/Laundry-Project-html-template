@@ -13,12 +13,14 @@
         text-align: center;
         @include border-radius(50%);
         cursor: pointer;
-        border: 1px solid $--border;
+        background-color: $--primary;
+        border: 1px solid transparent;
+        color: $--white;
         &:hover{
-            border: 1px solid transparent;
-            color: $--white;
-            background-color: $--primary;
+            border: 1px solid $--border;
+            color: $--text_clr;
             @include transition(0.4s);
+            background-color: #ddd;
         }
     }
 }

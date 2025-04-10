@@ -27694,11 +27694,11 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     cursor: pointer;
-    border: 1px solid #d9dbdf; }
+    background-color: #4375e7; }
     .back_top span:hover {
+      border: 1px solid #d9dbdf;
       border: 1px solid transparent;
       color: #fff;
-      background-color: #4375e7;
       transition: all 0.4s ease; }
 
 .show {
