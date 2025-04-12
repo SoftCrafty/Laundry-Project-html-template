@@ -55,16 +55,7 @@
 
                 &.style_1{
                     background-color: #ebeff3;
-                    .blog_details_contains{
-                        h2{
-                            margin-top: 25px;
-                            margin-bottom: 18px;
-
-                        }
-                        .btn_wrapper_area{
-                            width: fit-content;
-                        }
-                    }
+                   
                 }
                 &.style_2{
                     background-color: transparent;
@@ -741,6 +732,7 @@
                         @include sm{
                             padding-left: 20px;
                         }
+                        
                         &.style_1{
                             padding-left: 0;
                         }
@@ -1138,12 +1130,15 @@
             }
         }
 
-        .sidebar_wrapper{
+        .widget{
         &.style_1{
             background-color: $--primary !important;
             padding-bottom: 30px !important;
         }
     }
+
+    
+   
 
      .service_check_list{
         ul{
@@ -1167,7 +1162,8 @@
 
         }
     }
-    .service_contains_area{
+
+     .service_contains_area{
         .service_img_area{
             @include flex(row, space-between, center);
             flex-wrap: wrap;
@@ -1185,3 +1181,14 @@
             }
         }
     }
+
+     .blog_details_contains{
+                        h2{
+                            margin-top: 25px;
+                            margin-bottom: 18px;
+
+                        }
+                        .btn_wrapper_area{
+                            width: fit-content;
+                        }
+                    }

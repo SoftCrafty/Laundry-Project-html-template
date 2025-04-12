@@ -26535,11 +26535,6 @@
       padding: 0; } }
   .blog_details_area .blog-post .single-post-iteam.style_1 {
     background-color: #ebeff3; }
-    .blog_details_area .blog-post .single-post-iteam.style_1 .blog_details_contains h2 {
-      margin-top: 25px;
-      margin-bottom: 18px; }
-    .blog_details_area .blog-post .single-post-iteam.style_1 .blog_details_contains .btn_wrapper_area {
-      width: fit-content; }
   .blog_details_area .blog-post .single-post-iteam.style_2 {
     background-color: transparent; }
   .blog_details_area .blog-post .single-post-iteam .post-thumbnail {
@@ -27533,9 +27528,54 @@
             background-color: #14213724;
             color: #142137; }
 
-.sidebar_wrapper.style_1 {
+.widget.style_1 {
   background-color: #4375e7 !important;
   padding-bottom: 30px !important; }
+
+.service_check_list ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 13px; }
+  .service_check_list ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px; }
+    .service_check_list ul li span {
+      color: #4375e7; }
+    .service_check_list ul li p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 162%;
+      color: #142137b3; }
+
+.service_contains_area .service_img_area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px; }
+  .service_contains_area .service_img_area .service_img_wrapper {
+    width: calc(50% - 15px); }
+    .service_contains_area .service_img_area .service_img_wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .service_contains_area .service_img_area .service_img_wrapper {
+        width: 100%; } }
+
+.blog_details_contains h2 {
+  margin-top: 25px;
+  margin-bottom: 18px; }
+.blog_details_contains .btn_wrapper_area {
+  width: fit-content; }
 
 .principle_section_area .principle_section_wrapper .principle_contains_area {
   display: flex;

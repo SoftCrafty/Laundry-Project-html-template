@@ -310,14 +310,15 @@
     <div class="container-xxl">
       <div class="blog_details_wrapper">
         <div class="col-lg-9 col-12">
-          <div class="blog_details_contains_area">
-            <div class="blog_details_img_wrapper style_2 style_1 pb-38">
-              <div class="blog_details_img_card">
+          <div class="blog-post">
+            <div class="single-post-iteam style_2 style_1 pb-38">
+              <div class="post-thumbnail">
                 <img src="./images/service/service1.png" alt="">
               </div>
               <div class="blog_details_contains pt-1">
-                <h2>Smooth Laundry Experience</h2>
-                <p>
+                  <h2 class="post-title style_1"><a href="#">Smooth Laundry Experience</a></h2>
+                <div class="post-content style_1">
+                  <p>
                   Scheduling a pickup is as easy as visiting our website or using our mobile app. You can choose a 
                   convenient time slot, and we'll be at your doorstep. We're happy accommodate your preferences. 
                   You can let know about any special instructions when scheduling your service, and we'll make sure to follow them. 
@@ -328,6 +329,7 @@
                      we ensure every item is treated with respect. Benefit from our doorstep collection and return, 
                      designed for your comfort and convenience. Would you like a more casual version, 
                      or something for use in marketing material?</p>
+                </div>
                 <div class="service_check_list mt-25">
                     <ul>
                         <li><span><i class="fa-solid fa-circle-check"></i></span> <p>Clean Made Easy</p></li>
@@ -408,15 +410,23 @@
   <!-- FAQ section end -->
         </div>
         <div class="col-lg-3">
-          <div class="sidebar_area">
-            <div class="sidebar_wrapper">
-              <h4>Search</h4>
+          <div class="sidebar">
+            <div class="widget widget_search">
+              <div class="widget-title-box">
+                <h4 class="wp-block-heading">Search</h4>
+              </div>
               <div class="search_box">
-                <input type="search" placeholder="Search Here...."><span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <!-- <input type="search" placeholder="Search Here...."><span><i class="fa-solid fa-magnifying-glass"></i></span> -->
+                 <form class="search-form" action="#" method="get">
+                  <input type="text" placeholder="Search Here...">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
               </div>
             </div>
-            <div class="sidebar_wrapper">
-              <h4>Categories</h4>
+            <div class="widget widget_categories">
+              <div class="widget-title-box">
+                <h4 class="wp-block-heading">Categories</h4>
+              </div>
               <div class="categories_area">
                 <ul>
                 <li><a href="#"> <span><span class="dot">•</span>Laundry Services</span><span>(6)</span></a></li>
@@ -427,7 +437,7 @@
               </ul>
               </div>
             </div>
-            <div class="sidebar_wrapper style_1">
+            <div class="widget style_1">
               <div class="footer_contact_wrapper">
                      <div class="icon">
                         <a href="tel:(629) 555-0129"><span><img src="./images/service/icon.png" alt=""></span></a>
@@ -438,7 +448,7 @@
                      </div>
                    </div>
             </div>
-             <div class="sidebar_wrapper">
+             <div class="widget">
               <h4>Company profile</h4>
               <div class="categories_area style_1">
                 <ul>
