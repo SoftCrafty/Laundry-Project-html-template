@@ -840,6 +840,9 @@ progress {
     .container-xxl {
         max-width: 1320px
     }
+    .container-xxl {
+        max-width: 1600px
+    }
 }
 
 :root {

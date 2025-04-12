@@ -21703,12 +21703,6 @@
   100% {
     transform: translateX(50vw);
     transform: translateX(50vw); } }
-.container_area {
-  max-width: 1600px;
-  margin: auto;
-  width: 100%;
-  padding: 0px 10px; }
-
 .header_contact_area {
   overflow: hidden; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
