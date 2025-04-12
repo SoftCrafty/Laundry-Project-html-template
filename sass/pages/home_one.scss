@@ -252,7 +252,7 @@
         background-size: cover;
         position: relative;
          
-            .container_area{
+            .container-xxl{
                 position: relative;
                 .line{
                 position: absolute;
@@ -1351,89 +1351,90 @@
         @include md{
             justify-content: center;
         }
-        .packages_contains{
-            @include sm{
-                width: 100%;
-            }
-            @include md{
-                width: calc(50% - 30px);
-            }
-            @include nesthub{
-                width: calc(33.33% - 30px);
-            }
-            max-width: 378px;
-            height: 324px;
-            width: calc(25% - 30px);
-            @include transition(0.6s);
-            position: relative;
-            &:hover{
-                    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-                    transform: translateY(-5px);
-                    .packages_title{
-                        img{
-                            @include transition(1.5s);
-                            transform: rotateY(360deg);
-                            -webkit-transform: rotateY(360deg);
-                            -moz-transform: rotateY(360deg);
-                            -ms-transform: rotateY(360deg);
-                            -o-transform: rotateY(360deg);
-}
-                    }
-                }
-            .packages_title_wrapper{
-                width: 100%;
-                height: 158px;
-                background-color: #ecf2fe ;
-                @include flex(row, space-between, flex-start);
-                padding: 30px;
+    }
+    .packages_contains{
+        // @include sm{
+        //     width: 100%;
+        // }
+        // @include md{
+        //     width: calc(50% - 30px);
+        // }
+        // @include nesthub{
+        //     width: calc(33.33% - 30px);
+        // }
+        max-width: 378px;
+        height: 324px;
+        width: 100%;
+        // width: calc(25% - 30px);
+        @include transition(0.6s);
+        position: relative;
+        &:hover{
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+                transform: translateY(-5px);
                 .packages_title{
-                    @include flex(row, space-between, center);
-                    width: 100%;
-                    h4{
-                        font-family: $--font-family;
-                        font-weight: 600;
-                        font-size: 24px;
-                        color: $--text_clr;
-                    }
+                    img{
+                        @include transition(1.5s);
+                        transform: rotateY(360deg);
+                        -webkit-transform: rotateY(360deg);
+                        -moz-transform: rotateY(360deg);
+                        -ms-transform: rotateY(360deg);
+                        -o-transform: rotateY(360deg);
+}
                 }
             }
-            .packages_details{
-                border: 1px solid rgba(20, 33, 55, 0.16);
-                width: 85%;
-                height: 210px;
-                background-color: $--white;
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                @include transformX(-50%);
-                padding: 30px 10px 0px 30px;
-                @include nesthub{
-                    padding: 20px 10px 0px 20px;
+        .packages_title_wrapper{
+            width: 100%;
+            height: 158px;
+            background-color: #ecf2fe ;
+            @include flex(row, space-between, flex-start);
+            padding: 30px;
+            .packages_title{
+                @include flex(row, space-between, center);
+                width: 100%;
+                h4{
+                    font-family: $--font-family;
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: $--text_clr;
                 }
+            }
+        }
+        .packages_details{
+            border: 1px solid rgba(20, 33, 55, 0.16);
+            width: 85%;
+            height: 210px;
+            background-color: $--white;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            @include transformX(-50%);
+            padding: 30px 10px 0px 30px;
+            @include nesthub{
+                padding: 20px 10px 0px 20px;
+            }
+            @include nesthubmax{
+                padding: 20px 10px 0px 20px;
+            }
+            ul{
+                padding: 0px;
+                @include flex(column, flex-start, flex-start);
+                gap: 18px;
                 @include nesthubmax{
-                    padding: 20px 10px 0px 20px;
+                    gap:10px;
                 }
-                ul{
-                    padding: 0px;
-                    @include flex(column, flex-start, flex-start);
-                    gap: 18px;
-                    @include nesthubmax{
-                        gap:10px;
+                li{
+                    @include flex(row, flex-start, flex-start);
+                    gap: 10px;
+                    p{
+                        font-family: $--font-family;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 162%;
+                    color: #142137b3;
+                    @include transition(0.5s);
                     }
-                    li{
-                        @include flex(row, flex-start, flex-start);
-                        gap: 10px;
-                        p{
-                            font-family: $--font-family;
-                        font-weight: 500;
-                        font-size: 16px;
-                        line-height: 162%;
-                        color: #142137b3;
-                        @include transition(0.5s);
-                        }
-                        span{
-                        color: #22E17F;
-                        }
+                    span{
+                    color: #22E17F;
                     }
                 }
             }

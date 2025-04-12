@@ -21921,15 +21921,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; }
-    .hero_section_area .hero_section .container_area {
+    .hero_section_area .hero_section .container-xxl {
       position: relative; }
-      .hero_section_area .hero_section .container_area .line {
+      .hero_section_area .hero_section .container-xxl .line {
         position: absolute;
         top: 49%;
         left: 110px;
         z-index: 100; }
         @media only screen and (min-width: 0px) and (max-width: 767px) {
-          .hero_section_area .hero_section .container_area .line img {
+          .hero_section_area .hero_section .container-xxl .line img {
             display: none; } }
     .hero_section_area .hero_section .overly_tow {
       border-radius: 100%;
@@ -22866,96 +22866,87 @@
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .price_packages_area .price_packages_wrapper {
       justify-content: center; } }
-  .price_packages_area .price_packages_wrapper .packages_contains {
-    max-width: 378px;
-    height: 324px;
-    width: calc(25% - 30px);
-    transition: all 0.6s ease;
-    position: relative; }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .price_packages_area .price_packages_wrapper .packages_contains {
-        width: 100%; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .price_packages_area .price_packages_wrapper .packages_contains {
-        width: calc(50% - 30px); } }
-    @media only screen and (min-width: 992px) and (max-width: 1024px) {
-      .price_packages_area .price_packages_wrapper .packages_contains {
-        width: calc(33.33% - 30px); } }
-    .price_packages_area .price_packages_wrapper .packages_contains:hover {
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-      transform: translateY(-5px); }
-      .price_packages_area .price_packages_wrapper .packages_contains:hover .packages_title img {
-        transition: all 1.5s ease;
-        transform: rotateY(360deg);
-        -webkit-transform: rotateY(360deg);
-        -moz-transform: rotateY(360deg);
-        -ms-transform: rotateY(360deg);
-        -o-transform: rotateY(360deg); }
-    .price_packages_area .price_packages_wrapper .packages_contains .packages_title_wrapper {
-      width: 100%;
-      height: 158px;
-      background-color: #ecf2fe;
+.price_packages_area .packages_contains {
+  max-width: 378px;
+  height: 324px;
+  width: 100%;
+  transition: all 0.6s ease;
+  position: relative; }
+  .price_packages_area .packages_contains:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); }
+    .price_packages_area .packages_contains:hover .packages_title img {
+      transition: all 1.5s ease;
+      transform: rotateY(360deg);
+      -webkit-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+      -ms-transform: rotateY(360deg);
+      -o-transform: rotateY(360deg); }
+  .price_packages_area .packages_contains .packages_title_wrapper {
+    width: 100%;
+    height: 158px;
+    background-color: #ecf2fe;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px; }
+    .price_packages_area .packages_contains .packages_title_wrapper .packages_title {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
+      width: 100%; }
+      .price_packages_area .packages_contains .packages_title_wrapper .packages_title h4 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        color: #142137; }
+  .price_packages_area .packages_contains .packages_details {
+    border: 1px solid rgba(20, 33, 55, 0.16);
+    width: 85%;
+    height: 210px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    padding: 30px 10px 0px 30px; }
+    @media only screen and (min-width: 992px) and (max-width: 1024px) {
+      .price_packages_area .packages_contains .packages_details {
+        padding: 20px 10px 0px 20px; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+      .price_packages_area .packages_contains .packages_details {
+        padding: 20px 10px 0px 20px; } }
+    .price_packages_area .packages_contains .packages_details ul {
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
       align-items: flex-start;
-      padding: 30px; }
-      .price_packages_area .price_packages_wrapper .packages_contains .packages_title_wrapper .packages_title {
+      gap: 18px; }
+      @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+        .price_packages_area .packages_contains .packages_details ul {
+          gap: 10px; } }
+      .price_packages_area .packages_contains .packages_details ul li {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%; }
-        .price_packages_area .price_packages_wrapper .packages_contains .packages_title_wrapper .packages_title h4 {
-          font-family: "Poppins", sans-serif;
-          font-weight: 600;
-          font-size: 24px;
-          color: #142137; }
-    .price_packages_area .price_packages_wrapper .packages_contains .packages_details {
-      border: 1px solid rgba(20, 33, 55, 0.16);
-      width: 85%;
-      height: 210px;
-      background-color: #fff;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      -o-transform: translateX(-50%);
-      padding: 30px 10px 0px 30px; }
-      @media only screen and (min-width: 992px) and (max-width: 1024px) {
-        .price_packages_area .price_packages_wrapper .packages_contains .packages_details {
-          padding: 20px 10px 0px 20px; } }
-      @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-        .price_packages_area .price_packages_wrapper .packages_contains .packages_details {
-          padding: 20px 10px 0px 20px; } }
-      .price_packages_area .price_packages_wrapper .packages_contains .packages_details ul {
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 18px; }
-        @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-          .price_packages_area .price_packages_wrapper .packages_contains .packages_details ul {
-            gap: 10px; } }
-        .price_packages_area .price_packages_wrapper .packages_contains .packages_details ul li {
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: flex-start;
-          gap: 10px; }
-          .price_packages_area .price_packages_wrapper .packages_contains .packages_details ul li p {
-            font-family: "Poppins", sans-serif;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 162%;
-            color: #142137b3;
-            transition: all 0.5s ease; }
-          .price_packages_area .price_packages_wrapper .packages_contains .packages_details ul li span {
-            color: #22E17F; }
+        gap: 10px; }
+        .price_packages_area .packages_contains .packages_details ul li p {
+          font-family: "Poppins", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 162%;
+          color: #142137b3;
+          transition: all 0.5s ease; }
+        .price_packages_area .packages_contains .packages_details ul li span {
+          color: #22E17F; }
 .price_packages_area .price_packages_btn_wrapper {
   margin-top: 50px;
   display: flex;
@@ -25996,7 +25987,7 @@
   background-size: cover;
   height: 370px; }
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
-    .inner_hero_section_area .container_area {
+    .inner_hero_section_area .container_xxl {
       padding: 0px 40px; } }
   .inner_hero_section_area .inner_page_overly {
     background: linear-gradient(90deg, #192f54 0%, rgba(20, 33, 55, 0.1) 89.82%);
