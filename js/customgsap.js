@@ -29,7 +29,7 @@ gsap.from(".team_member_card_wrapper", {
     scrollTrigger: { trigger: ".team_member_card_area", start: "top 80%", toggleActions: "play none none reverse" },
     opacity: 0, y: 50, duration: 1, stagger: 0.4,
 });
-gsap.from(".inner_page_overly .container_area h1 span", {
+gsap.from(".inner_page_overly .container-xxl h1 span", {
     x: 100,
     opacity: 0,
     duration: 2,
