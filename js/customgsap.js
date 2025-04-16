@@ -18,7 +18,7 @@ gsap.from(".about_card_wrapper", {
     });
 }
 gsap.from(".packages_title_wrapper", {
-    scrollTrigger: { trigger: ".packages_contains", start: "top 80%", toggleActions: "play none none reverse" },
+    scrollTrigger: { trigger: ".price_packages_area", start: "top 80%", toggleActions: "play none none reverse" },
     opacity: 0, y: 50, duration: 1, stagger: 0.3,
 });
 gsap.from(".blog_news_contains", {

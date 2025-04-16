@@ -1,7 +1,5 @@
 
 .btn_wrapper_area{
-    padding: 0px 34px;
-    // background-color: $--primary;
     text-align: center;
     line-height: 54px;
     border: 1px solid transparent;
@@ -10,6 +8,11 @@
     z-index: 1;
     overflow: hidden;
     cursor: pointer;
+    a{
+        padding: 0px 34px;
+        line-height: 54px;
+        display: block;
+    }
     
                   &::after{
             content: "";
@@ -136,7 +139,10 @@
         }
     }
     &.style_2{
-        padding: 0px 24px;
+        // padding: 0px 24px;
+        a{
+            padding: 0px 24px;
+        }
         @include border-radius(100px);
         background-color: $--white !important;
         position: relative;
@@ -206,8 +212,15 @@
     }
     &.style_3{
     padding: 0px;
+        // padding-left: 30px;
+        // padding-right: 10px;
+        a{
+            // background-color: red;
+            padding: 0px;
+            
         padding-left: 30px;
         padding-right: 10px;
+        }
         @include border-radius(50px);
         background-color: $--text-clr;
         border: 1px solid transparent;
@@ -307,8 +320,11 @@
     }
     &.style_4{
         padding: 0px;
+        a{
+            padding: 0px;
         padding-left: 30px;
         padding-right: 10px;
+        }
         @include border-radius(50px);
         border: 1px solid $--border_bl;
         background-color: transparent;

@@ -573,15 +573,17 @@
                                 .comment_user_meta{
                                     @include flex(row, space-between, center);
                                     .comment_reply_btn{
-                                        a{
-                                font-family: $--font-family;
-                                font-weight: 400;
-                                font-size: 16px;
-                                line-height: 162%;
-                                color: #142137b3;
-                                border: 1px solid rgba(28, 28, 28, 0.1);
-                                border-radius: 4px;
-                                padding: 5px 12px;
+                                        button{
+                                            font-family: $--font-family;
+                                            font-weight: 400;
+                                            font-size: 16px;
+                                            line-height: 162%;
+                                            color: #142137b3;
+                                            border: none;
+                                            border: 1px solid rgba(28, 28, 28, 0.1);
+                                            border-radius: 4px;
+                                            padding: 5px 12px;
+                                            background-color: transparent;
                                 span{
                                     margin-right: 5px;
                                 }
