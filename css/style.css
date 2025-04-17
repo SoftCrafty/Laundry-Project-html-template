@@ -25124,6 +25124,15 @@
       display: block; } }
   .mean-nav ul {
     padding: 0px; }
+    .mean-nav ul li .dropdownbtn_active {
+      background-color: red; }
+      .mean-nav ul li .dropdownbtn_active i {
+        transition: all 0.4s ease;
+        transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg); }
     .mean-nav ul li > span {
       width: 100%;
       display: block;
