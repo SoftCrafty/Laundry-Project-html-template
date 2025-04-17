@@ -1485,14 +1485,14 @@
                 li{
                     @include flex(row, flex-start, flex-start);
                     gap: 10px;
-                    p{
+                    
                         font-family: $--font-family;
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 162%;
                     color: #142137b3;
                     @include transition(0.5s);
-                    }
+                    
                     span{
                     color: #22E17F;
                     }
