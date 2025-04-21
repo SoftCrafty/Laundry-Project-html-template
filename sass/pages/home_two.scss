@@ -832,7 +832,9 @@ li {
             gap: 30px;
             flex-wrap: wrap;
             .team_member_card_wrapper{
+                max-width: 378px;
                 width: calc(25% - 30px);
+
                 @include nesthub{
                     width: calc(33.33% - 30px);
                 }
@@ -880,11 +882,15 @@ li {
                 .team_crad_img{
                     width: 100%;
                     margin-top: 32px;
+                    @include sm{
+                        padding: 30px;
+                    }
                     img{
                         object-fit: contain;
                         float: right;
                         @include sm{
                             width: 100%;
+
                         }
                     }
                 }

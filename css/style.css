@@ -23998,6 +23998,7 @@
       .team_members_area .team_member_area_wrapper .team_member_card_area {
         justify-content: center; } }
     .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper {
+      max-width: 378px;
       width: calc(25% - 30px);
       padding: 40px;
       border: 1px solid #14213724;
@@ -24044,6 +24045,9 @@
       .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper .team_crad_img {
         width: 100%;
         margin-top: 32px; }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper .team_crad_img {
+            padding: 30px; } }
         .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper .team_crad_img img {
           object-fit: contain;
           float: right; }
