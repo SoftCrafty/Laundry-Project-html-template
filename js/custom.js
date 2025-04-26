@@ -4,11 +4,10 @@
     $(document).ready(function () {
 
         // Sidebar (Off-Canvas Menu) Toggle
-        $(".mobile-menu-toggle-btn, .mobile-menu-bar").on("click", function () {
+        $(document).on("click", ".mobile-menu-toggle-btn, .mobile-menu-bar", function () {
             $(".menu-sidebar-area, .body-overlay").addClass("active");
         });
-
-        $(".menu-sidebar-close-btn, .cross_btn, .body-overlay").on("click", function () {
+        $(document).on("click", ".menu-sidebar-close-btn, .cross_btn, .body-overlay", function () {
             $(".menu-sidebar-area, .body-overlay").removeClass("active");
         });
 
@@ -23,6 +22,15 @@
 
         $(window).on("scroll", function () {
             $("#header_area").toggleClass("scrolled", $(window).scrollTop() > 100);
+            if ($(window).scrollTop() > 200) {
+                $(".back_top").addClass("show");
+            } else {
+                $(".back_top").removeClass("show");
+            }
+        });
+
+        $(document).on("click", ".back_top", function () {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
         });
 
         // Post Gallery Slider
@@ -85,7 +93,7 @@
         $(window).on('resize', initReviewSlider);
 
         // Tab Active Class Toggle
-        $(".tab").click(function () {
+        $(document).on("click", ".tab", function () {
             $(".tab").removeClass("active");
             $(this).addClass("active");
         });
@@ -116,7 +124,7 @@
         });
 
         // Dropdown Menu Toggle
-        $(".dropdown_btn").on("click", function (event) {
+        $(document).on("click", ".dropdown_btn", function (event) {
             event.stopPropagation();
             let parentLi = $(this).closest("li");
             let dropdown = parentLi.find(".dropdown");
@@ -128,19 +136,6 @@
                 dropdown.css("maxHeight", dropdown[0].scrollHeight + "px");
                 dropdown.addClass("active");
             }
-        });
-
-        // Back to Top Button
-        $(window).on("scroll", function () {
-            if ($(window).scrollTop() > 200) {
-                $(".back_top").addClass("show");
-            } else {
-                $(".back_top").removeClass("show");
-            }
-        });
-
-        $(".back_top").on("click", function () {
-            $("html, body").animate({ scrollTop: 0 }, "slow");
         });
 
         // Hero Section Slider
@@ -164,19 +159,44 @@
             $('.slick-current .hero_contains .heading, .slick-current .hero_contains .sub_heading').addClass('animated');
         });
 
+        // Home Two Hero Section Slider
+        $('.hero_section_area.home_tow_area').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
+            nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+            dots: true,
+            speed: 2000,
+            easing: 'ease-in-out',
+            dotsClass: 'home_two_dots',
+            autoplay: true,
+            autoplaySpeed: 4000,
+        });
+
+        $('.testimonial_card_area').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
+            nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            speed: 2000,
+            easing: "ease-in-out",
+            responsive: [
+                { breakpoint: 1100, settings: { slidesToShow: 2 } },
+                { breakpoint: 768, settings: { slidesToShow: 1 } },
+                { breakpoint: 480, settings: { slidesToShow: 1 } }
+            ]
+        });
+
         // Categories Hover Effects
-        $('.categories_area.style_1 ul li a').each(function () {
-            let link = $(this);
-
-            link.on("mouseenter", function () {
-                link.find('.download_btn img').attr('src', './images/service/icon3.png');
-                link.find('.pdf_btn img').attr('src', './images/service/icon5.png');
-            });
-
-            link.on("mouseleave", function () {
-                link.find('.download_btn img').attr('src', './images/service/icon2.png');
-                link.find('.pdf_btn img').attr('src', './images/service/icon4.png');
-            });
+        $(document).on("mouseenter", ".categories_area.style_1 ul li a", function () {
+            $(this).find('.download_btn img').attr('src', './images/service/icon3.png');
+            $(this).find('.pdf_btn img').attr('src', './images/service/icon5.png');
+        });
+        $(document).on("mouseleave", ".categories_area.style_1 ul li a", function () {
+            $(this).find('.download_btn img').attr('src', './images/service/icon2.png');
+            $(this).find('.pdf_btn img').attr('src', './images/service/icon4.png');
         });
 
         // Progress Bar Animation
@@ -199,28 +219,83 @@
             });
         });
 
-    });
-    // $(document).ready(function () {
-    $('.playBtn').magnificPopup({
-        type: 'iframe',
-        disableOn: 700,
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false,
-        iframe: {
-            patterns: {
-                youtube: {
-                    index: 'youtube.com/',
-                    id: function (url) {
-                        var match = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
-                        return match && match[1] ? match[1] : null;
-                    },
-                    src: 'https://www.youtube.com/embed/i6ZU0Hc3ap8?si=36VYEBItQRDb7r7a'
+        // FAQ Toggle
+        const $faqs = $(".faq");
+
+        if ($faqs.length > 1) {
+            $faqs.eq(1).addClass("active");
+            $faqs.eq(1).find(".answer").css("max-height", $faqs.eq(1).find(".answer")[0].scrollHeight + "px");
+            $faqs.eq(1).find(".icon").text("−");
+        }
+
+        $(document).on("click", ".faq", function () {
+            const $this = $(this);
+            const $answer = $this.find(".answer");
+            const $icon = $this.find(".icon");
+
+            if (!$this.hasClass("active")) {
+                $faqs.removeClass("active").find(".answer").css("max-height", "0");
+                $faqs.find(".icon").text("+");
+
+                $this.addClass("active");
+                $answer.css("max-height", $answer[0].scrollHeight + "px");
+                $icon.text("−");
+            } else {
+                $this.removeClass("active");
+                $answer.css("max-height", "0");
+                $icon.text("+");
+            }
+        });
+
+        // Collect Area Slider
+        $('.collect_area').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            prevArrow: false,
+            nextArrow: false,
+            dots: true,
+            speed: 2000,
+            easing: 'ease-in-out',
+            dotsClass: 'docts-active-collect',
+        });
+
+        // Video Popup
+        $('.playBtn').magnificPopup({
+            type: 'iframe',
+            disableOn: 700,
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false,
+            iframe: {
+                patterns: {
+                    youtube: {
+                        index: 'youtube.com/',
+                        id: function (url) {
+                            var match = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
+                            return match && match[1] ? match[1] : null;
+                        },
+                        src: 'https://www.youtube.com/embed/i6ZU0Hc3ap8?si=36VYEBItQRDb7r7a'
+                    }
                 }
             }
-        }
+        });
+
     });
 
-    // });
+    // Remove preloader after page load
+    $(window).on("load", function () {
+        const preloader = document.querySelector(".preloader_area");
+
+        preloader.style.transition = "all 0.5s ease";
+        preloader.style.opacity = "0";
+        preloader.style.visibility = "hidden";
+
+        setTimeout(() => {
+            preloader.style.display = "none";
+        }, 600);
+    });
+
 })(jQuery);
