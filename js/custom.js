@@ -1,8 +1,6 @@
 (function ($) {
     "use strict";
-
     $(document).ready(function () {
-
         // Sidebar (Off-Canvas Menu) Toggle
         $(document).on("click", ".mobile-menu-toggle-btn, .mobile-menu-bar", function () {
             $(".menu-sidebar-area, .body-overlay").addClass("active");
@@ -10,7 +8,6 @@
         $(document).on("click", ".menu-sidebar-close-btn, .cross_btn, .body-overlay", function () {
             $(".menu-sidebar-area, .body-overlay").removeClass("active");
         });
-
         // Sticky Navbar
         function addStickyNav(navSelector, scrollOffset = 200, activeClass = 'active') {
             let nav = $(navSelector);
@@ -19,7 +16,6 @@
             });
         }
         addStickyNav('#top_nav');
-
         $(window).on("scroll", function () {
             $("#header_area").toggleClass("scrolled", $(window).scrollTop() > 100);
             if ($(window).scrollTop() > 200) {
@@ -28,11 +24,9 @@
                 $(".back_top").removeClass("show");
             }
         });
-
         $(document).on("click", ".back_top", function () {
             $("html, body").animate({ scrollTop: 0 }, "slow");
         });
-
         // Post Gallery Slider
         $('.post-gallery').slick({
             slidesToShow: 1,
@@ -45,7 +39,6 @@
             speed: 2000,
             easing: 'ease-in-out',
         });
-
         // Cleaning Slider
         var $cleaningSlider = $('.cleaning_container_area');
         $cleaningSlider.slick({
@@ -64,7 +57,6 @@
                 { breakpoint: 600, settings: { slidesToShow: 1 } }
             ]
         });
-
         // Review Slider
         var $reviewSlider = $('.customers_reviews_wrapper');
         function initReviewSlider() {
@@ -91,19 +83,16 @@
         }
         initReviewSlider();
         $(window).on('resize', initReviewSlider);
-
         // Tab Active Class Toggle
         $(document).on("click", ".tab", function () {
             $(".tab").removeClass("active");
             $(this).addClass("active");
         });
-
         // Scroll-triggered Counter Animation
         $(".about_count").each(function () {
             let counter = $(this);
             let targetValue = counter.data("count").toString().replace(/\D/g, "");
             let suffix = counter.data("count").toString().replace(/\d/g, "");
-
             gsap.to(counter[0], {
                 innerText: targetValue,
                 snap: "innerText",
@@ -122,7 +111,6 @@
                 }
             });
         });
-
         // Dropdown Menu Toggle
         $(document).on("click", ".dropdown_btn", function (event) {
             event.stopPropagation();
@@ -137,7 +125,6 @@
                 dropdown.addClass("active");
             }
         });
-
         // Hero Section Slider
         $('.hero_section_area').slick({
             slidesToShow: 1,
@@ -150,29 +137,12 @@
             speed: 1000,
             cssEase: 'ease-in-out',
         });
-
         $('.slick-current .hero_contains .heading').addClass('animated');
         $('.slick-current .hero_contains .sub_heading').addClass('animated');
-
         $('.hero_section_area').on('afterChange', function (event, slick, currentSlide) {
             $('.hero_contains .heading, .hero_contains .sub_heading').removeClass('animated');
             $('.slick-current .hero_contains .heading, .slick-current .hero_contains .sub_heading').addClass('animated');
         });
-
-        // Home Two Hero Section Slider
-        // $('.hero_section_area.home_tow_area').slick({
-        //     slidesToShow: 1,
-        //     slidesToScroll: 1,
-        //     prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
-        //     nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
-        //     dots: true,
-        //     speed: 2000,
-        //     easing: 'ease-in-out',
-        //     dotsClass: 'home_two_dots',
-        //     autoplay: true,
-        //     autoplaySpeed: 4000,
-        // });
-
         $('.testimonial_card_area').slick({
             slidesToShow: 4,
             slidesToScroll: 1,
@@ -188,8 +158,6 @@
                 { breakpoint: 480, settings: { slidesToShow: 1 } }
             ]
         });
-
-        // Categories Hover Effects
         $(document).on("mouseenter", ".categories_area.style_1 ul li a", function () {
             $(this).find('.download_btn img').attr('src', './images/service/icon3.png');
             $(this).find('.pdf_btn img').attr('src', './images/service/icon5.png');
@@ -198,19 +166,15 @@
             $(this).find('.download_btn img').attr('src', './images/service/icon2.png');
             $(this).find('.pdf_btn img').attr('src', './images/service/icon4.png');
         });
-
-        // Progress Bar Animation
         $(".progress-fill").each(function (index) {
             let bar = $(this);
             let value = bar.data("value");
             let valueText = $(".progress-value").eq(index);
-
             gsap.to(bar, {
                 width: value + "%",
                 duration: 2,
                 ease: "power2.out"
             });
-
             gsap.to(valueText[0], {
                 innerHTML: value + "%",
                 duration: 2,
@@ -218,7 +182,6 @@
                 ease: "power2.out"
             });
         });
-
         // FAQ Toggle
         const $faqs = $(".faq");
 
@@ -227,16 +190,13 @@
             $faqs.eq(1).find(".answer").css("max-height", $faqs.eq(1).find(".answer")[0].scrollHeight + "px");
             $faqs.eq(1).find(".icon").text("−");
         }
-
         $(document).on("click", ".faq", function () {
             const $this = $(this);
             const $answer = $this.find(".answer");
             const $icon = $this.find(".icon");
-
             if (!$this.hasClass("active")) {
                 $faqs.removeClass("active").find(".answer").css("max-height", "0");
                 $faqs.find(".icon").text("+");
-
                 $this.addClass("active");
                 $answer.css("max-height", $answer[0].scrollHeight + "px");
                 $icon.text("−");
@@ -246,7 +206,6 @@
                 $icon.text("+");
             }
         });
-
         // Collect Area Slider
         $('.collect_area').slick({
             slidesToShow: 1,
@@ -260,7 +219,6 @@
             easing: 'ease-in-out',
             dotsClass: 'docts-active-collect',
         });
-
         // Video Popup
         $('.playBtn').magnificPopup({
             type: 'iframe',
@@ -282,20 +240,15 @@
                 }
             }
         });
-
     });
-
     // Remove preloader after page load
     $(window).on("load", function () {
         const preloader = document.querySelector(".preloader_area");
-
         preloader.style.transition = "all 0.5s ease";
         preloader.style.opacity = "0";
         preloader.style.visibility = "hidden";
-
         setTimeout(() => {
             preloader.style.display = "none";
         }, 600);
     });
-
 })(jQuery);

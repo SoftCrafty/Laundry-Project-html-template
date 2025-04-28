@@ -1,27 +1,16 @@
-// Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
-
-// Function to initialize all GSAP animations
 function initGSAPAnimations() {
-    // Only run animations if the window width is greater than 768px
     if (window.innerWidth > 768) {
-        // Animation for .about_card_wrapper (multiple elements)
         animateAboutCardWrapper();
-
-        // Animation for .about_page_overly_card (single element)
         animateAboutPageOverlyCard();
     }
-
-    // General animations that don't depend on window width
     animatePackagesTitleWrapper();
     animateBlogNewsContains();
     animateTeamMemberCardWrapper();
     animateInnerPageOverlySpan();
 }
-
-// Animation for .about_card_wrapper (Multiple elements)
 function animateAboutCardWrapper() {
-    const aboutCardWrappers = document.querySelectorAll(".about_card_wrapper");  // Select all elements
+    const aboutCardWrappers = document.querySelectorAll(".about_card_wrapper"); 
     if (aboutCardWrappers.length > 0) {
         gsap.from(aboutCardWrappers, {
             scrollTrigger: {
@@ -33,14 +22,12 @@ function animateAboutCardWrapper() {
             opacity: 0,
             rotate: 360,
             duration: 1,
-            stagger: 0.3,  // Stagger animation between multiple elements
+            stagger: 0.3,  
         });
     }
 }
-
-// Animation for .about_page_overly_card (Single element)
 function animateAboutPageOverlyCard() {
-    const aboutPageOverlyCard = document.querySelector(".about_page_overly_card");  // Select the single element
+    const aboutPageOverlyCard = document.querySelector(".about_page_overly_card");
     if (aboutPageOverlyCard) {
         gsap.to(aboutPageOverlyCard, {
             x: 150,
@@ -51,8 +38,6 @@ function animateAboutPageOverlyCard() {
         });
     }
 }
-
-// Animation for .packages_title_wrapper (Multiple elements)
 function animatePackagesTitleWrapper() {
     const packagesTitleWrapper = document.querySelectorAll(".packages_title_wrapper");  // Select all elements
     if (packagesTitleWrapper.length > 0) {
@@ -65,14 +50,12 @@ function animatePackagesTitleWrapper() {
             opacity: 0,
             y: 50,
             duration: 1,
-            stagger: 0.3,  // Stagger animation between multiple elements
+            stagger: 0.3, 
         });
     }
 }
-
-// Animation for .blog_news_contains (Multiple elements)
 function animateBlogNewsContains() {
-    const blogNewsContains = document.querySelectorAll(".blog_news_contains");  // Select all elements
+    const blogNewsContains = document.querySelectorAll(".blog_news_contains");
     if (blogNewsContains.length > 0) {
         gsap.from(blogNewsContains, {
             scrollTrigger: {
@@ -83,12 +66,10 @@ function animateBlogNewsContains() {
             opacity: 0,
             y: 50,
             duration: 1,
-            stagger: 0.3,  // Stagger animation between multiple elements
+            stagger: 0.3,
         });
     }
 }
-
-// Animation for .team_member_card_wrapper (Multiple elements)
 function animateTeamMemberCardWrapper() {
     const teamMemberCardWrappers = document.querySelectorAll(".team_member_card_wrapper");  // Select all elements
     if (teamMemberCardWrappers.length > 0) {
@@ -101,14 +82,12 @@ function animateTeamMemberCardWrapper() {
             opacity: 0,
             y: 50,
             duration: 1,
-            stagger: 0.4,  // Stagger animation between multiple elements
+            stagger: 0.4,
         });
     }
 }
-
-// Animation for .inner_page_overly .container-xxl h1 span (Multiple elements)
 function animateInnerPageOverlySpan() {
-    const innerPageOverlySpans = document.querySelectorAll(".inner_page_overly .container-xxl h1 span");  // Select all elements
+    const innerPageOverlySpans = document.querySelectorAll(".inner_page_overly .container-xxl h1 span"); 
     if (innerPageOverlySpans.length > 0) {
         gsap.from(innerPageOverlySpans, {
             x: 100,
@@ -119,8 +98,6 @@ function animateInnerPageOverlySpan() {
         });
     }
 }
-
-// Initialize all animations when DOM is ready
 document.addEventListener("DOMContentLoaded", function () {
     initGSAPAnimations();
 });
