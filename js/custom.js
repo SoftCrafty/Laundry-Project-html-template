@@ -160,18 +160,18 @@
         });
 
         // Home Two Hero Section Slider
-        $('.hero_section_area.home_tow_area').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
-            nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
-            dots: true,
-            speed: 2000,
-            easing: 'ease-in-out',
-            dotsClass: 'home_two_dots',
-            autoplay: true,
-            autoplaySpeed: 4000,
-        });
+        // $('.hero_section_area.home_tow_area').slick({
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1,
+        //     prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
+        //     nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+        //     dots: true,
+        //     speed: 2000,
+        //     easing: 'ease-in-out',
+        //     dotsClass: 'home_two_dots',
+        //     autoplay: true,
+        //     autoplaySpeed: 4000,
+        // });
 
         $('.testimonial_card_area').slick({
             slidesToShow: 4,
