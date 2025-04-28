@@ -236,6 +236,26 @@
 
             li {
     position: relative;
+    a{
+        span{
+            &::after{
+            font-family: "Font Awesome 6 Free"; /* Font Awesome 6 er jonno */
+            font-weight: 900; /* solid icon er jonno 900 */
+            content: "\f107"; /* fa-angle-down icon er Unicode */
+            margin-right: 8px;
+            &:hover{
+                 transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+            }
+            @include sm{
+                display: none;
+            }
+        }
+    }
+    }
     a:hover{
         span{
         i{
@@ -366,3 +386,43 @@ color: $--text_clr;
 /*=================navigation end=======================*/
 
 
+.mobile-menu-bar{
+    position: relative;
+        .mean-bar{
+        position: absolute;
+        top: -25px;
+        right: 0px;
+        width: 100% !important;
+        a{
+            span{
+                color: #0b103e !important;
+            }
+        }
+    }
+    // &.style_2{
+    //     .mean-bar{
+    //     position: absolute;
+    //     top: -25px;
+    //     right: 0px;
+    //     width: 100% !important;
+    //     // background-color: transparent;
+    //     a{
+    //         span{
+    //             color: #fff !important;
+    //         }
+    //     }
+    // }
+    // }
+    
+    .mean-nav{
+        //margin-top: 50px !important;
+        background-color: #ffffff;
+        // height: 100vh;
+        width: 350px !important;
+        max-height: 100vh !important;
+        position: absolute;
+        right: 0px !important;
+}
+
+
+}

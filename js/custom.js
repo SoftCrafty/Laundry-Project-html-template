@@ -2,12 +2,22 @@
     "use strict";
     $(document).ready(function () {
         // Sidebar (Off-Canvas Menu) Toggle
-        $(document).on("click", ".mobile-menu-toggle-btn, .mobile-menu-bar", function () {
-            $(".menu-sidebar-area, .body-overlay").addClass("active");
-        });
-        $(document).on("click", ".menu-sidebar-close-btn, .cross_btn, .body-overlay", function () {
-            $(".menu-sidebar-area, .body-overlay").removeClass("active");
-        });
+        // $(document).on("click", ".mobile-menu-toggle-btn, .mobile-menu-bar", function () {
+        //     $(".menu-sidebar-area, .body-overlay").addClass("active");
+        // });
+        // $(document).on("click", ".menu-sidebar-close-btn, .cross_btn, .body-overlay", function () {
+        //     $(".menu-sidebar-area, .body-overlay").removeClass("active");
+        // });
+
+        // $(document).ready(function () {
+        //     $('.mobile-menu-toggle-btn').on('click', function (e) {
+        //         e.preventDefault();
+        //         $('.mean-nav').toggleClass('mean-nav-open');
+        //     });
+        // });
+
+       
+
         // Sticky Navbar
         function addStickyNav(navSelector, scrollOffset = 200, activeClass = 'active') {
             let nav = $(navSelector);
@@ -251,4 +261,15 @@
             preloader.style.display = "none";
         }, 600);
     });
+
+$(document).ready(function () {
+    $('.main_menu').meanmenu({
+        meanMenuContainer: '.mobile-menu-bar', // jekhane mobile menu button thakbe
+        meanScreenWidth: "991", // kon screen width er niche meanmenu cholbe (991px niche)
+        meanRevealPosition: "right", // button position
+        meanMenuOpen: "<span></span><span></span><span></span>", // 3 bar icon
+        meanMenuClose: "X" // close button text
+    });
+});
+
 })(jQuery);
