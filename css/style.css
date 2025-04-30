@@ -24893,7 +24893,7 @@
       .header-area .header_menu_wrapper .main_menu ul li {
         position: relative; }
         .header-area .header_menu_wrapper .main_menu ul li.menu-item-has-children::after {
-          font-family: "Font Awesome 6 Free";
+          font-family: "FontAwesome";
           font-weight: 900;
           content: "\f107";
           display: inline-block;
