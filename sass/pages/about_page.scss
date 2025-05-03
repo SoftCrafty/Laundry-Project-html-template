@@ -284,43 +284,7 @@
         
     }
 }
- .contact_card_area{
-                // background-color: red;
-                margin-top: 63px;
-                @include flex(column, flex-start, flex-start);
-                gap: 63px;
-                .contact_card_wrapper{
-                    // background-color: green;
-                    @include flex(row, flex-start, flex-start);
-                    gap: 30px;
-                    .contact_icon{
-                        border-radius: 100px;
-                        background-color: #142137;
-                        width: 50px;
-                        height: 50px;
-                        text-align: center;
-                        line-height: 45px;
-                        display: block;
-                        color: $--white;
-                    }
-                    .contact_details{
-                        h5{
-                            font-family: $--font-family;
-                            font-weight: 500;
-                            font-size: 18px;
-                            color: $--text-clr;
-                            margin-top: 6px;
-                        }
-                        p{
-                            font-family: $--font-family;
-                            font-weight: 400;
-                            font-size: 15px;
-                            color: #142137b3;
-                            margin-top: 4px;
-                        }
-                    }
-                }
-            }
+
 .contact_message_box_area{
             padding-left: 43px;
             @include sm{
@@ -419,3 +383,42 @@
             }
         }
         }
+
+
+         .contact_card_area{
+                background-color: red;
+                margin-top: 63px;
+                @include flex(column, flex-start, flex-start);
+                gap: 63px;
+                .contact_card_wrapper{
+                    // background-color: green;
+                    @include flex(row, flex-start, flex-start);
+                    gap: 30px;
+                    .contact_icon{
+                        border-radius: 100px;
+                        background-color: #142137;
+                        width: 50px;
+                        height: 50px;
+                        text-align: center;
+                        line-height: 45px;
+                        display: block;
+                        color: $--white;
+                    }
+                    .contact_details{
+                        h5{
+                            font-family: $--font-family;
+                            font-weight: 500;
+                            font-size: 18px;
+                            color: $--text-clr;
+                            margin-top: 6px;
+                        }
+                        p{
+                            font-family: $--font-family;
+                            font-weight: 400;
+                            font-size: 15px;
+                            color: #142137b3;
+                            margin-top: 4px;
+                        }
+                    }
+                }
+            }
