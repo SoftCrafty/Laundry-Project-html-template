@@ -27506,19 +27506,16 @@
           .sidebar .widget .categories_area ul li a {
             border: 1px solid #1421371a;
             width: 100%;
-            height: 46px;
             font-family: "Poppins", sans-serif;
             font-weight: 500;
             font-size: 15px;
-            line-height: 173%;
             color: #142137b3;
             display: block;
-            line-height: 46px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding: 0px 20px; }
+            padding: 10px 20px; }
             .sidebar .widget .categories_area ul li a .dot {
               margin-right: 6px; }
             .sidebar .widget .categories_area ul li a .pdf_btn {
