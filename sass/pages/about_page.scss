@@ -331,6 +331,8 @@
                         @include flex(row, space-between, center);
                         flex-wrap: wrap;
                         gap: 30px;
+                        width: 100%;
+                        
                     }
                     width: 100%;
                     padding: 0;
