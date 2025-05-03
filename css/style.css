@@ -27672,25 +27672,25 @@
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .post-comments-form .comment-respond h2 {
       font-size: 32px; } }
-.post-comments-form .comment-respond .leave_comment_box .contacts-name {
+.post-comments-form .comment-respond .contacts-name {
   width: 100%; }
-  .post-comments-form .comment-respond .leave_comment_box .contacts-name input {
+  .post-comments-form .comment-respond .contacts-name input {
     margin-top: 8px;
     width: 100%;
     border: 1px solid rgba(20, 33, 55, 0.1);
     height: 50px;
     outline: none;
     padding-left: 20px; }
-.post-comments-form .comment-respond .leave_comment_box .contacts-email {
+.post-comments-form .comment-respond .contacts-email {
   width: 100%; }
-  .post-comments-form .comment-respond .leave_comment_box .contacts-email input {
+  .post-comments-form .comment-respond .contacts-email input {
     margin-top: 8px;
     width: 100%;
     border: 1px solid rgba(20, 33, 55, 0.1);
     height: 50px;
     outline: none;
     padding-left: 20px; }
-.post-comments-form .comment-respond .leave_comment_box .theme-btn {
+.post-comments-form .comment-respond .theme-btn {
   border: none;
   background-color: #142137;
   font-family: "Poppins", sans-serif;
@@ -27712,7 +27712,7 @@
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border: 1px solid transparent; }
-  .post-comments-form .comment-respond .leave_comment_box .theme-btn span {
+  .post-comments-form .comment-respond .theme-btn span {
     width: 30px;
     height: 30px;
     text-align: center;
@@ -27726,36 +27726,36 @@
     color: #142137;
     margin-left: 5px;
     transition: all 0.5s ease; }
-    .post-comments-form .comment-respond .leave_comment_box .theme-btn span i {
+    .post-comments-form .comment-respond .theme-btn span i {
       transition: all 0.5s ease;
       transform: rotate(-45deg);
       -webkit-transform: rotate(-45deg);
       -moz-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
       -o-transform: rotate(-45deg); }
-  .post-comments-form .comment-respond .leave_comment_box .theme-btn:hover {
+  .post-comments-form .comment-respond .theme-btn:hover {
     background-color: transparent;
     border: 1px solid #14213724;
     color: #142137; }
-    .post-comments-form .comment-respond .leave_comment_box .theme-btn:hover span {
+    .post-comments-form .comment-respond .theme-btn:hover span {
       background-color: #142137;
       color: #fff; }
-      .post-comments-form .comment-respond .leave_comment_box .theme-btn:hover span i {
+      .post-comments-form .comment-respond .theme-btn:hover span i {
         transform: rotate(0deg);
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg); }
-.post-comments-form .comment-respond .leave_comment_box .contacts-message {
+.post-comments-form .comment-respond .contacts-message {
   margin-top: 30px; }
-  .post-comments-form .comment-respond .leave_comment_box .contacts-message textarea {
+  .post-comments-form .comment-respond .contacts-message textarea {
     margin-top: 8px;
     width: 100%;
     border: 1px solid #1421371a;
     height: 210px;
     outline: none;
     padding: 30px 10px 10px 20px; }
-.post-comments-form .comment-respond .leave_comment_box .check_box {
+.post-comments-form .comment-respond .check_box {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -27763,15 +27763,15 @@
   width: 100%;
   gap: 8px;
   margin-top: 8px; }
-  .post-comments-form .comment-respond .leave_comment_box .check_box p {
+  .post-comments-form .comment-respond .check_box p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #142137b3; }
-.post-comments-form .comment-respond .leave_comment_box .message_sent_btn {
+.post-comments-form .comment-respond .message_sent_btn {
   width: 100%;
   padding-top: 52px; }
-  .post-comments-form .comment-respond .leave_comment_box .message_sent_btn .btn_wrapper_area {
+  .post-comments-form .comment-respond .message_sent_btn .btn_wrapper_area {
     width: 298px; }
 
 .principle_section_area .principle_section_wrapper .principle_contains_area {
