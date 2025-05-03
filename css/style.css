@@ -26323,40 +26323,41 @@
         width: 100%; }
       .contact_us_area .contact_us_wrapper .col-lg-7 {
         width: 100%; } }
-  .contact_us_area .contact_us_wrapper .contact_card_area {
-    margin-top: 63px;
+
+.contact_card_area {
+  margin-top: 63px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 63px; }
+  .contact_card_area .contact_card_wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 63px; }
-    .contact_us_area .contact_us_wrapper .contact_card_area .contact_card_wrapper {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: flex-start;
-      gap: 30px; }
-      .contact_us_area .contact_us_wrapper .contact_card_area .contact_card_wrapper .contact_icon {
-        border-radius: 100px;
-        background-color: #142137;
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        line-height: 45px;
-        display: block;
-        color: #fff; }
-      .contact_us_area .contact_us_wrapper .contact_card_area .contact_card_wrapper .contact_details h5 {
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        font-size: 18px;
-        color: #142137;
-        margin-top: 6px; }
-      .contact_us_area .contact_us_wrapper .contact_card_area .contact_card_wrapper .contact_details p {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-size: 15px;
-        color: #142137b3;
-        margin-top: 4px; }
+    gap: 30px; }
+    .contact_card_area .contact_card_wrapper .contact_icon {
+      border-radius: 100px;
+      background-color: #142137;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 45px;
+      display: block;
+      color: #fff; }
+    .contact_card_area .contact_card_wrapper .contact_details h5 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      color: #142137;
+      margin-top: 6px; }
+    .contact_card_area .contact_card_wrapper .contact_details p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      color: #142137b3;
+      margin-top: 4px; }
 
 .contact_message_box_area {
   padding-left: 43px; }
