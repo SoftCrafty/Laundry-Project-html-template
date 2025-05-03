@@ -27406,8 +27406,7 @@
   .sidebar .widget {
     background: #ebeff3;
     width: 100%;
-    max-width: 380px;
-    padding: 30px 30px 40px 30px; }
+    max-width: 380px; }
     @media only screen and (min-width: 1025px) and (max-width: 1280px) {
       .sidebar .widget {
         padding: 10px; } }
