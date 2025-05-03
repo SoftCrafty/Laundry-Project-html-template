@@ -547,72 +547,7 @@
                
             }
             
-                .post-comments-form{
-                    .leave_comment_wrapper{
-                        h2{
-                            font-family: $--font-family;
-                            font-weight: 600;
-                            font-size: 44px;
-                            line-height: 145%;
-                            letter-spacing: -0.02em;
-                            color: $--text-clr;
-                            @include sm{
-                                font-size: 32px;
-                            }
-                        }
-                        .leave_comment_box{
-
-                            .leave_signle_box{
-                                @include flex(row, space-between, center);
-                                flex-wrap: wrap;
-                                .leave_name{
-                                    width: calc(50% - 15px);
-                                    @include sm{
-                                        width: 100%;
-                                    }
-                                    input{
-                                        margin-top: 8px;
-                                        width: 100%;
-                                        border: 1px solid rgba(20, 33, 55, 0.1);
-                                        height: 50px;
-                                        outline: none;
-                                        padding-left: 20px;
-                                    }
-                                }
-                            }
-                            .your_comment{
-                                margin-top: 30px;
-                                textarea{
-                                margin-top: 8px;
-                                width: 100%;
-                                border: 1px solid #1421371a;
-                                height: 210px;
-                                outline: none;
-                                padding: 30px 10px 10px 20px;
-                            }
-                            }
-                            .check_box{
-                    @include flex(row, flex-start, center);
-                    width: 100%;
-                    gap: 8px;
-                    margin-top: 8px;
-                    p{
-                        font-family: $--font-family;
-                        font-weight: 400;
-                        font-size: 16px;
-                        color: #142137b3;
-                    }
-                }
-                .message_sent_btn{
-                    width: 100%;
-                    padding-top: 52px;
-                    .btn_wrapper_area{
-                        width: 298px;
-                    }
-                }
-                        }
-                    }
-                }
+               
                 .page_change_btn{
                     @include flex(row, center, center);
                     ul{
@@ -1198,3 +1133,136 @@
                  }
                 }
            /* post comment end*/
+
+
+            .post-comments-form{
+                    .comment-respond{
+                        h2{
+                            font-family: $--font-family;
+                            font-weight: 600;
+                            font-size: 44px;
+                            line-height: 145%;
+                            letter-spacing: -0.02em;
+                            color: $--text-clr;
+                            @include sm{
+                                font-size: 32px;
+                            }
+                        }
+                        .leave_comment_box{
+
+                            // .leave_signle_box{
+                                // @include flex(row, space-between, center);
+                                // flex-wrap: wrap;
+                                .contacts-name{
+                                    // width: calc(50% - 15px);
+                                    // @include sm{
+                                        width: 100%;
+                                    // }
+                                    input{
+                                        margin-top: 8px;
+                                        width: 100%;
+                                        border: 1px solid rgba(20, 33, 55, 0.1);
+                                        height: 50px;
+                                        outline: none;
+                                        padding-left: 20px;
+                                    }
+                                }
+                                .contacts-email{
+                                    // width: calc(50% - 15px);
+                                    // @include sm{
+                                        width: 100%;
+                                    // }
+                                    input{
+                                        margin-top: 8px;
+                                        width: 100%;
+                                        border: 1px solid rgba(20, 33, 55, 0.1);
+                                        height: 50px;
+                                        outline: none;
+                                        padding-left: 20px;
+                                    }
+                                }
+                                 .theme-btn{
+            border: none;
+            background-color: $--text-clr;
+            font-family: $--font-family;
+        font-weight: 500;
+        font-size: 15px;
+        color: $--white;
+        @include transition(0.5s);
+        width: 298px;
+        @include flex(row, space-between, center);
+        line-height: 54px;
+        padding-left: 30px;
+        padding-right: 10px;
+        @include border-radius(50px);
+        border: 1px solid transparent;
+        span{
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background-color: $--white;
+            @include border-radius(50%);
+            color: $--text-clr;
+            margin-left: 5px;
+            @include transition(0.5s);
+           i{
+            @include transition(0.5s);
+             transform:rotate(-45deg);
+             -webkit-transform:rotate(-45deg);
+             -moz-transform:rotate(-45deg);
+             -ms-transform:rotate(-45deg);
+             -o-transform:rotate(-45deg);
+}
+}
+      &:hover{
+        background-color: transparent;
+        border: 1px solid $--border_bl;
+        color: $--text-clr;
+        span{
+            background-color: $--text-clr;
+            color: $--white;
+            i{
+             transform:rotate(0deg);
+             -webkit-transform:rotate(0deg);
+             -moz-transform:rotate(0deg);
+             -ms-transform:rotate(0deg);
+             -o-transform:rotate(0deg);
+}
+        }
+      }
+        }
+                            // }
+                            .contacts-message{
+                                margin-top: 30px;
+                                textarea{
+                                margin-top: 8px;
+                                width: 100%;
+                                border: 1px solid #1421371a;
+                                height: 210px;
+                                outline: none;
+                                padding: 30px 10px 10px 20px;
+                            }
+                            }
+                            .check_box{
+                    @include flex(row, flex-start, center);
+                    width: 100%;
+                    gap: 8px;
+                    margin-top: 8px;
+                    p{
+                        font-family: $--font-family;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #142137b3;
+                    }
+                }
+                .message_sent_btn{
+                    width: 100%;
+                    padding-top: 52px;
+                    .btn_wrapper_area{
+                        width: 298px;
+                    }
+                }
+                        }
+                    }
+                }

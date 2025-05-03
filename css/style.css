@@ -27131,61 +27131,6 @@
           .blog_details_area .blog-post .blog_tag_social_area .blog_social_wrapper ul li:nth-child(4) a:hover {
             background-color: #14213724;
             color: #142137; }
-  .blog_details_area .blog-post .post-comments-form .leave_comment_wrapper h2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 145%;
-    letter-spacing: -0.02em;
-    color: #142137; }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .blog_details_area .blog-post .post-comments-form .leave_comment_wrapper h2 {
-        font-size: 32px; } }
-  .blog_details_area .blog-post .post-comments-form .leave_comment_wrapper .leave_comment_box .leave_signle_box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; }
-    .blog_details_area .blog-post .post-comments-form .leave_comment_wrapper .leave_comment_box .leave_signle_box .leave_name {
-      width: calc(50% - 15px); }
-      @media only screen and (min-width: 0px) and (max-width: 767px) {
-        .blog_details_area .blog-post .post-comments-form .leave_comment_wrapper .leave_comment_box .leave_signle_box .leave_name {
-          width: 100%; } }
-      .blog_details_area .blog-post .post-comments-form .leave_comment_wrapper .leave_comment_box .leave_signle_box .leave_name input {
-        margin-top: 8px;
-        width: 100%;
-        border: 1px solid rgba(20, 33, 55, 0.1);
-        height: 50px;
-        outline: none;
-        padding-left: 20px; }
-  .blog_details_area .blog-post .post-comments-form .leave_comment_wrapper .leave_comment_box .your_comment {
-    margin-top: 30px; }
-    .blog_details_area .blog-post .post-comments-form .leave_comment_wrapper .leave_comment_box .your_comment textarea {
-      margin-top: 8px;
-      width: 100%;
-      border: 1px solid #1421371a;
-      height: 210px;
-      outline: none;
-      padding: 30px 10px 10px 20px; }
-  .blog_details_area .blog-post .post-comments-form .leave_comment_wrapper .leave_comment_box .check_box {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    gap: 8px;
-    margin-top: 8px; }
-    .blog_details_area .blog-post .post-comments-form .leave_comment_wrapper .leave_comment_box .check_box p {
-      font-family: "Poppins", sans-serif;
-      font-weight: 400;
-      font-size: 16px;
-      color: #142137b3; }
-  .blog_details_area .blog-post .post-comments-form .leave_comment_wrapper .leave_comment_box .message_sent_btn {
-    width: 100%;
-    padding-top: 52px; }
-    .blog_details_area .blog-post .post-comments-form .leave_comment_wrapper .leave_comment_box .message_sent_btn .btn_wrapper_area {
-      width: 298px; }
   .blog_details_area .blog-post .page_change_btn {
     display: flex;
     flex-direction: row;
