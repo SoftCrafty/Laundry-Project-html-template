@@ -26659,9 +26659,7 @@
     color: #fff; }
 .blog_details_area .blog-post {
   width: 100%;
-  padding-right: 75px;
-  /* post comment start*/
-  /* post comment end*/ }
+  padding-right: 75px; }
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     .blog_details_area .blog-post {
       padding: 0; } }
@@ -27133,84 +27131,6 @@
           .blog_details_area .blog-post .blog_tag_social_area .blog_social_wrapper ul li:nth-child(4) a:hover {
             background-color: #14213724;
             color: #142137; }
-  .blog_details_area .blog-post .post-comment .commets-avatar {
-    width: 60px !important;
-    height: 60px; }
-    .blog_details_area .blog-post .post-comment .commets-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-  .blog_details_area .blog-post .post-comment .comments-text {
-    width: calc(100% - 60px); }
-  .blog_details_area .blog-post .post-comment .blog-comment-title h2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 145%;
-    letter-spacing: -0.02em;
-    color: #142137; }
-  .blog_details_area .blog-post .post-comment .latest-comments ul {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 40px; }
-    .blog_details_area .blog-post .post-comment .latest-comments ul li {
-      border-bottom: 1px solid #1c1c1c24;
-      padding-bottom: 55px;
-      max-width: 842px; }
-  .blog_details_area .blog-post .post-comment .comments-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px; }
-  .blog_details_area .blog-post .post-comment .avatar-name {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-    .blog_details_area .blog-post .post-comment .avatar-name .name {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 10px; }
-      .blog_details_area .blog-post .post-comment .avatar-name .name h5 {
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        font-size: 18px;
-        color: #142137; }
-      .blog_details_area .blog-post .post-comment .avatar-name .name p {
-        font-family: "Urbanist", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 162%;
-        color: #616161; }
-    .blog_details_area .blog-post .post-comment .avatar-name a {
-      font-family: "Poppins", sans-serif;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 162%;
-      color: #142137b3;
-      border: none;
-      border: 1px solid rgba(28, 28, 28, 0.1);
-      border-radius: 4px;
-      padding: 5px 12px;
-      background-color: transparent; }
-      .blog_details_area .blog-post .post-comment .avatar-name a span {
-        margin-right: 5px; }
-      .blog_details_area .blog-post .post-comment .avatar-name a:hover {
-        transition: all 0.5s ease;
-        background-color: #4375e7;
-        color: #fff; }
-  .blog_details_area .blog-post .post-comment p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 162%;
-    color: #142137b3; }
   .blog_details_area .blog-post .post-comments-form .leave_comment_wrapper h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -27716,6 +27636,87 @@
 .blog_details_contains .btn_wrapper_area {
   width: fit-content; }
 
+/* post comment start*/
+.post-comment .commets-avatar {
+  width: 60px !important;
+  height: 60px; }
+  .post-comment .commets-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+.post-comment .comments-text {
+  width: calc(100% - 60px); }
+.post-comment h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 145%;
+  letter-spacing: -0.02em;
+  color: #142137; }
+.post-comment ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px; }
+  .post-comment ul li {
+    border-bottom: 1px solid #1c1c1c24;
+    padding-bottom: 55px;
+    max-width: 842px; }
+.post-comment .comments-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px; }
+.post-comment .avatar-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .post-comment .avatar-name a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: #142137b3;
+    border: none;
+    border: 1px solid rgba(28, 28, 28, 0.1);
+    border-radius: 4px;
+    padding: 5px 12px;
+    background-color: transparent; }
+    .post-comment .avatar-name a span {
+      margin-right: 5px; }
+    .post-comment .avatar-name a:hover {
+      transition: all 0.5s ease;
+      background-color: #4375e7;
+      color: #fff; }
+.post-comment .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px; }
+  .post-comment .name h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #142137; }
+  .post-comment .name p {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    color: #616161; }
+.post-comment p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: #142137b3; }
+
+/* post comment end*/
 .principle_section_area .principle_section_wrapper .principle_contains_area {
   display: flex;
   flex-direction: row;
