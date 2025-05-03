@@ -26361,20 +26361,22 @@
       align-items: center;
       gap: 30px;
       padding-top: 60px;
+      width: 100%;
       width: 100%; }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .contact_message_box_area .contact_message_box_wrapper .contact_message_box {
           padding-top: 30px; } }
       .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_single_box {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 30px;
         width: 100%;
         padding: 0;
         margin: 0; }
+        .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_single_box p {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 30px; }
         .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_single_box input {
           border: 1px solid #14213724;
           width: calc(50% - 15px);
@@ -26390,12 +26392,14 @@
             font-size: 16px;
             line-height: 162%;
             color: #142137b3; }
-      .contact_message_box_area .contact_message_box_wrapper .contact_message_box textarea {
-        width: 100%;
-        padding: 25px 10px 10px 30px;
-        height: 170px;
-        outline: none;
-        border: 1px solid #14213724; }
+      .contact_message_box_area .contact_message_box_wrapper .contact_message_box p {
+        width: 100% !important; }
+        .contact_message_box_area .contact_message_box_wrapper .contact_message_box p textarea {
+          width: 100%;
+          padding: 25px 10px 10px 30px;
+          height: 170px;
+          outline: none;
+          border: 1px solid #14213724; }
       .contact_message_box_area .contact_message_box_wrapper .contact_message_box .check_box {
         display: flex;
         flex-direction: row;
@@ -26416,6 +26420,62 @@
             padding-top: 30px; } }
         .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_sent_btn .btn_wrapper_area {
           width: 298px; }
+        .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_sent_btn input {
+          border: none;
+          background-color: #142137;
+          font-family: "Poppins", sans-serif;
+          font-weight: 500;
+          font-size: 15px;
+          color: #fff;
+          transition: all 0.5s ease;
+          width: 298px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          line-height: 54px;
+          padding-left: 30px;
+          padding-right: 10px;
+          border-radius: 50px;
+          -moz-border-radius: 50px;
+          -webkit-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px;
+          border: 1px solid transparent; }
+          .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_sent_btn input span {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background-color: #fff;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            color: #142137;
+            margin-left: 5px;
+            transition: all 0.5s ease; }
+            .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_sent_btn input span i {
+              transition: all 0.5s ease;
+              transform: rotate(-45deg);
+              -webkit-transform: rotate(-45deg);
+              -moz-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+              -o-transform: rotate(-45deg); }
+          .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_sent_btn input:hover {
+            background-color: transparent;
+            border: 1px solid #14213724;
+            color: #142137; }
+            .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_sent_btn input:hover span {
+              background-color: #142137;
+              color: #fff; }
+              .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_sent_btn input:hover span i {
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg); }
 
 .contact_card_area {
   background-color: red;
