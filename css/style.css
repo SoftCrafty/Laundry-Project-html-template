@@ -26357,98 +26357,99 @@
         font-size: 15px;
         color: #142137b3;
         margin-top: 4px; }
-  .contact_us_area .contact_us_wrapper .contact_message_box_area {
-    padding-left: 43px; }
+
+.contact_message_box_area {
+  padding-left: 43px; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .contact_message_box_area {
+      padding-left: 0px; } }
+  @media only screen and (min-width: 0px) and (max-width: 998px) {
+    .contact_message_box_area {
+      padding-left: 0px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .contact_message_box_area {
+      padding-left: 0px; } }
+  .contact_message_box_area .contact_message_box_wrapper {
+    border: 1px solid #14213724;
+    padding: 60px; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .contact_us_area .contact_us_wrapper .contact_message_box_area {
-        padding-left: 0px; } }
-    @media only screen and (min-width: 0px) and (max-width: 998px) {
-      .contact_us_area .contact_us_wrapper .contact_message_box_area {
-        padding-left: 0px; } }
-    @media only screen and (min-width: 992px) and (max-width: 1024px) {
-      .contact_us_area .contact_us_wrapper .contact_message_box_area {
-        padding-left: 0px; } }
-    .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper {
-      border: 1px solid #14213724;
-      padding: 60px; }
+      .contact_message_box_area .contact_message_box_wrapper {
+        padding: 30px 20px; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+      .contact_message_box_area .contact_message_box_wrapper {
+        padding: 30px; } }
+    .contact_message_box_area .contact_message_box_wrapper h2 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 54px;
+      line-height: 122%;
+      letter-spacing: -0.02em;
+      color: #142137; }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
-        .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper {
-          padding: 30px 20px; } }
-      @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-        .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper {
-          padding: 30px; } }
-      .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper h2 {
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        font-size: 54px;
-        line-height: 122%;
-        letter-spacing: -0.02em;
-        color: #142137; }
-        @media only screen and (min-width: 0px) and (max-width: 767px) {
-          .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper h2 {
-            font-size: 32px; } }
-      .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper .contact_message_box {
+        .contact_message_box_area .contact_message_box_wrapper h2 {
+          font-size: 32px; } }
+    .contact_message_box_area .contact_message_box_wrapper .contact_message_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding-top: 60px;
+      width: 100%; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .contact_message_box_area .contact_message_box_wrapper .contact_message_box {
+          padding-top: 30px; } }
+      .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_single_box {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         gap: 30px;
-        padding-top: 60px;
-        width: 100%; }
-        @media only screen and (min-width: 0px) and (max-width: 767px) {
-          .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper .contact_message_box {
-            padding-top: 30px; } }
-        .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_single_box {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          flex-wrap: wrap;
-          gap: 30px;
-          width: 100%;
-          padding: 0;
-          margin: 0; }
-          .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_single_box input {
-            border: 1px solid #14213724;
-            width: calc(50% - 15px);
-            height: 60px;
-            padding-left: 30px;
-            outline: none; }
-            @media only screen and (min-width: 0px) and (max-width: 767px) {
-              .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_single_box input {
-                width: 100%; } }
-            .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_single_box input::placeholder {
-              font-family: "Poppins", sans-serif;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 162%;
-              color: #142137b3; }
-        .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper .contact_message_box textarea {
-          width: 100%;
-          padding: 25px 10px 10px 30px;
-          height: 170px;
-          outline: none;
-          border: 1px solid #14213724; }
-        .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper .contact_message_box .check_box {
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: center;
-          width: 100%;
-          gap: 8px; }
-          .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper .contact_message_box .check_box p {
+        width: 100%;
+        padding: 0;
+        margin: 0; }
+        .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_single_box input {
+          border: 1px solid #14213724;
+          width: calc(50% - 15px);
+          height: 60px;
+          padding-left: 30px;
+          outline: none; }
+          @media only screen and (min-width: 0px) and (max-width: 767px) {
+            .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_single_box input {
+              width: 100%; } }
+          .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_single_box input::placeholder {
             font-family: "Poppins", sans-serif;
             font-weight: 400;
             font-size: 16px;
+            line-height: 162%;
             color: #142137b3; }
-        .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_sent_btn {
-          width: 100%;
-          padding-top: 80px; }
-          @media only screen and (min-width: 0px) and (max-width: 767px) {
-            .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_sent_btn {
-              padding-top: 30px; } }
-          .contact_us_area .contact_us_wrapper .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_sent_btn .btn_wrapper_area {
-            width: 298px; }
+      .contact_message_box_area .contact_message_box_wrapper .contact_message_box textarea {
+        width: 100%;
+        padding: 25px 10px 10px 30px;
+        height: 170px;
+        outline: none;
+        border: 1px solid #14213724; }
+      .contact_message_box_area .contact_message_box_wrapper .contact_message_box .check_box {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        gap: 8px; }
+        .contact_message_box_area .contact_message_box_wrapper .contact_message_box .check_box p {
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          color: #142137b3; }
+      .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_sent_btn {
+        width: 100%;
+        padding-top: 80px; }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_sent_btn {
+            padding-top: 30px; } }
+        .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_sent_btn .btn_wrapper_area {
+          width: 298px; }
 
 .faq_btn button {
   border: none;
