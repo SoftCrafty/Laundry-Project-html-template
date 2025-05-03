@@ -287,6 +287,7 @@
 
 .contact_message_box_area{
             padding-left: 43px;
+            background-color: green;
             @include sm{
                 padding-left: 0px;
             }
@@ -332,7 +333,9 @@
                         flex-wrap: wrap;
                         gap: 30px;
                         width: 100%;
-                        
+                        span{
+                            display: block;
+                        }
                     }
                     width: 100%;
                     padding: 0;

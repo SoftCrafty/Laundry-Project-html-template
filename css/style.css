@@ -26325,7 +26325,8 @@
         width: 100%; } }
 
 .contact_message_box_area {
-  padding-left: 43px; }
+  padding-left: 43px;
+  background-color: green; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .contact_message_box_area {
       padding-left: 0px; } }
@@ -26378,6 +26379,8 @@
           flex-wrap: wrap;
           gap: 30px;
           width: 100%; }
+          .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_single_box p span {
+            display: block; }
         .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_single_box input {
           border: 1px solid #14213724;
           width: calc(50% - 15px);
