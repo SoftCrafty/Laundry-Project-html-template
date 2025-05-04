@@ -27873,45 +27873,40 @@
   .header-style-2 .header-wrap .main-menu ul ul li > a {
     padding: 10px 20px; }
 
-.sticky {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0;
-  right: 0;
+.sticky_top {
   width: 100%;
-  z-index: 10000;
-  transition: all 0.9s ease-in-out;
-  -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  background-color: #fff;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px); }
-  .sticky.header-1 .header-wrap {
+  position: fixed;
+  top: 0px;
+  margin: auto;
+  animation: slideDown 2s ease forwards;
+  background-color: #fffdfd;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  animation: slideDown 2s ease forwards; }
+  .sticky_top.header-1 .header-wrap {
     margin-top: 0; }
     @media (max-width: 1199px) {
-      .sticky.header-1 .header-wrap {
+      .sticky_top.header-1 .header-wrap {
         padding: 14px 0; } }
     @media (max-width: 991px) {
-      .sticky.header-1 .header-wrap {
+      .sticky_top.header-1 .header-wrap {
         padding: 9px 0; } }
     @media (max-width: 575px) {
-      .sticky.header-1 .header-wrap {
+      .sticky_top.header-1 .header-wrap {
         padding: 12px 0; } }
-    .sticky.header-1 .header-wrap .logo .primary-logo {
+    .sticky_top.header-1 .header-wrap .logo .primary-logo {
       display: none; }
-    .sticky.header-1 .header-wrap .logo .sticky-logo {
+    .sticky_top.header-1 .header-wrap .logo .sticky-logo {
       display: block; }
-    .sticky.header-1 .header-wrap .main-menu ul li a {
+    .sticky_top.header-1 .header-wrap .main-menu ul li a {
       padding: 26px 24px; }
-    .sticky.header-1 .header-wrap .main-menu ul ul li > a {
+    .sticky_top.header-1 .header-wrap .main-menu ul ul li > a {
       padding: 10px 20px; }
   @media (max-width: 1199px) {
-    .sticky.header-style-2 .header-wrap {
+    .sticky_top.header-style-2 .header-wrap {
       padding-left: 40px;
       padding-right: 40px; } }
   @media (max-width: 991px) {
-    .sticky.header-style-2 .header-wrap {
+    .sticky_top.header-style-2 .header-wrap {
       padding-left: 30px;
       padding-right: 30px; } }
 
