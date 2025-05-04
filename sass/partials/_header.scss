@@ -134,7 +134,6 @@
 			  float: none;
 			  min-width: 210px;
 			  margin: 0;
-	  
 			  ul {
 				visibility: hidden;
 			  }
@@ -149,7 +148,7 @@
 				border-bottom: 1px solid #E3E3E3;
 				margin-left: 0;
 				font-size: 16px;
-				font-family: var(--body-font);
+				font-family:  $--font-family;
 				@include transition(0.4s);
 				&:hover {
 				  background-color: $--primary;
@@ -177,11 +176,83 @@
 	width: 100%;
 	z-index: 999;
 	height: 90px;
+	&.style_1{
+		.header-wrap .main-menu ul li {
+			a {
+			color: $--white !important;
+			
+		}
+		ul{
+				li{
+					
+					a{
+						color: $--text_clr !important;
+					}
+					&:hover{
+						color: $--white !important;
+					}
+				}
+			}
+	}
+		background-color: #0b103e;
+		.btn_wrapper_1{
+			@media (max-width:1272px){
+                display: none;
+            }
+			a{
+				background-color: $--white;
+			padding: 5px 5px 5px 30px;
+			border: 1px solid rgba(20, 33, 55, 0.14);
+            font-family: $--font-family;
+            font-weight: 500;
+            font-size: 15px;
+			@include border-radius(50px);
+            color: $--text_clr;
+			@include flex(row, space-between, center);
+			span{
+				margin-left: 10px;
+				display: block;
+				width: 34px;
+				height: 34px;
+				@include border-radius(50%);
+				background-color: #142137;
+				color: $--white;
+				line-height: 34px;
+				text-align: center;
+				i{
+					transform: rotate(-45deg);
+					-webkit-transform: rotate(-45deg);
+					-moz-transform: rotate(-45deg);
+					-ms-transform: rotate(-45deg);
+					-o-transform: rotate(-45deg);
+					@include transition(0.4s);
+}
+			}
+			&:hover{
+				span{
+					i{
+						transform: rotate(0deg);
+						-webkit-transform: rotate(0deg);
+						-moz-transform: rotate(0deg);
+						-ms-transform: rotate(0deg);
+						-o-transform: rotate(0deg);
+}
+				}
+			}
+			}
+
+		}
+		.offcanvas-bar{
+			span{
+				color: $--white !important;
+			}
+		}
+	}
 	@include nesthub{
-		height: 60px;
+		height: 80px;
 	}
 	@include md{
-		height: 60px;
+		height: 70px;
 	}
 	@include sm{
 		height: 60px;
@@ -194,10 +265,23 @@
 	@include breakpoint(max-lg){
 		padding: 0 30px;
 	}
+	@include sm{
+		padding: 0px 5px;
+	}
 	.header-wrap{
-		margin-top: 10px;
+		// margin-top: 10px;
+		height: 90px;
+		@include nesthub{
+			height: 80px;
+		}
+		@include md{
+			height: 70px;
+		}
+		@include sm{
+			height: 60px;
+		}
 		@include breakpoint(max-xl){
-			margin-top: 30px;
+			// margin-top: 20px;
 		}
 
 		.logo{
@@ -209,12 +293,66 @@
 			}
 		}
 
-		.main-menu-wrap{
-			margin-left: -65px;
-		}
+		// .main-menu-wrap{
+		// 	margin-left: -65px;
+		// }
 		.header-right{
 			@include flexbox();
 			align-items: center;
+			gap: 20px;
+            .header_contact_wrapper{
+              @include nesthubmax{
+				display: none;
+			  }
+              @include nesthub{
+				display: none;
+			  }
+              @include md{
+				display: none;
+			  }
+              @include sm{
+				display: none;
+			  }
+                        @include flex(row, flex-start, center);
+                        gap: 14px;
+                        .icon{
+                            span{
+                            border: 1.50px solid #ffffff1a;
+                            border-radius: 23px;
+                            width: 46px;
+                            height: 46px;
+                            display: block;
+                            text-align: center;
+                            line-height: 40px;
+                            color: $--white;
+                            font-size: 20px;
+                            border-radius:50% ;
+                            -webkit-border-radius:50% ;
+                            -moz-border-radius:50% ;
+                            -ms-border-radius:50% ;
+                            -o-border-radius:50% ;
+    }
+                            
+                        }
+                        .number{
+                            p{
+                                font-family: $--font-family;
+                                font-weight: 500;
+                                font-size: 15px;
+                                line-height: 160%;
+                                letter-spacing: -0.02em;
+                                color: $--white;
+                            }
+                            a{
+                                line-height: 160%;
+                                font-family: $--font-family;
+                                font-weight: 600;
+                                letter-spacing: -0.02em;
+                                font-size: 16px;
+                                color: $--white;
+                            }
+                        }
+                    }
 			.btn_wrapper{
 				@media (max-width:1272px){
                 display: none;
@@ -270,6 +408,7 @@
 			}
 		}
 	}
+
 }
 .header-style-2{
 	.header-wrap{
