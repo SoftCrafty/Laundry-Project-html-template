@@ -3,8 +3,6 @@
 @import "./partials/animation";
 @import "./pages/home_one.scss";
 @import "./pages/home_two.scss";
-@import "./partials/header";
-@import "./partials/menu-sidebar";
 @import "./partials/heading";
 @import "./partials/button";
 @import "./partials/footer";
@@ -17,6 +15,9 @@
 @import "./partials/back_top";
 @import "./partials/preloader";
 @import "./pages/team.scss";
+@import "./partials/header";
+@import "./partials/offcanvas";
+@import "./partials/mobile-menu";
 
 * {
     margin: 0;

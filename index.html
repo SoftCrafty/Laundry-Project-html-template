@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+    <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lanudry & Dry Cleaning</title>
@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/slick.min.css" />
     <link rel="stylesheet" href="./css/magnific-popup.css">
-    <link rel="stylesheet" href="./css/meanmenu.min.css">
+    <link rel="stylesheet" href="./css/meanmenu.css">
     <link rel="stylesheet" href="./css/style.css" />
+
     </head>
-  <body>
-    <!-- Preloader -->
+    <body>
+
+        <!-- Preloader -->
      <div class="preloader_area">
        <div id="preloader">
          <div class="loader">
@@ -69,74 +71,157 @@
       </div>
     </div>
   </div>
-  <!-- Header Start !-->
-  <header class="header-area" id="top_nav">
-    <div class="container-xxl">
-     <div class="row">
-       <div class="col-12" style="padding-right: 0px;">
-        <div class="header_menu_wrapper">
-          <div class="logo_wrapper">
-           <div class="logo">
-             <a href="index.html" class="standard-logo">
-              <img src="./images/logo/logo.png" alt="logo"/>
-             </a>
-             <a href="index.html" class="sticky-logo">
-               <img src="./images/logo/logo.png" alt="logo"/>
-             </a>
-           </div>
-          </div>
-          
-          <div class="menu">
-            <nav class="main_menu">
-              <ul>
-               <li class="menu-item-has-children"><a href="#">Home</a>
-                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index2.html">Home 2</a></li>
-                 </ul>
-               </li>
-               <li><a href="about.html">About Us</a></li>
-               <li class="menu-item-has-children"><a href="#">Service</a>
-                  <ul>
-                     <li><a href="services.html">Service</a></li>
-                     <li><a href="service_details.html">Service Details</a></li>
-                  </ul>
-                </li>
-               <li class="menu-item-has-children"><a href="#">Team</a>
-                  <ul>
-                    <li><a href="team.html">Team</a></li>
-                     <li><a href="team_details.html">Team Details</a></li>
-                  </ul>
-                </li>
-               <li class="menu-item-has-children"><a href="#">Pages</a>
-                  <ul>
-                     <li><a href="faq.html">FAQ</a></li>
-                     <li><a href="price_packages.html">Price Packages</a></li>
-                     <li><a href="error.html">Page Not Found</a></li>
-                  </ul>
-                </li>
-                <li class="menu-item-has-children"><a href="#">Blog</a>
-                  <ul>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="blog_details.html">Blog Details</a></li>
-                  </ul>
-               </li>
-               <li><a href="contact.html">Contact</a></li>
-              </ul>
-              
-            </nav>
-          </div>
-          <div class="mobile-menu-bar d-lg-none"></div>
-          <div class="btn_wrapper">
-            <a href="contact.html">Schedule a Pickup <span><i class="fa-solid fa-arrow-right"></i></span></a>
-          </div>
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="./images/logo/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                            <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">3517 W. Gray St. Utica, Pennsylvania 57867</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fa-solid fa-envelope"></i></div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:example@gmail.com"><span>tanya.hill@example.com</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+(123)456-7890">(123) 456-7890</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/?lang=en&mx=2"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-       </div>
-     </div>
     </div>
-  </header>
-  <!-- Header End !-->
-
+    <div class="offcanvas__overlay"></div>
+    <!-- Header Start -->
+    <header>
+        <div class="header-1" id="header-sticky">
+               <div class="container-xxl">
+                 <div class="header-wrap">
+                    <div class="logo">
+                        <a class="primary-logo" href="index.html"><img src="./images/logo/logo.png" alt="logo"></a>
+                        <a class="sticky-logo" href="index.html"><img src="./images/logo/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="main-menu-wrap">
+                        <div class="main-menu">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li class="has-dropdown menu-thumb">
+                                        <a href="index.html">
+                                            Home 
+                                        </a>
+                                        <ul class="submenu">
+                                            <li><a href="index.html">Home 01</a></li>
+                                            <li><a href="index2.html">Home 02</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="about.html">
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Service
+                                        </a>
+                                        <ul class="submenu">
+                                            <li><a href="services.html">Service</a></li>
+                                            <li><a href="service_details.html">Service Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="service.html">
+                                            Team
+                                        </a>
+                                        <ul class="submenu">
+                                            <li><a href="team.html">Team</a></li>
+                                            <li><a href="team_details.html">Team Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="service.html">
+                                            Pages
+                                        </a>
+                                        <ul class="submenu">
+                                            <li><a href="faq.html">FAQ</a></li>
+                                            <li><a href="price_packages.html">Price Packages</a></li>
+                                            <li><a href="error.html">Page Not Found</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="blog.html">
+                                            Blog
+                                        </a>
+                                        <ul class="submenu">
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="blog_details.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="btn_wrapper">
+                          <a href="contact.html">Schedule a Pickup <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                        </div>
+                        <button class="offcanvas-bar text-white sidebar__toggle d-lg-none">
+                            <span><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                    </div>
+                </div>
+               </div>
+            </div>
+    </header>
+    <!-- Header End !-->
 
   <!-- hero section start -->
   <section class="hero_section_area">
@@ -243,7 +328,6 @@
      </div>
   </div>
   </section>
-  
   <!-- hero section end -->
  <!-- about section start -->
   <section class="about_section_area pt-150 pb-150">
