@@ -96,7 +96,7 @@
 			i {
 				color: var(--common-white);
                 font-size: 16px;
-                @include transition(all 0.3s ease-in-out);
+                @include transition(0.3s);
 			}
 		}
 
@@ -159,7 +159,7 @@
 					border: 1px solid #414141;
 					text-align: center;
 					color: var(--common-white);
-					@include transition(all 0.3s ease-in-out);
+					@include transition(0.3s);
 					&:hover{
 						border: 1px solid var(--theme-color);
 						background-color: var(--theme-color);

@@ -116,8 +116,7 @@
 	font-weight: 500;
 	text-transform: capitalize;
 	border: none;
-	@include transition(all 0.3s ease-in-out);
-	// border-bottom: 1px solid #e3e3e336 !important;
+	@include transition(0.3s);
 	border-bottom: 1px solid #00000036 !important;
 
 	&:hover {
@@ -155,7 +154,7 @@
 	-moz-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
 	-o-transform: rotate(90deg);
-	@include transition(all 0.3s ease-in-out);
+	@include transition(0.3s);
   }
   
   .mean-container .mean-nav ul li .mega-menu li a {

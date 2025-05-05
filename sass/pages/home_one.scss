@@ -1,9 +1,3 @@
-// .container_area{
-//     max-width: 1600px;
-//     margin: auto;
-//     width: 100%;
-//     padding: 0px 10px;
-// }
 .header_contact_area{
     overflow: hidden;
     @include sm{
@@ -1157,7 +1151,7 @@
             font-size: 10px !important;
         }
         p{
-            font-family: 8px !important;
+            font-size: 8px !important;
         }
     }
     }
