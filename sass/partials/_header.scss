@@ -262,8 +262,6 @@
 	@include sm{
 		height: 60px;
 	}
-	// padding: 0 100px;
-
 	@include breakpoint(max-xl){
 		padding: 0 40px;
 	}
@@ -274,7 +272,6 @@
 		padding: 0px 5px;
 	}
 	.header-wrap{
-		// margin-top: 10px;
 		height: 90px;
 		@include nesthub{
 			height: 80px;
@@ -285,9 +282,7 @@
 		@include sm{
 			height: 60px;
 		}
-		@include breakpoint(max-xl){
-			// margin-top: 20px;
-		}
+		
 
 		.logo{
 			@include breakpoint(max-sm){
@@ -297,10 +292,6 @@
 				display: none;
 			}
 		}
-
-		// .main-menu-wrap{
-		// 	margin-left: -65px;
-		// }
 		.header-right{
 			@include flexbox();
 			align-items: center;
