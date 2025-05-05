@@ -26888,15 +26888,15 @@
     line-height: 142%;
     letter-spacing: -0.02em;
     color: #142137; }
-  .sidebar .widget {
+  .sidebar > .widget {
     background: #ebeff3;
     width: 100%;
     max-width: 380px;
     padding: 30px 30px 40px 30px; }
     @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-      .sidebar .widget {
+      .sidebar > .widget {
         padding: 10px; } }
-    .sidebar .widget .search-form {
+    .sidebar > .widget .search-form {
       margin-top: 24px;
       width: 100%;
       height: 44px;
@@ -26904,20 +26904,20 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center; }
-      .sidebar .widget .search-form input {
+      .sidebar > .widget .search-form input {
         width: calc(100% - 44px);
         height: 44px;
         outline: none;
         padding: 0px 20px;
         border: 1px solid #1421371a;
         background-color: #ebeff3; }
-        .sidebar .widget .search-form input::placeholder {
+        .sidebar > .widget .search-form input::placeholder {
           font-family: "Poppins", sans-serif;
           font-weight: 400;
           font-size: 15px;
           line-height: 173%;
           color: #142137b3; }
-      .sidebar .widget .search-form button {
+      .sidebar > .widget .search-form button {
         width: 44px;
         height: 44px;
         display: block;
@@ -26925,60 +26925,60 @@
         line-height: 44px;
         background-color: #4375e7;
         color: #fff; }
-    .sidebar .widget .recent_post_area {
+    .sidebar > .widget .recent_post_area {
       padding-top: 24px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
       gap: 24px; }
-      .sidebar .widget .recent_post_area .recent_post_wrapper {
+      .sidebar > .widget .recent_post_area .recent_post_wrapper {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         gap: 20px; }
-        .sidebar .widget .recent_post_area .recent_post_wrapper .recent_post_img {
+        .sidebar > .widget .recent_post_area .recent_post_wrapper .recent_post_img {
           width: 90px;
           height: 100px; }
-          .sidebar .widget .recent_post_area .recent_post_wrapper .recent_post_img img {
+          .sidebar > .widget .recent_post_area .recent_post_wrapper .recent_post_img img {
             width: 100%;
             height: 100%;
             object-fit: contain; }
-        .sidebar .widget .recent_post_area .recent_post_wrapper .recent_post_title {
+        .sidebar > .widget .recent_post_area .recent_post_wrapper .recent_post_title {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: flex-start;
           gap: 10px; }
-          .sidebar .widget .recent_post_area .recent_post_wrapper .recent_post_title .blog_publish_date {
+          .sidebar > .widget .recent_post_area .recent_post_wrapper .recent_post_title .blog_publish_date {
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
             gap: 8px; }
-            .sidebar .widget .recent_post_area .recent_post_wrapper .recent_post_title .blog_publish_date a {
+            .sidebar > .widget .recent_post_area .recent_post_wrapper .recent_post_title .blog_publish_date a {
               font-family: "Urbanist", sans-serif;
               font-weight: 500;
               font-size: 16px;
               color: #142137; }
-              .sidebar .widget .recent_post_area .recent_post_wrapper .recent_post_title .blog_publish_date a:hover {
+              .sidebar > .widget .recent_post_area .recent_post_wrapper .recent_post_title .blog_publish_date a:hover {
                 color: #4375e7; }
-          .sidebar .widget .recent_post_area .recent_post_wrapper .recent_post_title h5 a {
+          .sidebar > .widget .recent_post_area .recent_post_wrapper .recent_post_title h5 a {
             font-family: "Poppins", sans-serif;
             font-weight: 500;
             font-size: 18px;
             line-height: 156%;
             letter-spacing: -0.02em;
             color: #142137; }
-            .sidebar .widget .recent_post_area .recent_post_wrapper .recent_post_title h5 a:hover {
+            .sidebar > .widget .recent_post_area .recent_post_wrapper .recent_post_title h5 a:hover {
               color: #4375e7; }
             @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-              .sidebar .widget .recent_post_area .recent_post_wrapper .recent_post_title h5 a {
+              .sidebar > .widget .recent_post_area .recent_post_wrapper .recent_post_title h5 a {
                 font-size: 15px; } }
-    .sidebar .widget .categories_area {
+    .sidebar > .widget .categories_area {
       margin-top: 28px; }
-      .sidebar .widget .categories_area ul {
+      .sidebar > .widget .categories_area ul {
         padding: 0;
         margin: 0;
         display: flex;
@@ -26986,9 +26986,9 @@
         justify-content: flex-start;
         align-items: flex-start;
         gap: 20px; }
-        .sidebar .widget .categories_area ul li {
+        .sidebar > .widget .categories_area ul li {
           width: 100%; }
-          .sidebar .widget .categories_area ul li a {
+          .sidebar > .widget .categories_area ul li a {
             border: 1px solid #1421371a;
             width: 100%;
             font-family: "Poppins", sans-serif;
@@ -27001,17 +27001,17 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px; }
-            .sidebar .widget .categories_area ul li a .dot {
+            .sidebar > .widget .categories_area ul li a .dot {
               margin-right: 6px; }
-            .sidebar .widget .categories_area ul li a .pdf_btn {
+            .sidebar > .widget .categories_area ul li a .pdf_btn {
               margin-right: 6px; }
-            .sidebar .widget .categories_area ul li a:hover {
+            .sidebar > .widget .categories_area ul li a:hover {
               background-color: #4375e7;
               transition: all 0.4s ease;
               color: #fff; }
-    .sidebar .widget .tag_area {
+    .sidebar > .widget .tag_area {
       margin-top: 28px; }
-      .sidebar .widget .tag_area ul {
+      .sidebar > .widget .tag_area ul {
         padding: 0;
         margin: 0;
         display: flex;
@@ -27020,7 +27020,7 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 10px; }
-        .sidebar .widget .tag_area ul li a {
+        .sidebar > .widget .tag_area ul li a {
           font-family: "Poppins", sans-serif;
           font-weight: 400;
           font-size: 15px;
@@ -27031,13 +27031,13 @@
           height: 28px;
           display: block;
           line-height: 28px; }
-          .sidebar .widget .tag_area ul li a:hover {
+          .sidebar > .widget .tag_area ul li a:hover {
             transition: all 0.5s ease;
             background-color: #4375e7;
             color: #fff; }
-    .sidebar .widget .social_area {
+    .sidebar > .widget .social_area {
       margin-top: 25px; }
-      .sidebar .widget .social_area ul {
+      .sidebar > .widget .social_area ul {
         padding: 0;
         margin: 0;
         display: flex;
@@ -27045,7 +27045,7 @@
         justify-content: flex-start;
         align-items: center;
         gap: 6px; }
-        .sidebar .widget .social_area ul li a {
+        .sidebar > .widget .social_area ul li a {
           width: 40px;
           height: 40px;
           display: block;
@@ -27060,19 +27060,19 @@
           color: #fff;
           color: #fff;
           transition: all 0.4s ease; }
-          .sidebar .widget .social_area ul li a:hover {
+          .sidebar > .widget .social_area ul li a:hover {
             background-color: #14213724;
             color: #142137; }
-        .sidebar .widget .social_area ul li:nth-child(2) a {
+        .sidebar > .widget .social_area ul li:nth-child(2) a {
           background-color: #142137;
           color: #fff; }
-          .sidebar .widget .social_area ul li:nth-child(2) a:hover {
+          .sidebar > .widget .social_area ul li:nth-child(2) a:hover {
             background-color: #14213724;
             color: #142137; }
-        .sidebar .widget .social_area ul li:nth-child(4) a {
+        .sidebar > .widget .social_area ul li:nth-child(4) a {
           background-color: #cb2027;
           color: #fff; }
-          .sidebar .widget .social_area ul li:nth-child(4) a:hover {
+          .sidebar > .widget .social_area ul li:nth-child(4) a:hover {
             background-color: #14213724;
             color: #142137; }
 
