@@ -33,7 +33,6 @@
 			  position: relative;
 			  > a {
 				color: var(--theme-color);
-				background-color: red;
 			  }
 			}
 			&.dropdown {
@@ -45,7 +44,6 @@
 				}
 			  }
 			  .dropdown {
-				background-color: red;
 				> a {
 				  &:before {
 					visibility: visible;
@@ -189,8 +187,15 @@
 						color: $--text_clr !important;
 					}
 					&:hover{
-						color: $--white !important;
+						a{
+							color: $--white !important;
+						}
 					}
+				}
+			}
+			&:hover{
+				 > a{
+					color: $--secondary !important;
 				}
 			}
 	}
