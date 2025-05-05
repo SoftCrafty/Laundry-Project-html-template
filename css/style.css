@@ -23506,7 +23506,7 @@
         width: calc(50% - 30px); } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .premium_laundry_service_area .premium_service_wrapper .premium_service_info {
-        width: calc(50% -30px); } }
+        width: calc(50% - 30px); } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .premium_laundry_service_area .premium_service_wrapper .premium_service_info {
         width: 100% !important; } }
@@ -28020,7 +28020,6 @@
       padding-left: 30px;
       padding-right: 30px; } }
 
-@use '../utils' as *;
 /*------------------------------------
 		2.7 Offcanvas
 ----------------------------------*/
@@ -28162,7 +28161,6 @@
 @media (max-width: 575px) {
   .offcanvas__wrapper {
     padding: 20px; } }
-@use '../../utils' as *;
 /*------------------------------------
 		3.4 Mobile menu
 ----------------------------------*/
