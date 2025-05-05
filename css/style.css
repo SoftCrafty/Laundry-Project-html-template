@@ -27709,8 +27709,7 @@
         margin-top: -4px; }
       .header-wrap .main-menu ul li ul.submenu li.active > a {
         position: relative;
-        z-index: 2;
-        color: #fff !important; }
+        z-index: 2; }
       .header-wrap .main-menu ul li a {
         display: block;
         padding: 30px 24px;
