@@ -28329,3 +28329,30 @@ p {
   margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+/*
+ ----Desktop er jonno------
+.working_proces_area .gallery_parent .tab.active .content .how_it_work_contains {
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : flex-start;
+  gap            : 30px;
+}
+
+-------Movile Device er jonno---------
+@media (max-width:767px){
+  .working_proces_area .gallery_parent .tab.active .content .how_it_work_contains {
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : flex-start;
+  gap            : 10px;
+  margin-top     : -32px;
+}
+}
+
+*/
