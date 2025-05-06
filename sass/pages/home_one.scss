@@ -685,11 +685,15 @@
             }
             @include md{
                 width: 50%;
-                padding: 0;
+                padding: 0px 20px;
             }
+            
             @include sm{
                 width: 100%;
                 padding: 0;
+            }
+            @media (min-width:500px) and (max-width:767px){
+                padding: 40px 0px !important;
             }
             &:hover{
                 .service_img_wrapper{
@@ -1151,7 +1155,7 @@
             font-size: 10px !important;
         }
         p{
-            font-size: 8px !important;
+            font-size: 16px !important;
         }
     }
     }
@@ -1180,7 +1184,6 @@
         cursor: pointer;
         overflow: hidden;
         border: 1px solid $--border;
-
         .overly_content_text{
             height: 100%;
             position: absolute;
@@ -1325,16 +1328,15 @@
                         color: #142137b3;
                         margin-top: -8px;
                         @include sm{
-                            margin-top: 10px;
+                            margin-top: 24px;
                         }
                     }
                     .check_list_area{
-                        margin-top: -3px
+                        margin-top: -26px
                     }
                 }
             }
             @include md{
-                // flex: 12;
         .content{
             margin-top: 247px;
            .how_it_work_contains{
@@ -1407,19 +1409,9 @@
         }
     }
     .packages_contains{
-        // @include sm{
-        //     width: 100%;
-        // }
-        // @include md{
-        //     width: calc(50% - 30px);
-        // }
-        // @include nesthub{
-        //     width: calc(33.33% - 30px);
-        // }
         max-width: 378px;
         height: 324px;
         width: 100%;
-        // width: calc(25% - 30px);
         @include transition(0.6s);
         position: relative;
         &:hover{
@@ -1553,7 +1545,6 @@
                 min-height: 350px;
             }
             position: relative;
-            // box-shadow: 0 10px 10px 0 #14213733;
             background: $--white;
             ul{
                 @include flex(row, flex-start, center);
@@ -1665,16 +1656,6 @@
             .blog_text_wrapper{
                 padding-top: 13px;
                 @include flex(column, flex-end, flex-start);
-                // h4{
-                //     font-family: $--font-family;
-                //     font-weight: 500;
-                //     font-size: 15px;
-                //     line-height: 173%;
-                //     color: $--white;
-                //     background-color: $--primary;
-                //     padding: 8px 12px;
-                //     display: inline;
-                // }
                 a{
                     span{
                         position: relative;
@@ -1707,7 +1688,6 @@
                     background-color: $--primary;
 }
                     &:hover h4 span::after {
-//   transform: scaleX(1);
   width: 100%;
 }
 
