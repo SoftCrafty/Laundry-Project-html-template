@@ -15,6 +15,32 @@
 			display: inline-block;
 			padding: 0;
 			position: relative;
+			  &.menu-item-has-children{
+				&::after{
+				content: "\f107";
+				font-family: "FontAwesome";
+				position: absolute;
+				top: 50%;
+				margin-top: 1px;
+				display: inline-block;
+				@include transformY(-50%);
+				right: 2px;
+				@include transition(0.5s);
+				
+			}
+			&:hover{
+                &::after{
+					margin-top: -9px;
+                color: $--primary;
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+              }
+    }
+
+			  }
 			@include breakpoint(max-xxxl){
 				margin: 0 5px;
 			}

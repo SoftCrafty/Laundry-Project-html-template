@@ -6,7 +6,6 @@
 
 
         windowOn.on('load', function () {
-            // wowAnimation();
         });
 
 

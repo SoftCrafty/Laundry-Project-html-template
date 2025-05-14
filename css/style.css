@@ -23920,11 +23920,14 @@
         background-color: #ebeff3;
         transition: all 0.4s ease;
         border: 1px solid transparent; }
-      .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper h4 {
+      .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper h4 a {
         font-family: "Poppins", sans-serif;
         font-weight: 600;
         font-size: 18px;
-        color: #142137; }
+        color: #142137;
+        transition: all 0.4s ease; }
+        .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper h4 a:hover {
+          color: #4375e7; }
       .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper h5 {
         font-family: "Poppins", sans-serif;
         font-weight: 500;
@@ -23948,10 +23951,17 @@
             padding: 30px; } }
         .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper .team_crad_img img {
           object-fit: contain;
-          float: right; }
+          float: right;
+          transition: all 0.4s ease; }
           @media only screen and (min-width: 0px) and (max-width: 767px) {
             .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper .team_crad_img img {
               width: 100%; } }
+          .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper .team_crad_img img:hover {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1); }
       .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper .team_card_social_media {
         display: flex;
         flex-direction: row;
@@ -23963,29 +23973,31 @@
           color: #fff !important;
           background-color: #142137;
           transition: all 0.4s ease; }
-        .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper .team_card_social_media a:nth-child(1) {
-          width: 34px;
-          height: 34px;
-          border: 1px solid #00000024;
-          border-radius: 50%;
-          -moz-border-radius: 50%;
-          -webkit-border-radius: 50%;
-          -ms-border-radius: 50%;
-          -o-border-radius: 50%;
-          color: #142137;
-          display: block;
-          text-align: center;
-          line-height: 32px; }
-        .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper .team_card_social_media a:nth-child(2) {
-          padding: 5px 22px;
-          border-radius: 50px;
-          -moz-border-radius: 50px;
-          -webkit-border-radius: 50px;
-          -ms-border-radius: 50px;
-          -o-border-radius: 50px;
-          border: 1px solid #14213724;
-          color: #142137;
-          text-align: center; }
+        .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper .team_card_social_media a {
+          transition: all 0.4s ease; }
+          .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper .team_card_social_media a:nth-child(1) {
+            width: 34px;
+            height: 34px;
+            border: 1px solid #00000024;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            color: #142137;
+            display: block;
+            text-align: center;
+            line-height: 32px; }
+          .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper .team_card_social_media a:nth-child(2) {
+            padding: 5px 22px;
+            border-radius: 50px;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            border: 1px solid #14213724;
+            color: #142137;
+            text-align: center; }
       .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper .team_card_social_media.style_1:hover a {
         color: #fff !important;
         background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
@@ -25441,6 +25453,7 @@
 
 .inner_hero_section_area {
   position: relative;
+  background-image: url(../../images/about_page/bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -27584,6 +27597,28 @@
       display: inline-block;
       padding: 0;
       position: relative; }
+      .header-wrap .main-menu ul li.menu-item-has-children::after {
+        content: "\f107";
+        font-family: "FontAwesome";
+        position: absolute;
+        top: 50%;
+        margin-top: 1px;
+        display: inline-block;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        right: 2px;
+        transition: all 0.5s ease; }
+      .header-wrap .main-menu ul li.menu-item-has-children:hover::after {
+        margin-top: -9px;
+        color: #4375e7;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg); }
       @media (max-width: 1600px) {
         .header-wrap .main-menu ul li {
           margin: 0 5px; } }
@@ -28329,30 +28364,3 @@ p {
   margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
-
-
-
-
-/*
- ----Desktop er jonno------
-.working_proces_area .gallery_parent .tab.active .content .how_it_work_contains {
-  display        : flex;
-  flex-direction : column;
-  justify-content: center;
-  align-items    : flex-start;
-  gap            : 30px;
-}
-
--------Movile Device er jonno---------
-@media (max-width:767px){
-  .working_proces_area .gallery_parent .tab.active .content .how_it_work_contains {
-  display        : flex;
-  flex-direction : column;
-  justify-content: center;
-  align-items    : flex-start;
-  gap            : 10px;
-  margin-top     : -32px;
-}
-}
-
-*/

@@ -855,10 +855,16 @@ li {
                    
                 }
                 h4{
-                    font-family: $--font-family;
+                    a{
+                        font-family: $--font-family;
                     font-weight: 600;
                     font-size: 18px;
                     color: $--text-clr;
+                    @include transition(0.4s);
+                    &:hover{
+                        color: $--primary;
+                    }
+                    }
                 }
                 h5{
                     font-family: $--font-family;
@@ -886,10 +892,18 @@ li {
                     img{
                         object-fit: contain;
                         float: right;
+                        @include transition(0.4s);
                         @include sm{
                             width: 100%;
 
                         }
+                        &:hover{
+                            transform: scale(1.1)                        ;
+                            -webkit-transform: scale(1.1)                        ;
+                            -moz-transform: scale(1.1)                        ;
+                            -ms-transform: scale(1.1)                        ;
+                            -o-transform: scale(1.1)                        ;
+}
                     }
                 }
                 .team_card_social_media{
@@ -901,10 +915,11 @@ li {
                         color: $--white !important;
                         background-color: $--text-clr;
                             @include transition(0.4s);
-                       }
-                                
-                            }
+                        }
+                        
+                    }
                     a{
+                        @include transition(0.4s);
                         &:nth-child(1){
                             width: 34px;
                             height: 34px;
