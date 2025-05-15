@@ -32250,6 +32250,11 @@
   width: 298px;
 }
 
+.slick-slide[aria-hidden=true] .playBtn {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 .principle_section_area .principle_section_wrapper .principle_contains_area {
   display: flex;
   flex-direction: row;
