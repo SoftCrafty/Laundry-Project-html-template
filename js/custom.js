@@ -241,13 +241,24 @@
         });
         // Video Popup
         $('.playBtn').magnificPopup({
-            type: 'iframe',
-            disableOn: 700,
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false
-        });
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false,
+    iframe: {
+      patterns: {
+        youtube: {
+          index: 'youtube.com/',
+          id: function (url) {
+            var match = url.match(/[?&]v=([^&]+)/);
+            return match && match[1] ? match[1] : null;
+          },
+          src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+        }
+      }
+    }
+  });
           
     });
         $(window).on("load", function () {
