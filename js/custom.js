@@ -2,12 +2,21 @@
     "use strict";
 
     var windowOn = $(window);
+
     $(document).ready(function () {
 
+        $(window).on("load", function () {
+            const preloader = document.querySelector(".preloader_area");
+            preloader.style.transition = "all 0.5s ease";
+            preloader.style.opacity = "0";
+            preloader.style.visibility = "hidden";
+            setTimeout(() => {
+                preloader.style.display = "none";
+            }, 300);
+        });
 
         windowOn.on('load', function () {
         });
-
 
         //>> Mobile Menu Js Start <<//
         $('#mobile-menu').meanmenu({
@@ -160,21 +169,77 @@
             $('.hero_contains .heading, .hero_contains .sub_heading').removeClass('animated');
             $('.slick-current .hero_contains .heading, .slick-current .hero_contains .sub_heading').addClass('animated');
         });
-        $('.testimonial_card_area').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
-            nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            speed: 2000,
-            easing: "ease-in-out",
-            responsive: [
-                { breakpoint: 1100, settings: { slidesToShow: 2 } },
-                { breakpoint: 768, settings: { slidesToShow: 1 } },
-                { breakpoint: 480, settings: { slidesToShow: 1 } }
-            ]
+
+
+        
+       // ✅ Magnific Popup Fix (supports both watch and embed links)
+        $('.playBtn').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false,
+        iframe: {
+            patterns: {
+            youtube: {
+                index: 'youtube.com/', // also matches 'youtube.com/embed/'
+                id: function (url) {
+                // Support both watch and embed links
+                const watchMatch = url.match(/[?&]v=([^&]+)/);
+                if (watchMatch && watchMatch[1]) return watchMatch[1];
+                
+                const embedMatch = url.match(/embed\/([^\?&]+)/);
+                if (embedMatch && embedMatch[1]) return embedMatch[1];
+
+                return null;
+                },
+                src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+            }
+            }
+        }
         });
+
+        //  Slick Slider Init
+        $('.testimonial_card_area').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
+        nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 2000,
+        easing: "ease-in-out",
+        responsive: [
+            { breakpoint: 1100, settings: { slidesToShow: 2 } },
+            { breakpoint: 768, settings: { slidesToShow: 1 } },
+            { breakpoint: 480, settings: { slidesToShow: 1 } }
+        ]
+        });
+
+        // ✅ Manage focus for accessibility
+        function updatePlayButtonFocus() {
+        $('.testimonial_card_area .slick-slide').each(function () {
+            const isHidden = $(this).attr('aria-hidden') === 'true';
+            $(this).find('.playBtn').attr('tabindex', isHidden ? '-1' : '0');
+        });
+        }
+
+        setTimeout(updatePlayButtonFocus, 100); // Slight delay to let slick finish DOM update
+
+        $('.testimonial_card_area').on('afterChange', function () {
+        updatePlayButtonFocus();
+        });
+
+        // ✅ Block playBtn click if in hidden slide (prevent console warning)
+        $('.testimonial_card_area').on('click', '.playBtn', function (e) {
+        const isHidden = $(this).closest('.slick-slide').attr('aria-hidden') === 'true';
+        if (isHidden) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            return false;
+        }
+        });
+
         $(document).on("mouseenter", ".categories_area.style_1 ul li a", function () {
             $(this).find('.download_btn img').attr('src', './images/service/icon3.png');
             $(this).find('.pdf_btn img').attr('src', './images/service/icon5.png');
@@ -239,36 +304,8 @@
             easing: 'ease-in-out',
             dotsClass: 'docts-active-collect',
         });
-        // Video Popup
-        $('.playBtn').magnificPopup({
-    type: 'iframe',
-    mainClass: 'mfp-fade',
-    removalDelay: 160,
-    preloader: false,
-    fixedContentPos: false,
-    iframe: {
-      patterns: {
-        youtube: {
-          index: 'youtube.com/',
-          id: function (url) {
-            var match = url.match(/[?&]v=([^&]+)/);
-            return match && match[1] ? match[1] : null;
-          },
-          src: 'https://www.youtube.com/embed/%id%?autoplay=1'
-        }
-      }
-    }
-  });
-          
+        
     });
-        $(window).on("load", function () {
-            const preloader = document.querySelector(".preloader_area");
-            preloader.style.transition = "all 0.5s ease";
-            preloader.style.opacity = "0";
-            preloader.style.visibility = "hidden";
-            setTimeout(() => {
-                preloader.style.display = "none";
-            }, 300);
-        });
+       
    
 })(jQuery);
