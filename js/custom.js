@@ -169,10 +169,8 @@
             $('.hero_contains .heading, .hero_contains .sub_heading').removeClass('animated');
             $('.slick-current .hero_contains .heading, .slick-current .hero_contains .sub_heading').addClass('animated');
         });
-
-
         
-       // ✅ Magnific Popup Fix (supports both watch and embed links)
+      // ✅ Magnific Popup Configuration
         $('.playBtn').magnificPopup({
         type: 'iframe',
         mainClass: 'mfp-fade',
@@ -182,12 +180,12 @@
         iframe: {
             patterns: {
             youtube: {
-                index: 'youtube.com/', // also matches 'youtube.com/embed/'
+                index: 'youtube.com/',
                 id: function (url) {
-                // Support both watch and embed links
+                // Support both ?v=ID and /embed/ID
                 const watchMatch = url.match(/[?&]v=([^&]+)/);
                 if (watchMatch && watchMatch[1]) return watchMatch[1];
-                
+
                 const embedMatch = url.match(/embed\/([^\?&]+)/);
                 if (embedMatch && embedMatch[1]) return embedMatch[1];
 
@@ -199,7 +197,7 @@
         }
         });
 
-        //  Slick Slider Init
+        // ✅ Slick Slider Configuration
         $('.testimonial_card_area').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -216,21 +214,20 @@
         ]
         });
 
-        // ✅ Manage focus for accessibility
+        // ✅ Focus & Accessibility Management for Slick
         function updatePlayButtonFocus() {
         $('.testimonial_card_area .slick-slide').each(function () {
+            const $btn = $(this).find('.playBtn');
             const isHidden = $(this).attr('aria-hidden') === 'true';
-            $(this).find('.playBtn').attr('tabindex', isHidden ? '-1' : '0');
+            $btn.attr('tabindex', isHidden ? '-1' : '0');
+            $btn.toggleClass('disabled', isHidden); // Optional: style control
         });
         }
 
-        setTimeout(updatePlayButtonFocus, 100); // Slight delay to let slick finish DOM update
+        setTimeout(updatePlayButtonFocus, 100); // Allow Slick to initialize
+        $('.testimonial_card_area').on('afterChange', updatePlayButtonFocus);
 
-        $('.testimonial_card_area').on('afterChange', function () {
-        updatePlayButtonFocus();
-        });
-
-        // ✅ Block playBtn click if in hidden slide (prevent console warning)
+        // ✅ Block Video Click on Hidden Slides (prevents redirect in mobile)
         $('.testimonial_card_area').on('click', '.playBtn', function (e) {
         const isHidden = $(this).closest('.slick-slide').attr('aria-hidden') === 'true';
         if (isHidden) {
