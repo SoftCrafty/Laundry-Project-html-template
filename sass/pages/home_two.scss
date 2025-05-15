@@ -821,10 +821,13 @@ li {
         gap: 40px;
         .team_member_card_area{
             @include flex(row, space-between, center);
-            @include sm{
-                justify-content: center;
+            @include nesthub{
+                justify-content: flex-start;
             }
             @include md{
+                justify-content: center;
+            }
+            @include sm{
                 justify-content: center;
             }
             gap: 30px;
@@ -1282,9 +1285,7 @@ li {
                     height: 460px;
                     gap: 5px;
                     position: relative;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
+
                     .testimonial_contains_area{
                         height: 100%;
                         @include flex(column, flex-end, flex-start);
@@ -1324,6 +1325,18 @@ li {
                         }
                        }
                     }
+                }
+                &.style_2{
+                    background-image: url(../images/home2/clients_testimonial/bg.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                &.style_3{
+                    background-image: url(../images/home2/clients_testimonial/bg2.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                 }
                 // width: calc(25% - 30px);
                 padding: 40px 34px;

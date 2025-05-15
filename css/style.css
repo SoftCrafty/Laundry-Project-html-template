@@ -23889,10 +23889,13 @@
     align-items: center;
     gap: 30px;
     flex-wrap: wrap; }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
+    @media only screen and (min-width: 992px) and (max-width: 1024px) {
+      .team_members_area .team_member_area_wrapper .team_member_card_area {
+        justify-content: flex-start; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
       .team_members_area .team_member_area_wrapper .team_member_card_area {
         justify-content: center; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
       .team_members_area .team_member_area_wrapper .team_member_card_area {
         justify-content: center; } }
     .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper {
@@ -24315,10 +24318,7 @@
         height: 100%;
         height: 460px;
         gap: 5px;
-        position: relative;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; }
+        position: relative; }
         .clients_testimonials_area .clients_testimonials_wrapper .testimonial_card_area .testimonial_card_wrapper.style_1 .testimonial_contains_area {
           height: 100%;
           display: flex;
@@ -24352,6 +24352,16 @@
             line-height: 186%;
             text-transform: uppercase;
             color: #ffffffb3; }
+      .clients_testimonials_area .clients_testimonials_wrapper .testimonial_card_area .testimonial_card_wrapper.style_2 {
+        background-image: url(../images/home2/clients_testimonial/bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .clients_testimonials_area .clients_testimonials_wrapper .testimonial_card_area .testimonial_card_wrapper.style_3 {
+        background-image: url(../images/home2/clients_testimonial/bg2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .clients_testimonials_area .clients_testimonials_wrapper .testimonial_card_area .testimonial_card_wrapper {
           padding: 35px 20px; } }
@@ -25453,7 +25463,7 @@
 
 .inner_hero_section_area {
   position: relative;
-  background-image: url(../../images/about_page/bg.png);
+  background-image: url(../images/about_page/bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

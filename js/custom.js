@@ -246,20 +246,9 @@
             mainClass: 'mfp-fade',
             removalDelay: 160,
             preloader: false,
-            fixedContentPos: false,
-            iframe: {
-                patterns: {
-                    youtube: {
-                        index: 'youtube.com/',
-                        id: function (url) {
-                            var match = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
-                            return match && match[1] ? match[1] : null;
-                        },
-                        src: 'https://www.youtube.com/embed/i6ZU0Hc3ap8?si=36VYEBItQRDb7r7a'
-                    }
-                }
-            }
+            fixedContentPos: false
         });
+          
     });
         $(window).on("load", function () {
             const preloader = document.querySelector(".preloader_area");
