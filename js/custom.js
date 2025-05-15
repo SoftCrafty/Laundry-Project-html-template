@@ -257,7 +257,7 @@
             preloader.style.visibility = "hidden";
             setTimeout(() => {
                 preloader.style.display = "none";
-            }, 600);
+            }, 300);
         });
    
 })(jQuery);
