@@ -192,7 +192,16 @@
                 src: 'https://www.youtube.com/embed/%id%?autoplay=1'
             }
             }
-        }
+            },
+            callbacks: {
+                close: function () {
+                document.activeElement && document.activeElement.blur();
+               
+                setTimeout(() => {
+                    $('#main-content, .slick-current .playBtn').first().focus();
+                }, 100);
+                }
+            }
         });
 
         // ✅ Slick Slider Configuration
