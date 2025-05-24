@@ -646,6 +646,10 @@
         .heading{
             margin-top: 50px;
             margin-bottom: 16px;
+
+            @include xs{
+                margin-top: 25px;
+            }
            
             a{
             font-family: $--font-family;

@@ -34,10 +34,13 @@
 
 
 **********************************************/
-
 /*----------------------------------------*/
-/*  01. MIXIN DECLARARION
+/*  02. MIXIN DECLARATION
 /*----------------------------------------*/
+/* Flex & Transform Mixins */
+/* Flexbox Fallback Mixin */
+/* Responsive Mixins */
+/* Utility Margin & Padding Classes with Responsive Adjustments */
 .mt-1 {
   margin-top: 1px;
 }
@@ -25238,8 +25241,9 @@
     padding-right: 250px;
   }
 }
+/* Smart Breakpoint Mixin */
 /*----------------------------------------*/
-/*  01. VARIBALES DECLARARION
+/*  03. VARIBALES DECLARARION
 /*----------------------------------------*/
 * {
   margin: 0;
@@ -25279,6 +25283,9 @@ p {
   margin: 0;
 }
 
+/*----------------------------------------*/
+/*  04. HOME ONE CSS START
+/*----------------------------------------*/
 .header_contact_area {
   overflow: hidden;
 }
@@ -25557,10 +25564,6 @@ p {
   left: -160px;
   top: 50%;
   transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .hero_section_area .hero_section .overly_tow {
@@ -25727,7 +25730,7 @@ p {
 .experts_section_area {
   overflow: hidden;
 }
-@media only screen and (min-width: 0px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .experts_section_area {
     padding-top: 0px !important;
     padding-bottom: 75px !important;
@@ -25803,10 +25806,6 @@ p {
   height: 290px;
   position: absolute;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   right: 28%;
   bottom: 40px;
 }
@@ -25831,17 +25830,9 @@ p {
   background: #f9f9f9;
   position: absolute;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .experts_section_area .experts_content_wrapper .experts_img_area .experience_card .experience_card_contains {
@@ -26016,6 +26007,11 @@ p {
 .our_service_area .our_service_container .heading {
   margin-top: 50px;
   margin-bottom: 16px;
+}
+@media only screen and (max-width: 576px) {
+  .our_service_area .our_service_container .heading {
+    margin-top: 25px;
+  }
 }
 .our_service_area .our_service_container .heading a {
   font-family: "Poppins", sans-serif;
@@ -26335,7 +26331,7 @@ p {
     margin-left: 8px;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .cleaning_experts_section .cleaning_container_area .cleaning_experts_info {
     margin-left: 0px;
     padding-right: 10px;
@@ -26710,10 +26706,6 @@ p {
   background-color: #142137;
   display: block;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   text-align: center;
   line-height: 100px;
 }
@@ -26874,10 +26866,6 @@ p {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
   padding: 30px 10px 0px 30px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
@@ -27146,10 +27134,6 @@ p {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
   bottom: 0;
   height: 1px;
   width: 0%;
@@ -27197,6 +27181,9 @@ p {
 }
 
 /*--------Blog News end---------*/
+/*----------------------------------------*/
+/*  05. HOME TWO START
+/*----------------------------------------*/
 .hero_img {
   position: absolute;
   right: 0;
@@ -27245,10 +27232,6 @@ p {
   width: 1502px;
   height: 1502px;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.031372549);
   overflow: hidden;
 }
@@ -27268,10 +27251,6 @@ p {
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .home_two_dots {
@@ -27457,10 +27436,6 @@ p {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   background-color: #fff;
   text-align: center;
   padding-right: 10px;
@@ -27471,10 +27446,6 @@ p {
   top: 40%;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
 }
 .home_two_about_area .home_two_about_wrapper .home_two_image_area .home_two_img span i {
   margin-left: 10px;
@@ -27493,10 +27464,6 @@ p {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.4509803922);
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   animation: pulse 1.5s infinite ease-out;
 }
 .home_two_about_area .home_two_about_wrapper .home_two_image_area .home_two_img span i {
@@ -27609,10 +27576,6 @@ p {
   border: 1px solid #d9dbdf;
   padding: 0px 10px 0px 30px;
   border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -27711,10 +27674,6 @@ p {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
   text-align: center;
   line-height: 42px;
   background-color: rgba(255, 255, 255, 0.0352941176);
@@ -27933,10 +27892,6 @@ p {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
   text-align: center;
   line-height: 40px;
   background-color: rgba(255, 255, 255, 0.0352941176);
@@ -28007,10 +27962,6 @@ p {
   left: -100px;
   background-color: #4375e7;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   opacity: 0;
   visibility: hidden;
   z-index: 10;
@@ -28041,10 +27992,6 @@ p {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
   }
 }
 .counting_section_area .counting_info_wrapper .counting_info:nth-child(2) {
@@ -28066,10 +28013,6 @@ p {
   .counting_section_area .counting_info_wrapper .counting_info:nth-child(2) {
     left: 50%;
     transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
     top: 238px;
   }
 }
@@ -28092,10 +28035,6 @@ p {
   .counting_section_area .counting_info_wrapper .counting_info:nth-child(3) {
     left: 50%;
     transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
     top: 476px;
   }
 }
@@ -28124,10 +28063,6 @@ p {
   .counting_section_area .counting_info_wrapper .counting_info:nth-child(4) {
     left: 50%;
     transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
     top: 714px;
   }
 }
@@ -28312,10 +28247,6 @@ p {
   height: 34px;
   border: 1px solid rgba(0, 0, 0, 0.1411764706);
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   color: #142137;
   display: block;
   text-align: center;
@@ -28324,10 +28255,6 @@ p {
 .team_members_area .team_member_area_wrapper .team_member_card_area .team_member_card_wrapper .team_card_social_media a:nth-child(2) {
   padding: 5px 22px;
   border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
   border: 1px solid rgba(20, 33, 55, 0.1411764706);
   color: #142137;
   text-align: center;
@@ -28577,10 +28504,6 @@ p {
   -o-object-fit: contain;
      object-fit: contain;
   transform: translateX(-43%);
-  -webkit-transform: translateX(-43%);
-  -moz-transform: translateX(-43%);
-  -ms-transform: translateX(-43%);
-  -o-transform: translateX(-43%);
   position: absolute;
   bottom: 0px;
   left: 50%;
@@ -28593,10 +28516,6 @@ p {
     height: 550px;
     overflow: visible;
     transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -28607,10 +28526,6 @@ p {
     height: 550px;
     overflow: visible;
     transform: translateX(-55%);
-    -webkit-transform: translateX(-55%);
-    -moz-transform: translateX(-55%);
-    -ms-transform: translateX(-55%);
-    -o-transform: translateX(-55%);
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -28621,10 +28536,6 @@ p {
     height: 300px;
     overflow: visible;
     transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
   }
 }
 
@@ -28647,10 +28558,6 @@ p {
 }
 .clients_testimonials_area .clients_testimonials_wrapper .testimonial_card_area .left-arrow {
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   width: 50px;
   height: 50px;
   border: 1px solid rgba(20, 33, 55, 0.1411764706);
@@ -28679,10 +28586,6 @@ p {
 }
 .clients_testimonials_area .clients_testimonials_wrapper .testimonial_card_area .right-arrow {
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   width: 50px;
   height: 50px;
   border: 1px solid rgba(20, 33, 55, 0.1411764706);
@@ -29054,10 +28957,6 @@ p {
   padding-left: 30px;
   padding-right: 5px;
   border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
   border: 1px solid rgba(20, 33, 55, 0.1411764706);
   background-color: transparent;
   margin-top: 32px;
@@ -29110,6 +29009,9 @@ p {
 }
 
 /*-----------Blog and News End------------*/
+/*----------------------------------------*/
+/*  06. HEADING AREA START
+/*----------------------------------------*/
 .heading_area .sub_heading.style_1 h4 {
   color: rgba(20, 33, 55, 0.7019607843);
   font-family: var(--font-family);
@@ -29127,10 +29029,6 @@ p {
 }
 .heading_area .sub_heading.style_3 h4 {
   border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
   border: 1px solid #d9dbdf;
   padding: 0px 20px;
   color: #142137;
@@ -29273,6 +29171,10 @@ p {
     align-items: flex-start;
   }
 }
+
+/*----------------------------------------*/
+/*  07. BUTTON CSS START
+/*----------------------------------------*/
 .btn_wrapper_area {
   text-align: center;
   line-height: 54px;
@@ -29400,10 +29302,6 @@ p {
 }
 .btn_wrapper_area.style_2 {
   border-radius: 100px;
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
   background-color: #fff !important;
   position: relative;
   overflow: hidden;
@@ -29471,10 +29369,6 @@ p {
 .btn_wrapper_area.style_3 {
   padding: 0px;
   border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
   background-color: #142137;
   border: 1px solid transparent;
   position: relative;
@@ -29574,10 +29468,6 @@ p {
 .btn_wrapper_area.style_4 {
   padding: 0px;
   border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
   border: 1px solid rgba(20, 33, 55, 0.1411764706);
   background-color: transparent;
   overflow: hidden;
@@ -29766,6 +29656,9 @@ p {
   -o-transform: rotate(-45deg);
 }
 
+/*----------------------------------------*/
+/*  08. FOOTER CSS START
+/*----------------------------------------*/
 .footer {
   background: #142137;
   padding: 0px 20px;
@@ -30000,10 +29893,6 @@ p {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   width: 40px;
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.1411764706);
@@ -30125,7 +30014,7 @@ p {
 }
 
 /*----------------------------------------*/
-/*  01. ABOUT PAGE START
+/*  09. ABOUT PAGE START
 /*----------------------------------------*/
 .inner_hero_section_area {
   position: relative;
@@ -30192,10 +30081,6 @@ p {
   padding: 0px 16px;
   gap: 8px;
   border-radius: 195px;
-  -moz-border-radius: 195px;
-  -webkit-border-radius: 195px;
-  -ms-border-radius: 195px;
-  -o-border-radius: 195px;
 }
 .inner_hero_section_area ul li span:nth-child(1) {
   padding-right: 4px;
@@ -30294,10 +30179,6 @@ p {
   height: 102px;
   background-color: #ebeff3;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   position: absolute;
   top: 38px;
   right: 120px;
@@ -30316,10 +30197,6 @@ p {
   right: -45px;
   top: 50%;
   transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
 }
 .about_section_area .about_section_wrapper .about_counting_area {
   display: flex;
@@ -30372,10 +30249,6 @@ p {
   align-items: center;
   text-align: center;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   overflow: hidden;
   position: relative;
 }
@@ -30388,10 +30261,6 @@ p {
   left: -100px;
   background-color: #4375e7;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   opacity: 0;
   visibility: hidden;
   transition: all 0.9s ease;
@@ -30617,10 +30486,6 @@ p {
   padding-left: 30px;
   padding-right: 10px;
   border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
   border: 1px solid transparent;
 }
 .contact_message_box_area .contact_message_box_wrapper .contact_message_box .message_sent_btn input span {
@@ -30630,10 +30495,6 @@ p {
   line-height: 30px;
   background-color: #fff;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   color: #142137;
   margin-left: 5px;
   transition: all 0.5s ease;
@@ -30703,6 +30564,9 @@ p {
   margin-top: 4px;
 }
 
+/*----------------------------------------*/
+/*  10. FAQ AREA START
+/*----------------------------------------*/
 .faq_btn button {
   border: none;
   background-color: #142137;
@@ -30720,10 +30584,6 @@ p {
   padding-left: 30px;
   padding-right: 10px;
   border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
   border: 1px solid transparent;
 }
 .faq_btn button span {
@@ -30733,10 +30593,6 @@ p {
   line-height: 30px;
   background-color: #fff;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   color: #142137;
   margin-left: 5px;
   transition: all 0.5s ease;
@@ -30917,6 +30773,9 @@ p {
   display: block;
 }
 
+/*----------------------------------------*/
+/*  11. BLOG CSS START
+/*----------------------------------------*/
 .blog_details_area .footer_contact_wrapper {
   display: flex;
   flex-direction: row;
@@ -30990,15 +30849,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   width: 80px;
   height: 80px;
   cursor: pointer;
@@ -31024,10 +30875,6 @@ p {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.4509803922);
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   animation: pulse 1.5s infinite ease-out;
 }
 .blog_details_area .blog-post .single-post-iteam .post-gallery {
@@ -31333,10 +31180,6 @@ p {
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   background-color: #4375e7;
   color: #fff;
   color: #fff;
@@ -31511,10 +31354,6 @@ p {
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   background-color: #4375e7;
   color: #fff;
   color: #fff;
@@ -32013,10 +31852,6 @@ p {
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   background-color: #4375e7;
   color: #fff;
   color: #fff;
@@ -32255,10 +32090,6 @@ p {
   padding-left: 30px;
   padding-right: 10px;
   border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
   border: 1px solid transparent;
 }
 .post-comments-form .comment-respond .theme-btn span {
@@ -32268,10 +32099,6 @@ p {
   line-height: 30px;
   background-color: #fff;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   color: #142137;
   margin-left: 5px;
   transition: all 0.5s ease;
@@ -32339,6 +32166,12 @@ p {
   opacity: 0.5;
 }
 
+/*----------------------------------------*/
+/*  12. COMMENT AREA START
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*  13. PRINCIPLE CSS START
+/*----------------------------------------*/
 .principle_section_area .principle_section_wrapper .principle_contains_area {
   display: flex;
   flex-direction: row;
@@ -32406,6 +32239,9 @@ p {
   color: #fff;
 }
 
+/*----------------------------------------*/
+/*  14. ERROR CSS START
+/*----------------------------------------*/
 .error_contains_wrapper {
   display: flex;
   flex-direction: column;
@@ -32453,6 +32289,9 @@ p {
   width: 242px !important;
 }
 
+/*----------------------------------------*/
+/*  15. BACK TO TOP CSS START
+/*----------------------------------------*/
 .back_top {
   position: fixed;
   bottom: 30px;
@@ -32467,10 +32306,6 @@ p {
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   cursor: pointer;
   background-color: #4375e7;
   border: 1px solid transparent;
@@ -32487,7 +32322,9 @@ p {
   display: block;
 }
 
-/* Preloader styles */
+/*----------------------------------------*/
+/*  16. PRELOADER AREA START
+/*----------------------------------------*/
 .preloader_area {
   position: fixed;
   top: 0;
@@ -32506,10 +32343,6 @@ p {
   height: 300px;
   background-color: #4375e7;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32522,10 +32355,6 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
 }
 
 .loader {
@@ -32533,10 +32362,6 @@ p {
   height: 300px;
   background-color: #4375e7;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32558,6 +32383,9 @@ p {
     transform: rotate(360deg);
   }
 }
+/*----------------------------------------*/
+/*  17. TEAM AREA START
+/*----------------------------------------*/
 .team_details_area P {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -32638,10 +32466,6 @@ p {
 }
 .blog_social_wrapper.style_1 a {
   border-radius: 0px;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -ms-border-radius: 0px;
-  -o-border-radius: 0px;
 }
 .blog_social_wrapper h4 {
   font-family: "Poppins", sans-serif;
@@ -32667,10 +32491,6 @@ p {
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   background-color: #4375e7;
   color: #fff;
   color: #fff;
@@ -32762,9 +32582,9 @@ p {
   left: 0;
 }
 
-/*------------------------------------
-		3.1 Header Style 1
-----------------------------------*/
+/*----------------------------------------*/
+/*  18. HEADER CSS START
+/*----------------------------------------*/
 .header-wrap {
   display: flex;
   align-items: center;
@@ -32788,10 +32608,6 @@ p {
   margin-top: 1px;
   display: inline-block;
   transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   right: 2px;
   transition: all 0.5s ease;
 }
@@ -32957,10 +32773,6 @@ p {
   font-weight: 500;
   font-size: 15px;
   border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
   color: #142137;
   display: flex;
   flex-direction: row;
@@ -32973,10 +32785,6 @@ p {
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   background-color: #142137;
   color: #fff;
   line-height: 34px;
@@ -33235,9 +33043,9 @@ p {
   }
 }
 
-/*------------------------------------
-		2.7 Offcanvas
-----------------------------------*/
+/*----------------------------------------*/
+/*  19. OFF CANVAS CSS START
+/*----------------------------------------*/
 .offcanvas__info {
   background: #fff none repeat scroll 0 0;
   border-left: 1px solid var(--theme-color);
@@ -33400,9 +33208,9 @@ p {
     padding: 20px;
   }
 }
-/*------------------------------------
-		3.4 Mobile menu
-----------------------------------*/
+/*----------------------------------------*/
+/*  20. MOBILE MENU AREA
+/*----------------------------------------*/
 .mean-container a.meanmenu-reveal {
   display: none;
 }
@@ -33554,7 +33362,9 @@ p {
   margin-bottom: 20px;
 }
 
-/* Animation for SlideDown */
+/*----------------------------------------*/
+/*  21. ANIMATION CSS START
+/*----------------------------------------*/
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
