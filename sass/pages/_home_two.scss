@@ -288,7 +288,7 @@
             border: 1px solid $--border_bl;
             &:hover{
                     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-    transform: translateY(-5px);
+                    transform: translateY(-5px);
                     .premium_icon{
                         img{
                             @include transition(1.5s);
@@ -309,6 +309,10 @@
             width: calc(25% - 30px);
             max-width: 380px;
             padding: 60px 40px;
+
+            @include xxs{
+                padding: 35px 25px;
+            }
             @include three13{
                 width: calc(33.33% - 30px);
             }
@@ -340,6 +344,11 @@
                 letter-spacing: -0.02em;
                 color: $--text-clr;
                 margin-top: 54px;
+
+                @include xs{
+                    margin-top: 25px;
+                    font-size: 24px;
+                }
             }
             p{
                 font-family: $--font-family;
@@ -351,6 +360,10 @@
             }
             .premium_btn_wrapper{
                 margin-top: 72px;
+
+                @include xxs{
+                    margin-top: 30px;
+                }
                 a{
                     @include flex(row, space-between, center);
                     width: 100%;
