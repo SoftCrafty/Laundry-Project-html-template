@@ -1,0 +1,29 @@
+.order_tracking_area{
+    font-family: $--font-family;
+    .order_form_area{
+        border-right: 1px solid rgba(20, 33, 55, 0.12);
+        input{
+            padding: 20px 30px;
+            background: #ebeff3;
+            width: 100%;
+            max-width: 650px;
+            @include border-radius(100px);
+            border: none;
+            outline: none;
+            margin-bottom: 24px;
+        }
+        a{
+            background-color: $--text-clr;
+            display: block;
+            width: 100%;
+            max-width: 650px;
+            @include border-radius(50px);
+            padding: 20px 30px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #fff;
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+}

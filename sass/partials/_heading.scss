@@ -84,28 +84,35 @@
         }
         }
         h2{
-            font-family: $--font-family;
             font-weight: 600;
+            font-family: $--font-family;
             font-size: 54px;
             line-height: 119%;
             letter-spacing: -0.02em;
             color: $--text_clr;
-        @include nesthub{
-            font-size: 40px;
-        }
-        @include md{
-            font-size: 30px;
-        }
-        @include sm{
-            font-size: 28px;
-            width: 100%;
-        }
-
-        br{
-            @include xxs{
-                display: none;
+            @include nesthub{
+                font-size: 40px;
             }
+            @include md{
+                font-size: 30px;
+            }
+            @include sm{
+                font-size: 28px;
+                width: 100%;
+            }
+            
+            br{
+                @include xxs{
+                    display: none;
+                }
         }
+    }
+        h4{
+            font-weight: 600;
+            font-family: $--font-family;
+            font-size: 34px;
+            letter-spacing: -0.02em;
+            color: #142137;
         }
         
     }
@@ -137,6 +144,14 @@
             margin-top: 12px;
             
             
+        }
+    }
+    .describtion{
+        p{
+            font-family: $--font-family;
+            font-weight: 400;
+            font-size: 16px;
+            color: rgba(20, 33, 55, 0.7);
         }
     }
 }
