@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 function initGSAPAnimations() {
     if (window.innerWidth > 768) {
         animateAboutCardWrapper();
-        animateAboutPageOverlyCard();
+        //animateAboutPageOverlyCard();
     }
     animatePackagesTitleWrapper();
     animateBlogNewsContains();

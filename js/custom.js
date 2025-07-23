@@ -1,14 +1,21 @@
 (function ($) {
     "use strict";
 
-    var windowOn = $(window);
+    //preloader 
+
+    window.addEventListener("DOMContentLoaded", () => {
+        const preloader = document.querySelector(".preloader_area");
+        preloader.style.transition = "opacity 0.5s ease";
+        preloader.style.opacity = "0";        
+       
+        setTimeout(() => {
+            preloader.style.display = "none";
+        }, 1000);
+    });
+
     $(document).ready(function () {
-
-
-        windowOn.on('load', function () {
-        });
-
-
+        var windowOn = $(window);
+        
         //>> Mobile Menu Js Start <<//
         $('#mobile-menu').meanmenu({
             meanMenuContainer: '.mobile-menu',
@@ -160,21 +167,83 @@
             $('.hero_contains .heading, .hero_contains .sub_heading').removeClass('animated');
             $('.slick-current .hero_contains .heading, .slick-current .hero_contains .sub_heading').addClass('animated');
         });
-        $('.testimonial_card_area').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
-            nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            speed: 2000,
-            easing: "ease-in-out",
-            responsive: [
-                { breakpoint: 1100, settings: { slidesToShow: 2 } },
-                { breakpoint: 768, settings: { slidesToShow: 1 } },
-                { breakpoint: 480, settings: { slidesToShow: 1 } }
-            ]
+        
+      // ✅ Magnific Popup Configuration
+        $('.playBtn').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false,
+        iframe: {
+            patterns: {
+            youtube: {
+                index: 'youtube.com/',
+                id: function (url) {
+                // Support both ?v=ID and /embed/ID
+                const watchMatch = url.match(/[?&]v=([^&]+)/);
+                if (watchMatch && watchMatch[1]) return watchMatch[1];
+
+                const embedMatch = url.match(/embed\/([^\?&]+)/);
+                if (embedMatch && embedMatch[1]) return embedMatch[1];
+
+                return null;
+                },
+                src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+            }
+            }
+            },
+            callbacks: {
+                close: function () {
+                document.activeElement && document.activeElement.blur();
+               
+                setTimeout(() => {
+                    $('#main-content, .slick-current .playBtn').first().focus();
+                }, 100);
+                }
+            }
         });
+
+        // ✅ Slick Slider Configuration
+        $('.testimonial_card_area').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
+        nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 2000,
+        easing: "ease-in-out",
+        responsive: [
+            { breakpoint: 1100, settings: { slidesToShow: 2 } },
+            { breakpoint: 768, settings: { slidesToShow: 1 } },
+            { breakpoint: 480, settings: { slidesToShow: 1 } }
+        ]
+        });
+
+        // ✅ Focus & Accessibility Management for Slick
+        function updatePlayButtonFocus() {
+        $('.testimonial_card_area .slick-slide').each(function () {
+            const $btn = $(this).find('.playBtn');
+            const isHidden = $(this).attr('aria-hidden') === 'true';
+            $btn.attr('tabindex', isHidden ? '-1' : '0');
+            $btn.toggleClass('disabled', isHidden); // Optional: style control
+        });
+        }
+
+        setTimeout(updatePlayButtonFocus, 100); // Allow Slick to initialize
+        $('.testimonial_card_area').on('afterChange', updatePlayButtonFocus);
+
+        // ✅ Block Video Click on Hidden Slides (prevents redirect in mobile)
+        $('.testimonial_card_area').on('click', '.playBtn', function (e) {
+        const isHidden = $(this).closest('.slick-slide').attr('aria-hidden') === 'true';
+        if (isHidden) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            return false;
+        }
+        });
+
         $(document).on("mouseenter", ".categories_area.style_1 ul li a", function () {
             $(this).find('.download_btn img').attr('src', './images/service/icon3.png');
             $(this).find('.pdf_btn img').attr('src', './images/service/icon5.png');
@@ -239,55 +308,8 @@
             easing: 'ease-in-out',
             dotsClass: 'docts-active-collect',
         });
-        // Video Popup
-        // $('.playBtn').magnificPopup({
-        //     type: 'iframe',
-        //     disableOn: 700,
-        //     mainClass: 'mfp-fade',
-        //     removalDelay: 160,
-        //     preloader: false,
-        //     fixedContentPos: false
-        // });
-
-        $(".playBtn").magnificPopup({
-            type : "iframe",
-            iframe: {
-                markup: '<div class="mfp-iframe-scaler">' +
-                    '<div class="mfp-close"></div>' +
-                    '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-                    '</div>', 
-
-                patterns: {
-                    youtube: {
-                        index: 'youtube.com/',
-                        id: 'v=', 
-                        src: 'https://www.youtube.com/embed/%id%?autoplay=1' 
-                    },
-                    vimeo: {
-                        index: 'vimeo.com/',
-                        id: '/',
-                        src: '//player.vimeo.com/video/%id%?autoplay=1'
-                    },
-                    gmaps: {
-                        index: '//maps.google.',
-                        src: '%id%&output=embed'
-                    }
-
-                },
-
-                srcAction: 'iframe_src',
-              }
-        })
-          
+        
     });
-        $(window).on("load", function () {
-            const preloader = document.querySelector(".preloader_area");
-            preloader.style.transition = "all 0.5s ease";
-            preloader.style.opacity = "0";
-            preloader.style.visibility = "hidden";
-            setTimeout(() => {
-                preloader.style.display = "none";
-            }, 300);
-        });
+       
    
 })(jQuery);

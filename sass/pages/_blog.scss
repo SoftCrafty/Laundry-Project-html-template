@@ -1,3 +1,7 @@
+/*----------------------------------------*/
+/*  11. BLOG CSS START
+/*----------------------------------------*/
+
 .blog_details_area{
    
     
@@ -809,6 +813,7 @@
                         line-height: 44px;
                         background-color: $--primary;
                         color: $--white;
+                        border: none;
                     }
                 }
                 .recent_post_area{
@@ -1264,3 +1269,8 @@
                         
                     }
                 }
+
+                .slick-slide[aria-hidden="true"] .playBtn {
+  pointer-events: none;
+  opacity: 0.5;
+}

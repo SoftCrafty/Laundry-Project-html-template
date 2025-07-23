@@ -1,3 +1,7 @@
+/*----------------------------------------*/
+/*  04. HOME ONE CSS START
+/*----------------------------------------*/
+
 .header_contact_area{
     overflow: hidden;
     @include sm{
@@ -642,6 +646,10 @@
         .heading{
             margin-top: 50px;
             margin-bottom: 16px;
+
+            @include xs{
+                margin-top: 20px;
+            }
            
             a{
             font-family: $--font-family;
@@ -649,6 +657,10 @@
             font-size: 30px;
             letter-spacing: -0.02em;
             color: $--text_clr;
+
+            @include xs{
+                font-size: 24px;
+            }
             &:hover{
                 color: $--primary;
             }
@@ -674,6 +686,9 @@
                 .heading{
                     &.style_1{
                         margin-top: 65px;
+                        @include xs{
+                            margin-top: 20px;
+                        }
                     }
                 }
             }
@@ -844,12 +859,13 @@
         }
     }
     .servers_card_wrapper{
-        // margin-top: 59px;
+        
         height: fit-content;
         @include flex(row, space-between, center);
         @include navmenu{
             flex-wrap: wrap;
         }
+        
         flex-wrap: wrap;
         @include tow12{
             gap:50px;
@@ -859,6 +875,10 @@
         .service_card_info{
             width: 270px;
             height: 382px;
+
+            @include xxs{
+                height: auto;
+            }
             
             &:hover{
                         .service_icon{
@@ -919,6 +939,13 @@
             }
             .service_card_meta{
                 text-align: center;
+
+                &.only{
+                    @include xxs{
+                        margin-top: -55px;
+                        margin-bottom: -50px;
+                    }
+                }
                 p{
                     font-family: $--font-family;
                     font-weight: 500;

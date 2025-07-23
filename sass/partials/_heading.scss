@@ -1,4 +1,6 @@
-
+/*----------------------------------------*/
+/*  06. HEADING AREA START
+/*----------------------------------------*/
 .heading_area{
     
     .sub_heading{
@@ -98,6 +100,12 @@
             font-size: 28px;
             width: 100%;
         }
+
+        br{
+            @include xxs{
+                display: none;
+            }
+        }
         }
         
     }
@@ -137,7 +145,7 @@
         
         @include nesthub{
             @include flex(column, center, flex-start);
-
+             gap: 30px;
         }
         @include  sm {
             @include flex(column, center, flex-start);
@@ -149,11 +157,5 @@
         @include  md {
             @include flex(column, center, flex-start);
         }
-        @include nesthubmax{
-            // h1{
-            //     font-size: 60px !important;
-            //     margin-top: -190px !important;
-
-            // }
-        }
+       
     }
