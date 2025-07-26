@@ -537,10 +537,13 @@
         color: #fff;
         text-align: center;
         line-height: 54px;
-
+        display: block;
         border: none;
         &.style_1{
             max-width: 270px;
+            @include sm{
+                max-width: 132px;
+            }
         }
 }
 

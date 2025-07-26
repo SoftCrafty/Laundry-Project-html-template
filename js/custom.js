@@ -142,7 +142,7 @@
                     toggleActions: "play none none none"
                 },
                 onUpdate: function () {
-                    counter.text(Math.round(counter.text()) + suffix);
+                    counter.text(suffix + Math.round(counter.text()));
                 },
                 onStart: () => {
                     gsap.to(counter[0], { opacity: 1, scale: 1, duration: 0.5 });
@@ -167,6 +167,177 @@
             $('.hero_contains .heading, .hero_contains .sub_heading').removeClass('animated');
             $('.slick-current .hero_contains .heading, .slick-current .hero_contains .sub_heading').addClass('animated');
         });
+
+        function showSection(sectionId) {
+            $('.content-section').removeClass('active');
+            $('#' + sectionId).addClass('active');      
+
+            $('.nav-link').removeClass('active');
+            $('[data-section="' + sectionId.replace('-section', '') + '"]').addClass('active');
+        }
+
+            $('.nav-link').on('click', function (e) {
+                e.preventDefault();
+                var targetSection = $(this).data('section') + '-section';
+                showSection(targetSection);
+            });
+            showSection('dashboard-section');
+        $('.nav-link').on('click', function (e) {
+            e.preventDefault(); 
+            var targetSection = $(this).data('section') + '-section'; 
+            showSection(targetSection);
+        });
+
+        showSection('dashboard-section');
+        function course(){
+                const courseItems = document.querySelectorAll('.course-item');
+                const options = {
+                    root: null, 
+                    rootMargin: '0px', 
+                    threshold: 0.5 
+                };
+
+                const callback = (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const progressBar = $(entry.target).find('.progress-bar');
+                            const progressValue = progressBar.find('.progress-value');
+                            const finalProgress = progressBar.data('progress');
+
+                            progressBar.css('width', finalProgress + '%');
+
+                            $({ countNum: 0 }).animate({
+                                countNum: finalProgress
+                            }, {
+                                duration: 1500, 
+                                easing: 'swing', 
+                                step: function () {
+                                    progressValue.text(Math.floor(this.countNum));
+                                },
+                                complete: function () {
+                                    progressValue.text(finalProgress);
+                                }
+                            });
+
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                };
+
+                const observer = new IntersectionObserver(callback, options);
+
+                courseItems.forEach(item => {
+                    observer.observe(item);
+                });
+            
+        }
+        course()
+        function passwordChange(){
+                $('.toggle-password').on('click', function () {
+                    $(this).toggleClass('fa-eye fa-eye-slash');
+                    var input = $(this).closest('.password-input-container').find('input');
+                    if (input.attr('type') === 'password') {
+                        input.attr('type', 'text');
+                    } else {
+                        input.attr('type', 'password');
+                    }
+                });
+
+                $('#newPassword').on('keyup', function () {
+                    var password = $(this).val();
+
+                    var minLength = password.length >= 12;
+                    var hasLowercase = /[a-z]/.test(password);
+                    var hasUppercase = /[A-Z]/.test(password);
+                    var hasNumber = /[0-9]/.test(password);
+                    var hasSpecialChar = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(password);
+
+                    $('#min-length').toggleClass('met', minLength);
+                    $('#lowercase').toggleClass('met', hasLowercase);
+                    $('#uppercase').toggleClass('met', hasUppercase);
+                    $('#number').toggleClass('met', hasNumber);
+                    $('#special-char').toggleClass('met', hasSpecialChar);
+                });
+
+                $('#changePasswordForm').on('submit', function (e) {
+                    e.preventDefault();
+
+                    var oldPassword = $('#oldPassword').val();
+                    var newPassword = $('#newPassword').val();
+                    var confirmPassword = $('#confirmPassword').val();
+
+                    if (newPassword !== confirmPassword) {
+                        alert('New password and confirm password do not match!');
+                        return;
+                    }
+
+                    var allCriteriaMet = $('#min-length').hasClass('met') &&
+                        $('#lowercase').hasClass('met') &&
+                        $('#uppercase').hasClass('met') &&
+                        $('#number').hasClass('met') &&
+                        $('#special-char').hasClass('met');
+
+                    if (!allCriteriaMet) {
+                        alert('Please meet all password criteria!');
+                        return;
+                    }
+                    alert('Form submitted! Password change logic would be here.');
+
+                    $(this)[0].reset();
+                    $('.criteria-item').removeClass('met');
+                });
+            
+        }
+        passwordChange();
+        function incDec() {
+                const MAX_COUNT = 10;
+                const MIN_COUNT = 1; 
+
+                function updateButtonsState($countItem) {
+                    let currentValue = parseInt($countItem.text());
+                    let $incButton = $countItem.siblings('.inc');
+                    let $decButton = $countItem.siblings('.dec');
+
+                    if (currentValue >= MAX_COUNT) {
+                        $incButton.addClass('disabled');
+                    } else {
+                        $incButton.removeClass('disabled');
+                    }
+
+                    if (currentValue <= MIN_COUNT) {
+                        $decButton.addClass('disabled');
+                    } else {
+                        $decButton.removeClass('disabled');
+                    }
+                }
+
+                $('.count_item').each(function () {
+                    updateButtonsState($(this));
+                });
+
+                $('.inc').on('click', function () {
+                    let $countItem = $(this).siblings('.count_item');
+                    let currentValue = parseInt($countItem.text());
+
+                    if (currentValue < MAX_COUNT) { 
+                        $countItem.text(currentValue + 1);
+                        updateButtonsState($countItem); 
+                    }
+                });
+
+                $('.dec').on('click', function () {
+                    let $countItem = $(this).siblings('.count_item');
+                    let currentValue = parseInt($countItem.text());
+
+                    if (currentValue > MIN_COUNT) { 
+                        $countItem.text(currentValue - 1);
+                        updateButtonsState($countItem); 
+                    }
+                });
+            
+        }
+        incDec()
+
         
       // ✅ Magnific Popup Configuration
         $('.playBtn').magnificPopup({
@@ -221,20 +392,18 @@
         ]
         });
 
-        // ✅ Focus & Accessibility Management for Slick
         function updatePlayButtonFocus() {
         $('.testimonial_card_area .slick-slide').each(function () {
             const $btn = $(this).find('.playBtn');
             const isHidden = $(this).attr('aria-hidden') === 'true';
             $btn.attr('tabindex', isHidden ? '-1' : '0');
-            $btn.toggleClass('disabled', isHidden); // Optional: style control
+            $btn.toggleClass('disabled', isHidden); 
         });
         }
 
-        setTimeout(updatePlayButtonFocus, 100); // Allow Slick to initialize
+        setTimeout(updatePlayButtonFocus, 100); 
         $('.testimonial_card_area').on('afterChange', updatePlayButtonFocus);
 
-        // ✅ Block Video Click on Hidden Slides (prevents redirect in mobile)
         $('.testimonial_card_area').on('click', '.playBtn', function (e) {
         const isHidden = $(this).closest('.slick-slide').attr('aria-hidden') === 'true';
         if (isHidden) {

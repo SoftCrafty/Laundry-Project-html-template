@@ -111,6 +111,9 @@
             font-weight: 600;
             font-family: $--font-family;
             font-size: 34px;
+            @include sm{
+                font-size: 24px;
+            }
             letter-spacing: -0.02em;
             color: #142137;
         }
