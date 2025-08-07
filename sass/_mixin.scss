@@ -9,6 +9,7 @@
   transition: all $time ease;
 }
 
+
 @mixin border-style($width, $height, $color) {
   width: $width;
   height: $height;
