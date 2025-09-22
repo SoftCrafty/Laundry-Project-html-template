@@ -13,6 +13,7 @@ $text-color: #5e6f92;
 $border-color: #bfc5cb;
 $font-family: "Poppins", sans-serif;
 
+<<<<<<< HEAD
 // @keyframes ripple {
 //   0% {
 //     box-shadow: 0 0 0 0 rgb(255 255 255 / 20%), 0 0 0 20px rgb(255 255 255 / 20%), 0 0 0 40px rgb(255 255 255 / 20%);
@@ -21,6 +22,16 @@ $font-family: "Poppins", sans-serif;
 //       box-shadow: 0 0 0 20px rgb(255 255 255 / 20%), 0 0 0 40px rgb(255 255 255 / 20%), 0 0 0 60px rgb(255 255 255 / 0%);
 //   }
 // }
+=======
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 20%), 0 0 0 20px rgb(255 255 255 / 20%), 0 0 0 40px rgb(255 255 255 / 20%);
+  }
+  100% {
+      box-shadow: 0 0 0 20px rgb(255 255 255 / 20%), 0 0 0 40px rgb(255 255 255 / 20%), 0 0 0 60px rgb(255 255 255 / 0%);
+  }
+}
+>>>>>>> 162940dacf4fd80b149958d96c8e7aba55c6b9d0
 
 .blog-area{ 
    
