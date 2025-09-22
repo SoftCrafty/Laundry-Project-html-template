@@ -57,6 +57,20 @@
 @import "./partials/offcanvas";
 @import "./partials/mobile-menu";
 @import "./partials/animation";
+@import "./pages/order.scss";
+@import "./pages/invoice.scss";
+@import "./pages/account.scss";
+@import "./pages/payment.scss";
+@import "./pages/password.scss";
+// unit test
+@import "./unitTest/pagination";
+@import "./unitTest/blog-details";
+@import "./unitTest/sidebar";
+@import "./unitTest/unit-test";
+@import "./unitTest/pages";
+@import "./unitTest/wp-font-spacing";
+@import "./unitTest/menu-testing";
+@import "./pages/global";
 
 
 

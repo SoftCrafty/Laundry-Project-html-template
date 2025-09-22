@@ -3,6 +3,7 @@
 /*----------------------------------------*/
 
 .inner_hero_section_area{
+    overflow: hidden;
     .container_xxl{
         @include nesthub{
         padding: 0px 40px;
@@ -39,11 +40,20 @@
         font-size: 60px;
         @include sm{
             font-size: 40px;
+            
         }
+       
         line-height: 183%;
         letter-spacing: -0.02em;
         color: $--white;
             
+        }
+    }
+    .heading_style{
+        @include sm{
+            span{
+                font-size: 34px !important;
+            }
         }
     }
     ul{
