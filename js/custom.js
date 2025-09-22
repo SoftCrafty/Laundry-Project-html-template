@@ -326,7 +326,6 @@
         }
         incDec()
 
-<<<<<<< HEAD
         function countProduct(){
             $('.inc_btn').on('click', function () {
                 let inputField = $(this).siblings('input[type="text"]');
@@ -366,8 +365,6 @@
         });
 
 
-=======
->>>>>>> 162940dacf4fd80b149958d96c8e7aba55c6b9d0
         
       // ✅ Magnific Popup Configuration
         $('.playBtn').magnificPopup({
